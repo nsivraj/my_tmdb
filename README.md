@@ -27,3 +27,5 @@ flutter run --dart-define=TMDB_API_KEY=$TMDB_API_KEY -d 0C88E072-58F4-47AE-8FAE-
 flutter pub upgrade
 flutter pub outdated
 flutter packages pub run build_runner build --delete-conflicting-outputs
+flutter test --update-goldens --tags=golden
+flutter test
