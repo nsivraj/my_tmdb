@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'content.dart';
 
@@ -12,7 +12,7 @@ part of 'content.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ContentId {
@@ -27,66 +27,71 @@ mixin _$ContentId {
 /// @nodoc
 abstract class $ContentIdCopyWith<$Res> {
   factory $ContentIdCopyWith(ContentId value, $Res Function(ContentId) then) =
-      _$ContentIdCopyWithImpl<$Res>;
+      _$ContentIdCopyWithImpl<$Res, ContentId>;
+  @useResult
   $Res call({int value, ContentType type});
 }
 
 /// @nodoc
-class _$ContentIdCopyWithImpl<$Res> implements $ContentIdCopyWith<$Res> {
+class _$ContentIdCopyWithImpl<$Res, $Val extends ContentId>
+    implements $ContentIdCopyWith<$Res> {
   _$ContentIdCopyWithImpl(this._value, this._then);
 
-  final ContentId _value;
   // ignore: unused_field
-  final $Res Function(ContentId) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
-    Object? type = freezed,
+    Object? value = null,
+    Object? type = null,
   }) {
     return _then(_value.copyWith(
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as int,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as ContentType,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_ContentIdCopyWith<$Res> implements $ContentIdCopyWith<$Res> {
-  factory _$$_ContentIdCopyWith(
-          _$_ContentId value, $Res Function(_$_ContentId) then) =
-      __$$_ContentIdCopyWithImpl<$Res>;
+abstract class _$$ContentIdImplCopyWith<$Res>
+    implements $ContentIdCopyWith<$Res> {
+  factory _$$ContentIdImplCopyWith(
+          _$ContentIdImpl value, $Res Function(_$ContentIdImpl) then) =
+      __$$ContentIdImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int value, ContentType type});
 }
 
 /// @nodoc
-class __$$_ContentIdCopyWithImpl<$Res> extends _$ContentIdCopyWithImpl<$Res>
-    implements _$$_ContentIdCopyWith<$Res> {
-  __$$_ContentIdCopyWithImpl(
-      _$_ContentId _value, $Res Function(_$_ContentId) _then)
-      : super(_value, (v) => _then(v as _$_ContentId));
+class __$$ContentIdImplCopyWithImpl<$Res>
+    extends _$ContentIdCopyWithImpl<$Res, _$ContentIdImpl>
+    implements _$$ContentIdImplCopyWith<$Res> {
+  __$$ContentIdImplCopyWithImpl(
+      _$ContentIdImpl _value, $Res Function(_$ContentIdImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_ContentId get _value => super._value as _$_ContentId;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? value = freezed,
-    Object? type = freezed,
+    Object? value = null,
+    Object? type = null,
   }) {
-    return _then(_$_ContentId(
-      value: value == freezed
+    return _then(_$ContentIdImpl(
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as int,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as ContentType,
@@ -96,8 +101,8 @@ class __$$_ContentIdCopyWithImpl<$Res> extends _$ContentIdCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ContentId implements _ContentId {
-  const _$_ContentId({required this.value, required this.type});
+class _$ContentIdImpl implements _ContentId {
+  const _$ContentIdImpl({required this.value, required this.type});
 
   @override
   final int value;
@@ -110,30 +115,28 @@ class _$_ContentId implements _ContentId {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ContentId &&
-            const DeepCollectionEquality().equals(other.value, value) &&
-            const DeepCollectionEquality().equals(other.type, type));
+            other is _$ContentIdImpl &&
+            (identical(other.value, value) || other.value == value) &&
+            (identical(other.type, type) || other.type == type));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(value),
-      const DeepCollectionEquality().hash(type));
+  int get hashCode => Object.hash(runtimeType, value, type);
 
   @JsonKey(ignore: true)
   @override
-  _$$_ContentIdCopyWith<_$_ContentId> get copyWith =>
-      __$$_ContentIdCopyWithImpl<_$_ContentId>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ContentIdImplCopyWith<_$ContentIdImpl> get copyWith =>
+      __$$ContentIdImplCopyWithImpl<_$ContentIdImpl>(this, _$identity);
 }
 
 abstract class _ContentId implements ContentId {
   const factory _ContentId(
       {required final int value,
-      required final ContentType type}) = _$_ContentId;
+      required final ContentType type}) = _$ContentIdImpl;
 
   @override
   int get value;
@@ -141,6 +144,6 @@ abstract class _ContentId implements ContentId {
   ContentType get type;
   @override
   @JsonKey(ignore: true)
-  _$$_ContentIdCopyWith<_$_ContentId> get copyWith =>
+  _$$ContentIdImplCopyWith<_$ContentIdImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

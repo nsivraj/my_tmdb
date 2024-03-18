@@ -5,9 +5,9 @@ import 'package:provider/provider.dart';
 import '../../../core/models/content.dart';
 import '../../../core/widgets/palette_theme.dart';
 import '../../../di.dart';
-import '../src/details_repository.dart';
-import '../src/models/details.dart';
-import '../src/widgets/details_content.dart';
+import '../masked/details_repository.dart';
+import '../masked/models/details.dart';
+import '../masked/widgets/details_content.dart';
 
 class DetailsWidget extends StatefulWidget {
   const DetailsWidget({

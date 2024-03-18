@@ -50,3 +50,5 @@ test/**/failures/*.png
 *.dot
 
 coverage/
+
+orig.git

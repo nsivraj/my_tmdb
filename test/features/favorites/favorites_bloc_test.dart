@@ -5,8 +5,8 @@ import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:my_tmdb/src/core/models/content.dart';
 import 'package:my_tmdb/src/features/auth/models/auth_info.dart';
-import 'package:my_tmdb/src/features/favorites/src/favorites_bloc.dart';
-import 'package:my_tmdb/src/features/favorites/src/favorites_repository.dart';
+import 'package:my_tmdb/src/features/favorites/masked/favorites_bloc.dart';
+import 'package:my_tmdb/src/features/favorites/masked/favorites_repository.dart';
 
 import 'favorites_bloc_test.mocks.dart';
 

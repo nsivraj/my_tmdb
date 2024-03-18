@@ -6,41 +6,41 @@ part of 'search_api_client.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_SearchMoviesResponseDto _$$_SearchMoviesResponseDtoFromJson(
+_$SearchMoviesResponseDtoImpl _$$SearchMoviesResponseDtoImplFromJson(
         Map<String, dynamic> json) =>
-    _$_SearchMoviesResponseDto(
+    _$SearchMoviesResponseDtoImpl(
       results: (json['results'] as List<dynamic>)
           .map((e) => SearchMoviesResultDto.fromJson(e as Map<String, dynamic>))
           .toList(),
       totalPages: json['total_pages'] as int,
     );
 
-Map<String, dynamic> _$$_SearchMoviesResponseDtoToJson(
-        _$_SearchMoviesResponseDto instance) =>
+Map<String, dynamic> _$$SearchMoviesResponseDtoImplToJson(
+        _$SearchMoviesResponseDtoImpl instance) =>
     <String, dynamic>{
       'results': instance.results,
       'total_pages': instance.totalPages,
     };
 
-_$_SearchMoviesResultDto _$$_SearchMoviesResultDtoFromJson(
+_$SearchMoviesResultDtoImpl _$$SearchMoviesResultDtoImplFromJson(
         Map<String, dynamic> json) =>
-    _$_SearchMoviesResultDto(
+    _$SearchMoviesResultDtoImpl(
       id: json['id'] as int,
       title: json['title'] as String,
       posterPath: json['poster_path'] as String?,
     );
 
-Map<String, dynamic> _$$_SearchMoviesResultDtoToJson(
-        _$_SearchMoviesResultDto instance) =>
+Map<String, dynamic> _$$SearchMoviesResultDtoImplToJson(
+        _$SearchMoviesResultDtoImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'title': instance.title,
       'poster_path': instance.posterPath,
     };
 
-_$_SearchTvShowsResponseDto _$$_SearchTvShowsResponseDtoFromJson(
+_$SearchTvShowsResponseDtoImpl _$$SearchTvShowsResponseDtoImplFromJson(
         Map<String, dynamic> json) =>
-    _$_SearchTvShowsResponseDto(
+    _$SearchTvShowsResponseDtoImpl(
       results: (json['results'] as List<dynamic>)
           .map(
               (e) => SearchTvShowsResultDto.fromJson(e as Map<String, dynamic>))
@@ -48,23 +48,23 @@ _$_SearchTvShowsResponseDto _$$_SearchTvShowsResponseDtoFromJson(
       totalPages: json['total_pages'] as int,
     );
 
-Map<String, dynamic> _$$_SearchTvShowsResponseDtoToJson(
-        _$_SearchTvShowsResponseDto instance) =>
+Map<String, dynamic> _$$SearchTvShowsResponseDtoImplToJson(
+        _$SearchTvShowsResponseDtoImpl instance) =>
     <String, dynamic>{
       'results': instance.results,
       'total_pages': instance.totalPages,
     };
 
-_$_SearchTvShowsResultDto _$$_SearchTvShowsResultDtoFromJson(
+_$SearchTvShowsResultDtoImpl _$$SearchTvShowsResultDtoImplFromJson(
         Map<String, dynamic> json) =>
-    _$_SearchTvShowsResultDto(
+    _$SearchTvShowsResultDtoImpl(
       id: json['id'] as int,
       name: json['name'] as String,
       posterPath: json['poster_path'] as String?,
     );
 
-Map<String, dynamic> _$$_SearchTvShowsResultDtoToJson(
-        _$_SearchTvShowsResultDto instance) =>
+Map<String, dynamic> _$$SearchTvShowsResultDtoImplToJson(
+        _$SearchTvShowsResultDtoImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,

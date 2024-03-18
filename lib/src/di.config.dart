@@ -12,20 +12,21 @@ import 'package:injectable/injectable.dart' as _i2;
 
 import 'core/models/content.dart' as _i18;
 import 'di.dart' as _i20;
-import 'features/auth/src/api/auth_api_client.dart' as _i6;
-import 'features/auth/src/auth_bloc.dart' as _i16;
-import 'features/auth/src/auth_repository.dart' as _i7;
+import 'features/auth/masked/api/auth_api_client.dart' as _i6;
+import 'features/auth/masked/auth_bloc.dart' as _i16;
+import 'features/auth/masked/auth_repository.dart' as _i7;
 import 'features/config/config_repository.dart' as _i3;
-import 'features/details/src/api/details_api_client.dart' as _i8;
-import 'features/details/src/details_repository.dart' as _i9;
-import 'features/favorites/src/api/favorites_api_client.dart' as _i10;
-import 'features/favorites/src/favorites_bloc.dart' as _i17;
-import 'features/favorites/src/favorites_repository.dart' as _i11;
-import 'features/popular_movies/src/api/popular_movies_api_client.dart' as _i12;
-import 'features/popular_movies/src/popular_movies_repository.dart' as _i13;
-import 'features/search/src/api/search_api_client.dart' as _i14;
-import 'features/search/src/search_bloc.dart' as _i19;
-import 'features/search/src/search_repository.dart'
+import 'features/details/masked/api/details_api_client.dart' as _i8;
+import 'features/details/masked/details_repository.dart' as _i9;
+import 'features/favorites/masked/api/favorites_api_client.dart' as _i10;
+import 'features/favorites/masked/favorites_bloc.dart' as _i17;
+import 'features/favorites/masked/favorites_repository.dart' as _i11;
+import 'features/popular_movies/masked/api/popular_movies_api_client.dart'
+    as _i12;
+import 'features/popular_movies/masked/popular_movies_repository.dart' as _i13;
+import 'features/search/masked/api/search_api_client.dart' as _i14;
+import 'features/search/masked/search_bloc.dart' as _i19;
+import 'features/search/masked/search_repository.dart'
     as _i15; // ignore_for_file: unnecessary_lambdas
 
 // ignore_for_file: lines_longer_than_80_chars

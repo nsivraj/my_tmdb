@@ -6,83 +6,83 @@ part of 'auth_api_client.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_NewAuthTokenResponseDto _$$_NewAuthTokenResponseDtoFromJson(
+_$NewAuthTokenResponseDtoImpl _$$NewAuthTokenResponseDtoImplFromJson(
         Map<String, dynamic> json) =>
-    _$_NewAuthTokenResponseDto(
+    _$NewAuthTokenResponseDtoImpl(
       success: json['success'] as bool,
       requestToken: json['request_token'] as String,
     );
 
-Map<String, dynamic> _$$_NewAuthTokenResponseDtoToJson(
-        _$_NewAuthTokenResponseDto instance) =>
+Map<String, dynamic> _$$NewAuthTokenResponseDtoImplToJson(
+        _$NewAuthTokenResponseDtoImpl instance) =>
     <String, dynamic>{
       'success': instance.success,
       'request_token': instance.requestToken,
     };
 
-_$_ValidateWithLoginRequestDto _$$_ValidateWithLoginRequestDtoFromJson(
+_$ValidateWithLoginRequestDtoImpl _$$ValidateWithLoginRequestDtoImplFromJson(
         Map<String, dynamic> json) =>
-    _$_ValidateWithLoginRequestDto(
+    _$ValidateWithLoginRequestDtoImpl(
       username: json['username'] as String,
       password: json['password'] as String,
       requestToken: json['request_token'] as String,
     );
 
-Map<String, dynamic> _$$_ValidateWithLoginRequestDtoToJson(
-        _$_ValidateWithLoginRequestDto instance) =>
+Map<String, dynamic> _$$ValidateWithLoginRequestDtoImplToJson(
+        _$ValidateWithLoginRequestDtoImpl instance) =>
     <String, dynamic>{
       'username': instance.username,
       'password': instance.password,
       'request_token': instance.requestToken,
     };
 
-_$_ValidateWithLoginResponseDto _$$_ValidateWithLoginResponseDtoFromJson(
+_$ValidateWithLoginResponseDtoImpl _$$ValidateWithLoginResponseDtoImplFromJson(
         Map<String, dynamic> json) =>
-    _$_ValidateWithLoginResponseDto(
+    _$ValidateWithLoginResponseDtoImpl(
       success: json['success'] as bool,
       requestToken: json['request_token'] as String,
     );
 
-Map<String, dynamic> _$$_ValidateWithLoginResponseDtoToJson(
-        _$_ValidateWithLoginResponseDto instance) =>
+Map<String, dynamic> _$$ValidateWithLoginResponseDtoImplToJson(
+        _$ValidateWithLoginResponseDtoImpl instance) =>
     <String, dynamic>{
       'success': instance.success,
       'request_token': instance.requestToken,
     };
 
-_$_AccountResponseDto _$$_AccountResponseDtoFromJson(
+_$AccountResponseDtoImpl _$$AccountResponseDtoImplFromJson(
         Map<String, dynamic> json) =>
-    _$_AccountResponseDto(
+    _$AccountResponseDtoImpl(
       id: json['id'] as int,
     );
 
-Map<String, dynamic> _$$_AccountResponseDtoToJson(
-        _$_AccountResponseDto instance) =>
+Map<String, dynamic> _$$AccountResponseDtoImplToJson(
+        _$AccountResponseDtoImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
     };
 
-_$_NewSessionRequestDto _$$_NewSessionRequestDtoFromJson(
+_$NewSessionRequestDtoImpl _$$NewSessionRequestDtoImplFromJson(
         Map<String, dynamic> json) =>
-    _$_NewSessionRequestDto(
+    _$NewSessionRequestDtoImpl(
       requestToken: json['request_token'] as String,
     );
 
-Map<String, dynamic> _$$_NewSessionRequestDtoToJson(
-        _$_NewSessionRequestDto instance) =>
+Map<String, dynamic> _$$NewSessionRequestDtoImplToJson(
+        _$NewSessionRequestDtoImpl instance) =>
     <String, dynamic>{
       'request_token': instance.requestToken,
     };
 
-_$_NewSessionResponseDto _$$_NewSessionResponseDtoFromJson(
+_$NewSessionResponseDtoImpl _$$NewSessionResponseDtoImplFromJson(
         Map<String, dynamic> json) =>
-    _$_NewSessionResponseDto(
+    _$NewSessionResponseDtoImpl(
       success: json['success'] as bool,
       sessionId: json['session_id'] as String,
     );
 
-Map<String, dynamic> _$$_NewSessionResponseDtoToJson(
-        _$_NewSessionResponseDto instance) =>
+Map<String, dynamic> _$$NewSessionResponseDtoImplToJson(
+        _$NewSessionResponseDtoImpl instance) =>
     <String, dynamic>{
       'success': instance.success,
       'session_id': instance.sessionId,
@@ -164,8 +164,7 @@ class _AuthApiClient implements AuthApiClient {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{r'api_key': apiKey};
     final _headers = <String, dynamic>{};
-    final _data = <String, dynamic>{};
-    _data.addAll(body.toJson());
+    final _data = body;
     final _result = await _dio.fetch<Map<String, dynamic>>(
         _setStreamType<NewSessionResponseDto>(Options(
       method: 'POST',
@@ -191,8 +190,7 @@ class _AuthApiClient implements AuthApiClient {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{r'api_key': apiKey};
     final _headers = <String, dynamic>{};
-    final _data = <String, dynamic>{};
-    _data.addAll(body.toJson());
+    final _data = body;
     final _result = await _dio.fetch<Map<String, dynamic>>(
         _setStreamType<ValidateWithLoginResponseDto>(Options(
       method: 'POST',

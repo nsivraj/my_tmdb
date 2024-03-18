@@ -6,9 +6,9 @@ part of 'details_api_client.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MoviesGetDetailsResponseDto _$$_MoviesGetDetailsResponseDtoFromJson(
+_$MoviesGetDetailsResponseDtoImpl _$$MoviesGetDetailsResponseDtoImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MoviesGetDetailsResponseDto(
+    _$MoviesGetDetailsResponseDtoImpl(
       id: json['id'] as int,
       title: json['title'] as String,
       overview: json['overview'] as String?,
@@ -16,8 +16,8 @@ _$_MoviesGetDetailsResponseDto _$$_MoviesGetDetailsResponseDtoFromJson(
       backdropPath: json['backdrop_path'] as String?,
     );
 
-Map<String, dynamic> _$$_MoviesGetDetailsResponseDtoToJson(
-        _$_MoviesGetDetailsResponseDto instance) =>
+Map<String, dynamic> _$$MoviesGetDetailsResponseDtoImplToJson(
+        _$MoviesGetDetailsResponseDtoImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'title': instance.title,
@@ -26,9 +26,9 @@ Map<String, dynamic> _$$_MoviesGetDetailsResponseDtoToJson(
       'backdrop_path': instance.backdropPath,
     };
 
-_$_TvGetDetailsResponseDto _$$_TvGetDetailsResponseDtoFromJson(
+_$TvGetDetailsResponseDtoImpl _$$TvGetDetailsResponseDtoImplFromJson(
         Map<String, dynamic> json) =>
-    _$_TvGetDetailsResponseDto(
+    _$TvGetDetailsResponseDtoImpl(
       id: json['id'] as int,
       name: json['name'] as String,
       overview: json['overview'] as String,
@@ -36,8 +36,8 @@ _$_TvGetDetailsResponseDto _$$_TvGetDetailsResponseDtoFromJson(
       backdropPath: json['backdrop_path'] as String?,
     );
 
-Map<String, dynamic> _$$_TvGetDetailsResponseDtoToJson(
-        _$_TvGetDetailsResponseDto instance) =>
+Map<String, dynamic> _$$TvGetDetailsResponseDtoImplToJson(
+        _$TvGetDetailsResponseDtoImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,

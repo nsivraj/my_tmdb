@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'details_api_client.dart';
 
@@ -12,7 +12,7 @@ part of 'details_api_client.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MoviesGetDetailsResponseDto _$MoviesGetDetailsResponseDtoFromJson(
     Map<String, dynamic> json) {
@@ -38,7 +38,9 @@ abstract class $MoviesGetDetailsResponseDtoCopyWith<$Res> {
   factory $MoviesGetDetailsResponseDtoCopyWith(
           MoviesGetDetailsResponseDto value,
           $Res Function(MoviesGetDetailsResponseDto) then) =
-      _$MoviesGetDetailsResponseDtoCopyWithImpl<$Res>;
+      _$MoviesGetDetailsResponseDtoCopyWithImpl<$Res,
+          MoviesGetDetailsResponseDto>;
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -48,55 +50,59 @@ abstract class $MoviesGetDetailsResponseDtoCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MoviesGetDetailsResponseDtoCopyWithImpl<$Res>
+class _$MoviesGetDetailsResponseDtoCopyWithImpl<$Res,
+        $Val extends MoviesGetDetailsResponseDto>
     implements $MoviesGetDetailsResponseDtoCopyWith<$Res> {
   _$MoviesGetDetailsResponseDtoCopyWithImpl(this._value, this._then);
 
-  final MoviesGetDetailsResponseDto _value;
   // ignore: unused_field
-  final $Res Function(MoviesGetDetailsResponseDto) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
+    Object? id = null,
+    Object? title = null,
     Object? overview = freezed,
     Object? posterPath = freezed,
     Object? backdropPath = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      overview: overview == freezed
+      overview: freezed == overview
           ? _value.overview
           : overview // ignore: cast_nullable_to_non_nullable
               as String?,
-      posterPath: posterPath == freezed
+      posterPath: freezed == posterPath
           ? _value.posterPath
           : posterPath // ignore: cast_nullable_to_non_nullable
               as String?,
-      backdropPath: backdropPath == freezed
+      backdropPath: freezed == backdropPath
           ? _value.backdropPath
           : backdropPath // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_MoviesGetDetailsResponseDtoCopyWith<$Res>
+abstract class _$$MoviesGetDetailsResponseDtoImplCopyWith<$Res>
     implements $MoviesGetDetailsResponseDtoCopyWith<$Res> {
-  factory _$$_MoviesGetDetailsResponseDtoCopyWith(
-          _$_MoviesGetDetailsResponseDto value,
-          $Res Function(_$_MoviesGetDetailsResponseDto) then) =
-      __$$_MoviesGetDetailsResponseDtoCopyWithImpl<$Res>;
+  factory _$$MoviesGetDetailsResponseDtoImplCopyWith(
+          _$MoviesGetDetailsResponseDtoImpl value,
+          $Res Function(_$MoviesGetDetailsResponseDtoImpl) then) =
+      __$$MoviesGetDetailsResponseDtoImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -106,44 +112,42 @@ abstract class _$$_MoviesGetDetailsResponseDtoCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_MoviesGetDetailsResponseDtoCopyWithImpl<$Res>
-    extends _$MoviesGetDetailsResponseDtoCopyWithImpl<$Res>
-    implements _$$_MoviesGetDetailsResponseDtoCopyWith<$Res> {
-  __$$_MoviesGetDetailsResponseDtoCopyWithImpl(
-      _$_MoviesGetDetailsResponseDto _value,
-      $Res Function(_$_MoviesGetDetailsResponseDto) _then)
-      : super(_value, (v) => _then(v as _$_MoviesGetDetailsResponseDto));
+class __$$MoviesGetDetailsResponseDtoImplCopyWithImpl<$Res>
+    extends _$MoviesGetDetailsResponseDtoCopyWithImpl<$Res,
+        _$MoviesGetDetailsResponseDtoImpl>
+    implements _$$MoviesGetDetailsResponseDtoImplCopyWith<$Res> {
+  __$$MoviesGetDetailsResponseDtoImplCopyWithImpl(
+      _$MoviesGetDetailsResponseDtoImpl _value,
+      $Res Function(_$MoviesGetDetailsResponseDtoImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_MoviesGetDetailsResponseDto get _value =>
-      super._value as _$_MoviesGetDetailsResponseDto;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
+    Object? id = null,
+    Object? title = null,
     Object? overview = freezed,
     Object? posterPath = freezed,
     Object? backdropPath = freezed,
   }) {
-    return _then(_$_MoviesGetDetailsResponseDto(
-      id: id == freezed
+    return _then(_$MoviesGetDetailsResponseDtoImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      overview: overview == freezed
+      overview: freezed == overview
           ? _value.overview
           : overview // ignore: cast_nullable_to_non_nullable
               as String?,
-      posterPath: posterPath == freezed
+      posterPath: freezed == posterPath
           ? _value.posterPath
           : posterPath // ignore: cast_nullable_to_non_nullable
               as String?,
-      backdropPath: backdropPath == freezed
+      backdropPath: freezed == backdropPath
           ? _value.backdropPath
           : backdropPath // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -153,16 +157,18 @@ class __$$_MoviesGetDetailsResponseDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MoviesGetDetailsResponseDto implements _MoviesGetDetailsResponseDto {
-  const _$_MoviesGetDetailsResponseDto(
+class _$MoviesGetDetailsResponseDtoImpl
+    implements _MoviesGetDetailsResponseDto {
+  const _$MoviesGetDetailsResponseDtoImpl(
       {required this.id,
       required this.title,
       this.overview,
       this.posterPath,
       this.backdropPath});
 
-  factory _$_MoviesGetDetailsResponseDto.fromJson(Map<String, dynamic> json) =>
-      _$$_MoviesGetDetailsResponseDtoFromJson(json);
+  factory _$MoviesGetDetailsResponseDtoImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$MoviesGetDetailsResponseDtoImplFromJson(json);
 
   @override
   final int id;
@@ -181,38 +187,35 @@ class _$_MoviesGetDetailsResponseDto implements _MoviesGetDetailsResponseDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_MoviesGetDetailsResponseDto &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.overview, overview) &&
-            const DeepCollectionEquality()
-                .equals(other.posterPath, posterPath) &&
-            const DeepCollectionEquality()
-                .equals(other.backdropPath, backdropPath));
+            other is _$MoviesGetDetailsResponseDtoImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.overview, overview) ||
+                other.overview == overview) &&
+            (identical(other.posterPath, posterPath) ||
+                other.posterPath == posterPath) &&
+            (identical(other.backdropPath, backdropPath) ||
+                other.backdropPath == backdropPath));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(overview),
-      const DeepCollectionEquality().hash(posterPath),
-      const DeepCollectionEquality().hash(backdropPath));
+  int get hashCode =>
+      Object.hash(runtimeType, id, title, overview, posterPath, backdropPath);
 
   @JsonKey(ignore: true)
   @override
-  _$$_MoviesGetDetailsResponseDtoCopyWith<_$_MoviesGetDetailsResponseDto>
-      get copyWith => __$$_MoviesGetDetailsResponseDtoCopyWithImpl<
-          _$_MoviesGetDetailsResponseDto>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MoviesGetDetailsResponseDtoImplCopyWith<_$MoviesGetDetailsResponseDtoImpl>
+      get copyWith => __$$MoviesGetDetailsResponseDtoImplCopyWithImpl<
+          _$MoviesGetDetailsResponseDtoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MoviesGetDetailsResponseDtoToJson(
+    return _$$MoviesGetDetailsResponseDtoImplToJson(
       this,
     );
   }
@@ -225,10 +228,10 @@ abstract class _MoviesGetDetailsResponseDto
       required final String title,
       final String? overview,
       final String? posterPath,
-      final String? backdropPath}) = _$_MoviesGetDetailsResponseDto;
+      final String? backdropPath}) = _$MoviesGetDetailsResponseDtoImpl;
 
   factory _MoviesGetDetailsResponseDto.fromJson(Map<String, dynamic> json) =
-      _$_MoviesGetDetailsResponseDto.fromJson;
+      _$MoviesGetDetailsResponseDtoImpl.fromJson;
 
   @override
   int get id;
@@ -242,7 +245,7 @@ abstract class _MoviesGetDetailsResponseDto
   String? get backdropPath;
   @override
   @JsonKey(ignore: true)
-  _$$_MoviesGetDetailsResponseDtoCopyWith<_$_MoviesGetDetailsResponseDto>
+  _$$MoviesGetDetailsResponseDtoImplCopyWith<_$MoviesGetDetailsResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -269,7 +272,8 @@ mixin _$TvGetDetailsResponseDto {
 abstract class $TvGetDetailsResponseDtoCopyWith<$Res> {
   factory $TvGetDetailsResponseDtoCopyWith(TvGetDetailsResponseDto value,
           $Res Function(TvGetDetailsResponseDto) then) =
-      _$TvGetDetailsResponseDtoCopyWithImpl<$Res>;
+      _$TvGetDetailsResponseDtoCopyWithImpl<$Res, TvGetDetailsResponseDto>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -279,54 +283,59 @@ abstract class $TvGetDetailsResponseDtoCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$TvGetDetailsResponseDtoCopyWithImpl<$Res>
+class _$TvGetDetailsResponseDtoCopyWithImpl<$Res,
+        $Val extends TvGetDetailsResponseDto>
     implements $TvGetDetailsResponseDtoCopyWith<$Res> {
   _$TvGetDetailsResponseDtoCopyWithImpl(this._value, this._then);
 
-  final TvGetDetailsResponseDto _value;
   // ignore: unused_field
-  final $Res Function(TvGetDetailsResponseDto) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? overview = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? overview = null,
     Object? posterPath = freezed,
     Object? backdropPath = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      overview: overview == freezed
+      overview: null == overview
           ? _value.overview
           : overview // ignore: cast_nullable_to_non_nullable
               as String,
-      posterPath: posterPath == freezed
+      posterPath: freezed == posterPath
           ? _value.posterPath
           : posterPath // ignore: cast_nullable_to_non_nullable
               as String?,
-      backdropPath: backdropPath == freezed
+      backdropPath: freezed == backdropPath
           ? _value.backdropPath
           : backdropPath // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_TvGetDetailsResponseDtoCopyWith<$Res>
+abstract class _$$TvGetDetailsResponseDtoImplCopyWith<$Res>
     implements $TvGetDetailsResponseDtoCopyWith<$Res> {
-  factory _$$_TvGetDetailsResponseDtoCopyWith(_$_TvGetDetailsResponseDto value,
-          $Res Function(_$_TvGetDetailsResponseDto) then) =
-      __$$_TvGetDetailsResponseDtoCopyWithImpl<$Res>;
+  factory _$$TvGetDetailsResponseDtoImplCopyWith(
+          _$TvGetDetailsResponseDtoImpl value,
+          $Res Function(_$TvGetDetailsResponseDtoImpl) then) =
+      __$$TvGetDetailsResponseDtoImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -336,43 +345,42 @@ abstract class _$$_TvGetDetailsResponseDtoCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_TvGetDetailsResponseDtoCopyWithImpl<$Res>
-    extends _$TvGetDetailsResponseDtoCopyWithImpl<$Res>
-    implements _$$_TvGetDetailsResponseDtoCopyWith<$Res> {
-  __$$_TvGetDetailsResponseDtoCopyWithImpl(_$_TvGetDetailsResponseDto _value,
-      $Res Function(_$_TvGetDetailsResponseDto) _then)
-      : super(_value, (v) => _then(v as _$_TvGetDetailsResponseDto));
+class __$$TvGetDetailsResponseDtoImplCopyWithImpl<$Res>
+    extends _$TvGetDetailsResponseDtoCopyWithImpl<$Res,
+        _$TvGetDetailsResponseDtoImpl>
+    implements _$$TvGetDetailsResponseDtoImplCopyWith<$Res> {
+  __$$TvGetDetailsResponseDtoImplCopyWithImpl(
+      _$TvGetDetailsResponseDtoImpl _value,
+      $Res Function(_$TvGetDetailsResponseDtoImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_TvGetDetailsResponseDto get _value =>
-      super._value as _$_TvGetDetailsResponseDto;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? overview = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? overview = null,
     Object? posterPath = freezed,
     Object? backdropPath = freezed,
   }) {
-    return _then(_$_TvGetDetailsResponseDto(
-      id: id == freezed
+    return _then(_$TvGetDetailsResponseDtoImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      overview: overview == freezed
+      overview: null == overview
           ? _value.overview
           : overview // ignore: cast_nullable_to_non_nullable
               as String,
-      posterPath: posterPath == freezed
+      posterPath: freezed == posterPath
           ? _value.posterPath
           : posterPath // ignore: cast_nullable_to_non_nullable
               as String?,
-      backdropPath: backdropPath == freezed
+      backdropPath: freezed == backdropPath
           ? _value.backdropPath
           : backdropPath // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -382,16 +390,16 @@ class __$$_TvGetDetailsResponseDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_TvGetDetailsResponseDto implements _TvGetDetailsResponseDto {
-  const _$_TvGetDetailsResponseDto(
+class _$TvGetDetailsResponseDtoImpl implements _TvGetDetailsResponseDto {
+  const _$TvGetDetailsResponseDtoImpl(
       {required this.id,
       required this.name,
       required this.overview,
       this.posterPath,
       this.backdropPath});
 
-  factory _$_TvGetDetailsResponseDto.fromJson(Map<String, dynamic> json) =>
-      _$$_TvGetDetailsResponseDtoFromJson(json);
+  factory _$TvGetDetailsResponseDtoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$TvGetDetailsResponseDtoImplFromJson(json);
 
   @override
   final int id;
@@ -410,39 +418,35 @@ class _$_TvGetDetailsResponseDto implements _TvGetDetailsResponseDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_TvGetDetailsResponseDto &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.overview, overview) &&
-            const DeepCollectionEquality()
-                .equals(other.posterPath, posterPath) &&
-            const DeepCollectionEquality()
-                .equals(other.backdropPath, backdropPath));
+            other is _$TvGetDetailsResponseDtoImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.overview, overview) ||
+                other.overview == overview) &&
+            (identical(other.posterPath, posterPath) ||
+                other.posterPath == posterPath) &&
+            (identical(other.backdropPath, backdropPath) ||
+                other.backdropPath == backdropPath));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(overview),
-      const DeepCollectionEquality().hash(posterPath),
-      const DeepCollectionEquality().hash(backdropPath));
+  int get hashCode =>
+      Object.hash(runtimeType, id, name, overview, posterPath, backdropPath);
 
   @JsonKey(ignore: true)
   @override
-  _$$_TvGetDetailsResponseDtoCopyWith<_$_TvGetDetailsResponseDto>
-      get copyWith =>
-          __$$_TvGetDetailsResponseDtoCopyWithImpl<_$_TvGetDetailsResponseDto>(
-              this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$TvGetDetailsResponseDtoImplCopyWith<_$TvGetDetailsResponseDtoImpl>
+      get copyWith => __$$TvGetDetailsResponseDtoImplCopyWithImpl<
+          _$TvGetDetailsResponseDtoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_TvGetDetailsResponseDtoToJson(
+    return _$$TvGetDetailsResponseDtoImplToJson(
       this,
     );
   }
@@ -454,10 +458,10 @@ abstract class _TvGetDetailsResponseDto implements TvGetDetailsResponseDto {
       required final String name,
       required final String overview,
       final String? posterPath,
-      final String? backdropPath}) = _$_TvGetDetailsResponseDto;
+      final String? backdropPath}) = _$TvGetDetailsResponseDtoImpl;
 
   factory _TvGetDetailsResponseDto.fromJson(Map<String, dynamic> json) =
-      _$_TvGetDetailsResponseDto.fromJson;
+      _$TvGetDetailsResponseDtoImpl.fromJson;
 
   @override
   int get id;
@@ -471,6 +475,6 @@ abstract class _TvGetDetailsResponseDto implements TvGetDetailsResponseDto {
   String? get backdropPath;
   @override
   @JsonKey(ignore: true)
-  _$$_TvGetDetailsResponseDtoCopyWith<_$_TvGetDetailsResponseDto>
+  _$$TvGetDetailsResponseDtoImplCopyWith<_$TvGetDetailsResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

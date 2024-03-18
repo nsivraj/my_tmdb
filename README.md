@@ -21,3 +21,9 @@ This product uses the TMDB API but is not endorsed or certified by TMDB.
 <img width="200" src="tmdb_logo.svg"/>
 
 [1]: https://developers.themoviedb.org/3/getting-started/introduction
+
+flutter run --dart-define=TMDB_API_KEY=$TMDB_API_KEY -d 0C88E072-58F4-47AE-8FAE-AD5FCD404D7A
+
+flutter pub upgrade
+flutter pub outdated
+flutter packages pub run build_runner build --delete-conflicting-outputs

@@ -6,28 +6,30 @@ part of 'popular_movies_api_client.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PopularMoviesResponseDto _$$_PopularMoviesResponseDtoFromJson(
+_$PopularMoviesResponseDtoImpl _$$PopularMoviesResponseDtoImplFromJson(
         Map<String, dynamic> json) =>
-    _$_PopularMoviesResponseDto(
+    _$PopularMoviesResponseDtoImpl(
       results: (json['results'] as List<dynamic>)
           .map((e) => PopularMovieDto.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
-Map<String, dynamic> _$$_PopularMoviesResponseDtoToJson(
-        _$_PopularMoviesResponseDto instance) =>
+Map<String, dynamic> _$$PopularMoviesResponseDtoImplToJson(
+        _$PopularMoviesResponseDtoImpl instance) =>
     <String, dynamic>{
       'results': instance.results,
     };
 
-_$_PopularMovieDto _$$_PopularMovieDtoFromJson(Map<String, dynamic> json) =>
-    _$_PopularMovieDto(
+_$PopularMovieDtoImpl _$$PopularMovieDtoImplFromJson(
+        Map<String, dynamic> json) =>
+    _$PopularMovieDtoImpl(
       id: json['id'] as int,
       title: json['title'] as String,
       posterPath: json['poster_path'] as String?,
     );
 
-Map<String, dynamic> _$$_PopularMovieDtoToJson(_$_PopularMovieDto instance) =>
+Map<String, dynamic> _$$PopularMovieDtoImplToJson(
+        _$PopularMovieDtoImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'title': instance.title,

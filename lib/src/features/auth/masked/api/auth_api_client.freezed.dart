@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'auth_api_client.dart';
 
@@ -12,7 +12,7 @@ part of 'auth_api_client.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 NewAuthTokenResponseDto _$NewAuthTokenResponseDtoFromJson(
     Map<String, dynamic> json) {
@@ -34,70 +34,75 @@ mixin _$NewAuthTokenResponseDto {
 abstract class $NewAuthTokenResponseDtoCopyWith<$Res> {
   factory $NewAuthTokenResponseDtoCopyWith(NewAuthTokenResponseDto value,
           $Res Function(NewAuthTokenResponseDto) then) =
-      _$NewAuthTokenResponseDtoCopyWithImpl<$Res>;
+      _$NewAuthTokenResponseDtoCopyWithImpl<$Res, NewAuthTokenResponseDto>;
+  @useResult
   $Res call({bool success, String requestToken});
 }
 
 /// @nodoc
-class _$NewAuthTokenResponseDtoCopyWithImpl<$Res>
+class _$NewAuthTokenResponseDtoCopyWithImpl<$Res,
+        $Val extends NewAuthTokenResponseDto>
     implements $NewAuthTokenResponseDtoCopyWith<$Res> {
   _$NewAuthTokenResponseDtoCopyWithImpl(this._value, this._then);
 
-  final NewAuthTokenResponseDto _value;
   // ignore: unused_field
-  final $Res Function(NewAuthTokenResponseDto) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? success = freezed,
-    Object? requestToken = freezed,
+    Object? success = null,
+    Object? requestToken = null,
   }) {
     return _then(_value.copyWith(
-      success: success == freezed
+      success: null == success
           ? _value.success
           : success // ignore: cast_nullable_to_non_nullable
               as bool,
-      requestToken: requestToken == freezed
+      requestToken: null == requestToken
           ? _value.requestToken
           : requestToken // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_NewAuthTokenResponseDtoCopyWith<$Res>
+abstract class _$$NewAuthTokenResponseDtoImplCopyWith<$Res>
     implements $NewAuthTokenResponseDtoCopyWith<$Res> {
-  factory _$$_NewAuthTokenResponseDtoCopyWith(_$_NewAuthTokenResponseDto value,
-          $Res Function(_$_NewAuthTokenResponseDto) then) =
-      __$$_NewAuthTokenResponseDtoCopyWithImpl<$Res>;
+  factory _$$NewAuthTokenResponseDtoImplCopyWith(
+          _$NewAuthTokenResponseDtoImpl value,
+          $Res Function(_$NewAuthTokenResponseDtoImpl) then) =
+      __$$NewAuthTokenResponseDtoImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({bool success, String requestToken});
 }
 
 /// @nodoc
-class __$$_NewAuthTokenResponseDtoCopyWithImpl<$Res>
-    extends _$NewAuthTokenResponseDtoCopyWithImpl<$Res>
-    implements _$$_NewAuthTokenResponseDtoCopyWith<$Res> {
-  __$$_NewAuthTokenResponseDtoCopyWithImpl(_$_NewAuthTokenResponseDto _value,
-      $Res Function(_$_NewAuthTokenResponseDto) _then)
-      : super(_value, (v) => _then(v as _$_NewAuthTokenResponseDto));
+class __$$NewAuthTokenResponseDtoImplCopyWithImpl<$Res>
+    extends _$NewAuthTokenResponseDtoCopyWithImpl<$Res,
+        _$NewAuthTokenResponseDtoImpl>
+    implements _$$NewAuthTokenResponseDtoImplCopyWith<$Res> {
+  __$$NewAuthTokenResponseDtoImplCopyWithImpl(
+      _$NewAuthTokenResponseDtoImpl _value,
+      $Res Function(_$NewAuthTokenResponseDtoImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_NewAuthTokenResponseDto get _value =>
-      super._value as _$_NewAuthTokenResponseDto;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? success = freezed,
-    Object? requestToken = freezed,
+    Object? success = null,
+    Object? requestToken = null,
   }) {
-    return _then(_$_NewAuthTokenResponseDto(
-      success: success == freezed
+    return _then(_$NewAuthTokenResponseDtoImpl(
+      success: null == success
           ? _value.success
           : success // ignore: cast_nullable_to_non_nullable
               as bool,
-      requestToken: requestToken == freezed
+      requestToken: null == requestToken
           ? _value.requestToken
           : requestToken // ignore: cast_nullable_to_non_nullable
               as String,
@@ -107,12 +112,12 @@ class __$$_NewAuthTokenResponseDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_NewAuthTokenResponseDto implements _NewAuthTokenResponseDto {
-  const _$_NewAuthTokenResponseDto(
+class _$NewAuthTokenResponseDtoImpl implements _NewAuthTokenResponseDto {
+  const _$NewAuthTokenResponseDtoImpl(
       {required this.success, required this.requestToken});
 
-  factory _$_NewAuthTokenResponseDto.fromJson(Map<String, dynamic> json) =>
-      _$$_NewAuthTokenResponseDtoFromJson(json);
+  factory _$NewAuthTokenResponseDtoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$NewAuthTokenResponseDtoImplFromJson(json);
 
   @override
   final bool success;
@@ -125,32 +130,29 @@ class _$_NewAuthTokenResponseDto implements _NewAuthTokenResponseDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_NewAuthTokenResponseDto &&
-            const DeepCollectionEquality().equals(other.success, success) &&
-            const DeepCollectionEquality()
-                .equals(other.requestToken, requestToken));
+            other is _$NewAuthTokenResponseDtoImpl &&
+            (identical(other.success, success) || other.success == success) &&
+            (identical(other.requestToken, requestToken) ||
+                other.requestToken == requestToken));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(success),
-      const DeepCollectionEquality().hash(requestToken));
+  int get hashCode => Object.hash(runtimeType, success, requestToken);
 
   @JsonKey(ignore: true)
   @override
-  _$$_NewAuthTokenResponseDtoCopyWith<_$_NewAuthTokenResponseDto>
-      get copyWith =>
-          __$$_NewAuthTokenResponseDtoCopyWithImpl<_$_NewAuthTokenResponseDto>(
-              this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NewAuthTokenResponseDtoImplCopyWith<_$NewAuthTokenResponseDtoImpl>
+      get copyWith => __$$NewAuthTokenResponseDtoImplCopyWithImpl<
+          _$NewAuthTokenResponseDtoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_NewAuthTokenResponseDtoToJson(
+    return _$$NewAuthTokenResponseDtoImplToJson(
       this,
     );
   }
@@ -159,10 +161,10 @@ class _$_NewAuthTokenResponseDto implements _NewAuthTokenResponseDto {
 abstract class _NewAuthTokenResponseDto implements NewAuthTokenResponseDto {
   const factory _NewAuthTokenResponseDto(
       {required final bool success,
-      required final String requestToken}) = _$_NewAuthTokenResponseDto;
+      required final String requestToken}) = _$NewAuthTokenResponseDtoImpl;
 
   factory _NewAuthTokenResponseDto.fromJson(Map<String, dynamic> json) =
-      _$_NewAuthTokenResponseDto.fromJson;
+      _$NewAuthTokenResponseDtoImpl.fromJson;
 
   @override
   bool get success;
@@ -170,7 +172,7 @@ abstract class _NewAuthTokenResponseDto implements NewAuthTokenResponseDto {
   String get requestToken;
   @override
   @JsonKey(ignore: true)
-  _$$_NewAuthTokenResponseDtoCopyWith<_$_NewAuthTokenResponseDto>
+  _$$NewAuthTokenResponseDtoImplCopyWith<_$NewAuthTokenResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -196,82 +198,86 @@ abstract class $ValidateWithLoginRequestDtoCopyWith<$Res> {
   factory $ValidateWithLoginRequestDtoCopyWith(
           ValidateWithLoginRequestDto value,
           $Res Function(ValidateWithLoginRequestDto) then) =
-      _$ValidateWithLoginRequestDtoCopyWithImpl<$Res>;
+      _$ValidateWithLoginRequestDtoCopyWithImpl<$Res,
+          ValidateWithLoginRequestDto>;
+  @useResult
   $Res call({String username, String password, String requestToken});
 }
 
 /// @nodoc
-class _$ValidateWithLoginRequestDtoCopyWithImpl<$Res>
+class _$ValidateWithLoginRequestDtoCopyWithImpl<$Res,
+        $Val extends ValidateWithLoginRequestDto>
     implements $ValidateWithLoginRequestDtoCopyWith<$Res> {
   _$ValidateWithLoginRequestDtoCopyWithImpl(this._value, this._then);
 
-  final ValidateWithLoginRequestDto _value;
   // ignore: unused_field
-  final $Res Function(ValidateWithLoginRequestDto) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? username = freezed,
-    Object? password = freezed,
-    Object? requestToken = freezed,
+    Object? username = null,
+    Object? password = null,
+    Object? requestToken = null,
   }) {
     return _then(_value.copyWith(
-      username: username == freezed
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as String,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as String,
-      requestToken: requestToken == freezed
+      requestToken: null == requestToken
           ? _value.requestToken
           : requestToken // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_ValidateWithLoginRequestDtoCopyWith<$Res>
+abstract class _$$ValidateWithLoginRequestDtoImplCopyWith<$Res>
     implements $ValidateWithLoginRequestDtoCopyWith<$Res> {
-  factory _$$_ValidateWithLoginRequestDtoCopyWith(
-          _$_ValidateWithLoginRequestDto value,
-          $Res Function(_$_ValidateWithLoginRequestDto) then) =
-      __$$_ValidateWithLoginRequestDtoCopyWithImpl<$Res>;
+  factory _$$ValidateWithLoginRequestDtoImplCopyWith(
+          _$ValidateWithLoginRequestDtoImpl value,
+          $Res Function(_$ValidateWithLoginRequestDtoImpl) then) =
+      __$$ValidateWithLoginRequestDtoImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String username, String password, String requestToken});
 }
 
 /// @nodoc
-class __$$_ValidateWithLoginRequestDtoCopyWithImpl<$Res>
-    extends _$ValidateWithLoginRequestDtoCopyWithImpl<$Res>
-    implements _$$_ValidateWithLoginRequestDtoCopyWith<$Res> {
-  __$$_ValidateWithLoginRequestDtoCopyWithImpl(
-      _$_ValidateWithLoginRequestDto _value,
-      $Res Function(_$_ValidateWithLoginRequestDto) _then)
-      : super(_value, (v) => _then(v as _$_ValidateWithLoginRequestDto));
+class __$$ValidateWithLoginRequestDtoImplCopyWithImpl<$Res>
+    extends _$ValidateWithLoginRequestDtoCopyWithImpl<$Res,
+        _$ValidateWithLoginRequestDtoImpl>
+    implements _$$ValidateWithLoginRequestDtoImplCopyWith<$Res> {
+  __$$ValidateWithLoginRequestDtoImplCopyWithImpl(
+      _$ValidateWithLoginRequestDtoImpl _value,
+      $Res Function(_$ValidateWithLoginRequestDtoImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_ValidateWithLoginRequestDto get _value =>
-      super._value as _$_ValidateWithLoginRequestDto;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? username = freezed,
-    Object? password = freezed,
-    Object? requestToken = freezed,
+    Object? username = null,
+    Object? password = null,
+    Object? requestToken = null,
   }) {
-    return _then(_$_ValidateWithLoginRequestDto(
-      username: username == freezed
+    return _then(_$ValidateWithLoginRequestDtoImpl(
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as String,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as String,
-      requestToken: requestToken == freezed
+      requestToken: null == requestToken
           ? _value.requestToken
           : requestToken // ignore: cast_nullable_to_non_nullable
               as String,
@@ -281,14 +287,16 @@ class __$$_ValidateWithLoginRequestDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ValidateWithLoginRequestDto implements _ValidateWithLoginRequestDto {
-  const _$_ValidateWithLoginRequestDto(
+class _$ValidateWithLoginRequestDtoImpl
+    implements _ValidateWithLoginRequestDto {
+  const _$ValidateWithLoginRequestDtoImpl(
       {required this.username,
       required this.password,
       required this.requestToken});
 
-  factory _$_ValidateWithLoginRequestDto.fromJson(Map<String, dynamic> json) =>
-      _$$_ValidateWithLoginRequestDtoFromJson(json);
+  factory _$ValidateWithLoginRequestDtoImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$ValidateWithLoginRequestDtoImplFromJson(json);
 
   @override
   final String username;
@@ -303,33 +311,33 @@ class _$_ValidateWithLoginRequestDto implements _ValidateWithLoginRequestDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ValidateWithLoginRequestDto &&
-            const DeepCollectionEquality().equals(other.username, username) &&
-            const DeepCollectionEquality().equals(other.password, password) &&
-            const DeepCollectionEquality()
-                .equals(other.requestToken, requestToken));
+            other is _$ValidateWithLoginRequestDtoImpl &&
+            (identical(other.username, username) ||
+                other.username == username) &&
+            (identical(other.password, password) ||
+                other.password == password) &&
+            (identical(other.requestToken, requestToken) ||
+                other.requestToken == requestToken));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(username),
-      const DeepCollectionEquality().hash(password),
-      const DeepCollectionEquality().hash(requestToken));
+  int get hashCode =>
+      Object.hash(runtimeType, username, password, requestToken);
 
   @JsonKey(ignore: true)
   @override
-  _$$_ValidateWithLoginRequestDtoCopyWith<_$_ValidateWithLoginRequestDto>
-      get copyWith => __$$_ValidateWithLoginRequestDtoCopyWithImpl<
-          _$_ValidateWithLoginRequestDto>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ValidateWithLoginRequestDtoImplCopyWith<_$ValidateWithLoginRequestDtoImpl>
+      get copyWith => __$$ValidateWithLoginRequestDtoImplCopyWithImpl<
+          _$ValidateWithLoginRequestDtoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ValidateWithLoginRequestDtoToJson(
+    return _$$ValidateWithLoginRequestDtoImplToJson(
       this,
     );
   }
@@ -340,10 +348,10 @@ abstract class _ValidateWithLoginRequestDto
   const factory _ValidateWithLoginRequestDto(
       {required final String username,
       required final String password,
-      required final String requestToken}) = _$_ValidateWithLoginRequestDto;
+      required final String requestToken}) = _$ValidateWithLoginRequestDtoImpl;
 
   factory _ValidateWithLoginRequestDto.fromJson(Map<String, dynamic> json) =
-      _$_ValidateWithLoginRequestDto.fromJson;
+      _$ValidateWithLoginRequestDtoImpl.fromJson;
 
   @override
   String get username;
@@ -353,7 +361,7 @@ abstract class _ValidateWithLoginRequestDto
   String get requestToken;
   @override
   @JsonKey(ignore: true)
-  _$$_ValidateWithLoginRequestDtoCopyWith<_$_ValidateWithLoginRequestDto>
+  _$$ValidateWithLoginRequestDtoImplCopyWith<_$ValidateWithLoginRequestDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -378,72 +386,76 @@ abstract class $ValidateWithLoginResponseDtoCopyWith<$Res> {
   factory $ValidateWithLoginResponseDtoCopyWith(
           ValidateWithLoginResponseDto value,
           $Res Function(ValidateWithLoginResponseDto) then) =
-      _$ValidateWithLoginResponseDtoCopyWithImpl<$Res>;
+      _$ValidateWithLoginResponseDtoCopyWithImpl<$Res,
+          ValidateWithLoginResponseDto>;
+  @useResult
   $Res call({bool success, String requestToken});
 }
 
 /// @nodoc
-class _$ValidateWithLoginResponseDtoCopyWithImpl<$Res>
+class _$ValidateWithLoginResponseDtoCopyWithImpl<$Res,
+        $Val extends ValidateWithLoginResponseDto>
     implements $ValidateWithLoginResponseDtoCopyWith<$Res> {
   _$ValidateWithLoginResponseDtoCopyWithImpl(this._value, this._then);
 
-  final ValidateWithLoginResponseDto _value;
   // ignore: unused_field
-  final $Res Function(ValidateWithLoginResponseDto) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? success = freezed,
-    Object? requestToken = freezed,
+    Object? success = null,
+    Object? requestToken = null,
   }) {
     return _then(_value.copyWith(
-      success: success == freezed
+      success: null == success
           ? _value.success
           : success // ignore: cast_nullable_to_non_nullable
               as bool,
-      requestToken: requestToken == freezed
+      requestToken: null == requestToken
           ? _value.requestToken
           : requestToken // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_ValidateWithLoginResponseDtoCopyWith<$Res>
+abstract class _$$ValidateWithLoginResponseDtoImplCopyWith<$Res>
     implements $ValidateWithLoginResponseDtoCopyWith<$Res> {
-  factory _$$_ValidateWithLoginResponseDtoCopyWith(
-          _$_ValidateWithLoginResponseDto value,
-          $Res Function(_$_ValidateWithLoginResponseDto) then) =
-      __$$_ValidateWithLoginResponseDtoCopyWithImpl<$Res>;
+  factory _$$ValidateWithLoginResponseDtoImplCopyWith(
+          _$ValidateWithLoginResponseDtoImpl value,
+          $Res Function(_$ValidateWithLoginResponseDtoImpl) then) =
+      __$$ValidateWithLoginResponseDtoImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({bool success, String requestToken});
 }
 
 /// @nodoc
-class __$$_ValidateWithLoginResponseDtoCopyWithImpl<$Res>
-    extends _$ValidateWithLoginResponseDtoCopyWithImpl<$Res>
-    implements _$$_ValidateWithLoginResponseDtoCopyWith<$Res> {
-  __$$_ValidateWithLoginResponseDtoCopyWithImpl(
-      _$_ValidateWithLoginResponseDto _value,
-      $Res Function(_$_ValidateWithLoginResponseDto) _then)
-      : super(_value, (v) => _then(v as _$_ValidateWithLoginResponseDto));
+class __$$ValidateWithLoginResponseDtoImplCopyWithImpl<$Res>
+    extends _$ValidateWithLoginResponseDtoCopyWithImpl<$Res,
+        _$ValidateWithLoginResponseDtoImpl>
+    implements _$$ValidateWithLoginResponseDtoImplCopyWith<$Res> {
+  __$$ValidateWithLoginResponseDtoImplCopyWithImpl(
+      _$ValidateWithLoginResponseDtoImpl _value,
+      $Res Function(_$ValidateWithLoginResponseDtoImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_ValidateWithLoginResponseDto get _value =>
-      super._value as _$_ValidateWithLoginResponseDto;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? success = freezed,
-    Object? requestToken = freezed,
+    Object? success = null,
+    Object? requestToken = null,
   }) {
-    return _then(_$_ValidateWithLoginResponseDto(
-      success: success == freezed
+    return _then(_$ValidateWithLoginResponseDtoImpl(
+      success: null == success
           ? _value.success
           : success // ignore: cast_nullable_to_non_nullable
               as bool,
-      requestToken: requestToken == freezed
+      requestToken: null == requestToken
           ? _value.requestToken
           : requestToken // ignore: cast_nullable_to_non_nullable
               as String,
@@ -453,12 +465,14 @@ class __$$_ValidateWithLoginResponseDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ValidateWithLoginResponseDto implements _ValidateWithLoginResponseDto {
-  const _$_ValidateWithLoginResponseDto(
+class _$ValidateWithLoginResponseDtoImpl
+    implements _ValidateWithLoginResponseDto {
+  const _$ValidateWithLoginResponseDtoImpl(
       {required this.success, required this.requestToken});
 
-  factory _$_ValidateWithLoginResponseDto.fromJson(Map<String, dynamic> json) =>
-      _$$_ValidateWithLoginResponseDtoFromJson(json);
+  factory _$ValidateWithLoginResponseDtoImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$ValidateWithLoginResponseDtoImplFromJson(json);
 
   @override
   final bool success;
@@ -471,31 +485,30 @@ class _$_ValidateWithLoginResponseDto implements _ValidateWithLoginResponseDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ValidateWithLoginResponseDto &&
-            const DeepCollectionEquality().equals(other.success, success) &&
-            const DeepCollectionEquality()
-                .equals(other.requestToken, requestToken));
+            other is _$ValidateWithLoginResponseDtoImpl &&
+            (identical(other.success, success) || other.success == success) &&
+            (identical(other.requestToken, requestToken) ||
+                other.requestToken == requestToken));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(success),
-      const DeepCollectionEquality().hash(requestToken));
+  int get hashCode => Object.hash(runtimeType, success, requestToken);
 
   @JsonKey(ignore: true)
   @override
-  _$$_ValidateWithLoginResponseDtoCopyWith<_$_ValidateWithLoginResponseDto>
-      get copyWith => __$$_ValidateWithLoginResponseDtoCopyWithImpl<
-          _$_ValidateWithLoginResponseDto>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ValidateWithLoginResponseDtoImplCopyWith<
+          _$ValidateWithLoginResponseDtoImpl>
+      get copyWith => __$$ValidateWithLoginResponseDtoImplCopyWithImpl<
+          _$ValidateWithLoginResponseDtoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ValidateWithLoginResponseDtoToJson(
+    return _$$ValidateWithLoginResponseDtoImplToJson(
       this,
     );
   }
@@ -505,10 +518,10 @@ abstract class _ValidateWithLoginResponseDto
     implements ValidateWithLoginResponseDto {
   const factory _ValidateWithLoginResponseDto(
       {required final bool success,
-      required final String requestToken}) = _$_ValidateWithLoginResponseDto;
+      required final String requestToken}) = _$ValidateWithLoginResponseDtoImpl;
 
   factory _ValidateWithLoginResponseDto.fromJson(Map<String, dynamic> json) =
-      _$_ValidateWithLoginResponseDto.fromJson;
+      _$ValidateWithLoginResponseDtoImpl.fromJson;
 
   @override
   bool get success;
@@ -516,7 +529,8 @@ abstract class _ValidateWithLoginResponseDto
   String get requestToken;
   @override
   @JsonKey(ignore: true)
-  _$$_ValidateWithLoginResponseDtoCopyWith<_$_ValidateWithLoginResponseDto>
+  _$$ValidateWithLoginResponseDtoImplCopyWith<
+          _$ValidateWithLoginResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -538,59 +552,61 @@ mixin _$AccountResponseDto {
 abstract class $AccountResponseDtoCopyWith<$Res> {
   factory $AccountResponseDtoCopyWith(
           AccountResponseDto value, $Res Function(AccountResponseDto) then) =
-      _$AccountResponseDtoCopyWithImpl<$Res>;
+      _$AccountResponseDtoCopyWithImpl<$Res, AccountResponseDto>;
+  @useResult
   $Res call({int id});
 }
 
 /// @nodoc
-class _$AccountResponseDtoCopyWithImpl<$Res>
+class _$AccountResponseDtoCopyWithImpl<$Res, $Val extends AccountResponseDto>
     implements $AccountResponseDtoCopyWith<$Res> {
   _$AccountResponseDtoCopyWithImpl(this._value, this._then);
 
-  final AccountResponseDto _value;
   // ignore: unused_field
-  final $Res Function(AccountResponseDto) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
+    Object? id = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_AccountResponseDtoCopyWith<$Res>
+abstract class _$$AccountResponseDtoImplCopyWith<$Res>
     implements $AccountResponseDtoCopyWith<$Res> {
-  factory _$$_AccountResponseDtoCopyWith(_$_AccountResponseDto value,
-          $Res Function(_$_AccountResponseDto) then) =
-      __$$_AccountResponseDtoCopyWithImpl<$Res>;
+  factory _$$AccountResponseDtoImplCopyWith(_$AccountResponseDtoImpl value,
+          $Res Function(_$AccountResponseDtoImpl) then) =
+      __$$AccountResponseDtoImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int id});
 }
 
 /// @nodoc
-class __$$_AccountResponseDtoCopyWithImpl<$Res>
-    extends _$AccountResponseDtoCopyWithImpl<$Res>
-    implements _$$_AccountResponseDtoCopyWith<$Res> {
-  __$$_AccountResponseDtoCopyWithImpl(
-      _$_AccountResponseDto _value, $Res Function(_$_AccountResponseDto) _then)
-      : super(_value, (v) => _then(v as _$_AccountResponseDto));
+class __$$AccountResponseDtoImplCopyWithImpl<$Res>
+    extends _$AccountResponseDtoCopyWithImpl<$Res, _$AccountResponseDtoImpl>
+    implements _$$AccountResponseDtoImplCopyWith<$Res> {
+  __$$AccountResponseDtoImplCopyWithImpl(_$AccountResponseDtoImpl _value,
+      $Res Function(_$AccountResponseDtoImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_AccountResponseDto get _value => super._value as _$_AccountResponseDto;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
+    Object? id = null,
   }) {
-    return _then(_$_AccountResponseDto(
-      id: id == freezed
+    return _then(_$AccountResponseDtoImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
@@ -600,11 +616,11 @@ class __$$_AccountResponseDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_AccountResponseDto implements _AccountResponseDto {
-  const _$_AccountResponseDto({required this.id});
+class _$AccountResponseDtoImpl implements _AccountResponseDto {
+  const _$AccountResponseDtoImpl({required this.id});
 
-  factory _$_AccountResponseDto.fromJson(Map<String, dynamic> json) =>
-      _$$_AccountResponseDtoFromJson(json);
+  factory _$AccountResponseDtoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$AccountResponseDtoImplFromJson(json);
 
   @override
   final int id;
@@ -615,27 +631,27 @@ class _$_AccountResponseDto implements _AccountResponseDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_AccountResponseDto &&
-            const DeepCollectionEquality().equals(other.id, id));
+            other is _$AccountResponseDtoImpl &&
+            (identical(other.id, id) || other.id == id));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(id));
+  int get hashCode => Object.hash(runtimeType, id);
 
   @JsonKey(ignore: true)
   @override
-  _$$_AccountResponseDtoCopyWith<_$_AccountResponseDto> get copyWith =>
-      __$$_AccountResponseDtoCopyWithImpl<_$_AccountResponseDto>(
+  @pragma('vm:prefer-inline')
+  _$$AccountResponseDtoImplCopyWith<_$AccountResponseDtoImpl> get copyWith =>
+      __$$AccountResponseDtoImplCopyWithImpl<_$AccountResponseDtoImpl>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AccountResponseDtoToJson(
+    return _$$AccountResponseDtoImplToJson(
       this,
     );
   }
@@ -643,16 +659,16 @@ class _$_AccountResponseDto implements _AccountResponseDto {
 
 abstract class _AccountResponseDto implements AccountResponseDto {
   const factory _AccountResponseDto({required final int id}) =
-      _$_AccountResponseDto;
+      _$AccountResponseDtoImpl;
 
   factory _AccountResponseDto.fromJson(Map<String, dynamic> json) =
-      _$_AccountResponseDto.fromJson;
+      _$AccountResponseDtoImpl.fromJson;
 
   @override
   int get id;
   @override
   @JsonKey(ignore: true)
-  _$$_AccountResponseDtoCopyWith<_$_AccountResponseDto> get copyWith =>
+  _$$AccountResponseDtoImplCopyWith<_$AccountResponseDtoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -674,59 +690,62 @@ mixin _$NewSessionRequestDto {
 abstract class $NewSessionRequestDtoCopyWith<$Res> {
   factory $NewSessionRequestDtoCopyWith(NewSessionRequestDto value,
           $Res Function(NewSessionRequestDto) then) =
-      _$NewSessionRequestDtoCopyWithImpl<$Res>;
+      _$NewSessionRequestDtoCopyWithImpl<$Res, NewSessionRequestDto>;
+  @useResult
   $Res call({String requestToken});
 }
 
 /// @nodoc
-class _$NewSessionRequestDtoCopyWithImpl<$Res>
+class _$NewSessionRequestDtoCopyWithImpl<$Res,
+        $Val extends NewSessionRequestDto>
     implements $NewSessionRequestDtoCopyWith<$Res> {
   _$NewSessionRequestDtoCopyWithImpl(this._value, this._then);
 
-  final NewSessionRequestDto _value;
   // ignore: unused_field
-  final $Res Function(NewSessionRequestDto) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? requestToken = freezed,
+    Object? requestToken = null,
   }) {
     return _then(_value.copyWith(
-      requestToken: requestToken == freezed
+      requestToken: null == requestToken
           ? _value.requestToken
           : requestToken // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_NewSessionRequestDtoCopyWith<$Res>
+abstract class _$$NewSessionRequestDtoImplCopyWith<$Res>
     implements $NewSessionRequestDtoCopyWith<$Res> {
-  factory _$$_NewSessionRequestDtoCopyWith(_$_NewSessionRequestDto value,
-          $Res Function(_$_NewSessionRequestDto) then) =
-      __$$_NewSessionRequestDtoCopyWithImpl<$Res>;
+  factory _$$NewSessionRequestDtoImplCopyWith(_$NewSessionRequestDtoImpl value,
+          $Res Function(_$NewSessionRequestDtoImpl) then) =
+      __$$NewSessionRequestDtoImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String requestToken});
 }
 
 /// @nodoc
-class __$$_NewSessionRequestDtoCopyWithImpl<$Res>
-    extends _$NewSessionRequestDtoCopyWithImpl<$Res>
-    implements _$$_NewSessionRequestDtoCopyWith<$Res> {
-  __$$_NewSessionRequestDtoCopyWithImpl(_$_NewSessionRequestDto _value,
-      $Res Function(_$_NewSessionRequestDto) _then)
-      : super(_value, (v) => _then(v as _$_NewSessionRequestDto));
+class __$$NewSessionRequestDtoImplCopyWithImpl<$Res>
+    extends _$NewSessionRequestDtoCopyWithImpl<$Res, _$NewSessionRequestDtoImpl>
+    implements _$$NewSessionRequestDtoImplCopyWith<$Res> {
+  __$$NewSessionRequestDtoImplCopyWithImpl(_$NewSessionRequestDtoImpl _value,
+      $Res Function(_$NewSessionRequestDtoImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_NewSessionRequestDto get _value => super._value as _$_NewSessionRequestDto;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? requestToken = freezed,
+    Object? requestToken = null,
   }) {
-    return _then(_$_NewSessionRequestDto(
-      requestToken: requestToken == freezed
+    return _then(_$NewSessionRequestDtoImpl(
+      requestToken: null == requestToken
           ? _value.requestToken
           : requestToken // ignore: cast_nullable_to_non_nullable
               as String,
@@ -736,11 +755,11 @@ class __$$_NewSessionRequestDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_NewSessionRequestDto implements _NewSessionRequestDto {
-  const _$_NewSessionRequestDto({required this.requestToken});
+class _$NewSessionRequestDtoImpl implements _NewSessionRequestDto {
+  const _$NewSessionRequestDtoImpl({required this.requestToken});
 
-  factory _$_NewSessionRequestDto.fromJson(Map<String, dynamic> json) =>
-      _$$_NewSessionRequestDtoFromJson(json);
+  factory _$NewSessionRequestDtoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$NewSessionRequestDtoImplFromJson(json);
 
   @override
   final String requestToken;
@@ -751,28 +770,29 @@ class _$_NewSessionRequestDto implements _NewSessionRequestDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_NewSessionRequestDto &&
-            const DeepCollectionEquality()
-                .equals(other.requestToken, requestToken));
+            other is _$NewSessionRequestDtoImpl &&
+            (identical(other.requestToken, requestToken) ||
+                other.requestToken == requestToken));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(requestToken));
+  int get hashCode => Object.hash(runtimeType, requestToken);
 
   @JsonKey(ignore: true)
   @override
-  _$$_NewSessionRequestDtoCopyWith<_$_NewSessionRequestDto> get copyWith =>
-      __$$_NewSessionRequestDtoCopyWithImpl<_$_NewSessionRequestDto>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NewSessionRequestDtoImplCopyWith<_$NewSessionRequestDtoImpl>
+      get copyWith =>
+          __$$NewSessionRequestDtoImplCopyWithImpl<_$NewSessionRequestDtoImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_NewSessionRequestDtoToJson(
+    return _$$NewSessionRequestDtoImplToJson(
       this,
     );
   }
@@ -780,17 +800,17 @@ class _$_NewSessionRequestDto implements _NewSessionRequestDto {
 
 abstract class _NewSessionRequestDto implements NewSessionRequestDto {
   const factory _NewSessionRequestDto({required final String requestToken}) =
-      _$_NewSessionRequestDto;
+      _$NewSessionRequestDtoImpl;
 
   factory _NewSessionRequestDto.fromJson(Map<String, dynamic> json) =
-      _$_NewSessionRequestDto.fromJson;
+      _$NewSessionRequestDtoImpl.fromJson;
 
   @override
   String get requestToken;
   @override
   @JsonKey(ignore: true)
-  _$$_NewSessionRequestDtoCopyWith<_$_NewSessionRequestDto> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$NewSessionRequestDtoImplCopyWith<_$NewSessionRequestDtoImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 NewSessionResponseDto _$NewSessionResponseDtoFromJson(
@@ -813,70 +833,74 @@ mixin _$NewSessionResponseDto {
 abstract class $NewSessionResponseDtoCopyWith<$Res> {
   factory $NewSessionResponseDtoCopyWith(NewSessionResponseDto value,
           $Res Function(NewSessionResponseDto) then) =
-      _$NewSessionResponseDtoCopyWithImpl<$Res>;
+      _$NewSessionResponseDtoCopyWithImpl<$Res, NewSessionResponseDto>;
+  @useResult
   $Res call({bool success, String sessionId});
 }
 
 /// @nodoc
-class _$NewSessionResponseDtoCopyWithImpl<$Res>
+class _$NewSessionResponseDtoCopyWithImpl<$Res,
+        $Val extends NewSessionResponseDto>
     implements $NewSessionResponseDtoCopyWith<$Res> {
   _$NewSessionResponseDtoCopyWithImpl(this._value, this._then);
 
-  final NewSessionResponseDto _value;
   // ignore: unused_field
-  final $Res Function(NewSessionResponseDto) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? success = freezed,
-    Object? sessionId = freezed,
+    Object? success = null,
+    Object? sessionId = null,
   }) {
     return _then(_value.copyWith(
-      success: success == freezed
+      success: null == success
           ? _value.success
           : success // ignore: cast_nullable_to_non_nullable
               as bool,
-      sessionId: sessionId == freezed
+      sessionId: null == sessionId
           ? _value.sessionId
           : sessionId // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_NewSessionResponseDtoCopyWith<$Res>
+abstract class _$$NewSessionResponseDtoImplCopyWith<$Res>
     implements $NewSessionResponseDtoCopyWith<$Res> {
-  factory _$$_NewSessionResponseDtoCopyWith(_$_NewSessionResponseDto value,
-          $Res Function(_$_NewSessionResponseDto) then) =
-      __$$_NewSessionResponseDtoCopyWithImpl<$Res>;
+  factory _$$NewSessionResponseDtoImplCopyWith(
+          _$NewSessionResponseDtoImpl value,
+          $Res Function(_$NewSessionResponseDtoImpl) then) =
+      __$$NewSessionResponseDtoImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({bool success, String sessionId});
 }
 
 /// @nodoc
-class __$$_NewSessionResponseDtoCopyWithImpl<$Res>
-    extends _$NewSessionResponseDtoCopyWithImpl<$Res>
-    implements _$$_NewSessionResponseDtoCopyWith<$Res> {
-  __$$_NewSessionResponseDtoCopyWithImpl(_$_NewSessionResponseDto _value,
-      $Res Function(_$_NewSessionResponseDto) _then)
-      : super(_value, (v) => _then(v as _$_NewSessionResponseDto));
+class __$$NewSessionResponseDtoImplCopyWithImpl<$Res>
+    extends _$NewSessionResponseDtoCopyWithImpl<$Res,
+        _$NewSessionResponseDtoImpl>
+    implements _$$NewSessionResponseDtoImplCopyWith<$Res> {
+  __$$NewSessionResponseDtoImplCopyWithImpl(_$NewSessionResponseDtoImpl _value,
+      $Res Function(_$NewSessionResponseDtoImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_NewSessionResponseDto get _value =>
-      super._value as _$_NewSessionResponseDto;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? success = freezed,
-    Object? sessionId = freezed,
+    Object? success = null,
+    Object? sessionId = null,
   }) {
-    return _then(_$_NewSessionResponseDto(
-      success: success == freezed
+    return _then(_$NewSessionResponseDtoImpl(
+      success: null == success
           ? _value.success
           : success // ignore: cast_nullable_to_non_nullable
               as bool,
-      sessionId: sessionId == freezed
+      sessionId: null == sessionId
           ? _value.sessionId
           : sessionId // ignore: cast_nullable_to_non_nullable
               as String,
@@ -886,12 +910,12 @@ class __$$_NewSessionResponseDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_NewSessionResponseDto implements _NewSessionResponseDto {
-  const _$_NewSessionResponseDto(
+class _$NewSessionResponseDtoImpl implements _NewSessionResponseDto {
+  const _$NewSessionResponseDtoImpl(
       {required this.success, required this.sessionId});
 
-  factory _$_NewSessionResponseDto.fromJson(Map<String, dynamic> json) =>
-      _$$_NewSessionResponseDtoFromJson(json);
+  factory _$NewSessionResponseDtoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$NewSessionResponseDtoImplFromJson(json);
 
   @override
   final bool success;
@@ -904,30 +928,29 @@ class _$_NewSessionResponseDto implements _NewSessionResponseDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_NewSessionResponseDto &&
-            const DeepCollectionEquality().equals(other.success, success) &&
-            const DeepCollectionEquality().equals(other.sessionId, sessionId));
+            other is _$NewSessionResponseDtoImpl &&
+            (identical(other.success, success) || other.success == success) &&
+            (identical(other.sessionId, sessionId) ||
+                other.sessionId == sessionId));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(success),
-      const DeepCollectionEquality().hash(sessionId));
+  int get hashCode => Object.hash(runtimeType, success, sessionId);
 
   @JsonKey(ignore: true)
   @override
-  _$$_NewSessionResponseDtoCopyWith<_$_NewSessionResponseDto> get copyWith =>
-      __$$_NewSessionResponseDtoCopyWithImpl<_$_NewSessionResponseDto>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$NewSessionResponseDtoImplCopyWith<_$NewSessionResponseDtoImpl>
+      get copyWith => __$$NewSessionResponseDtoImplCopyWithImpl<
+          _$NewSessionResponseDtoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_NewSessionResponseDtoToJson(
+    return _$$NewSessionResponseDtoImplToJson(
       this,
     );
   }
@@ -936,10 +959,10 @@ class _$_NewSessionResponseDto implements _NewSessionResponseDto {
 abstract class _NewSessionResponseDto implements NewSessionResponseDto {
   const factory _NewSessionResponseDto(
       {required final bool success,
-      required final String sessionId}) = _$_NewSessionResponseDto;
+      required final String sessionId}) = _$NewSessionResponseDtoImpl;
 
   factory _NewSessionResponseDto.fromJson(Map<String, dynamic> json) =
-      _$_NewSessionResponseDto.fromJson;
+      _$NewSessionResponseDtoImpl.fromJson;
 
   @override
   bool get success;
@@ -947,6 +970,6 @@ abstract class _NewSessionResponseDto implements NewSessionResponseDto {
   String get sessionId;
   @override
   @JsonKey(ignore: true)
-  _$$_NewSessionResponseDtoCopyWith<_$_NewSessionResponseDto> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$NewSessionResponseDtoImplCopyWith<_$NewSessionResponseDtoImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

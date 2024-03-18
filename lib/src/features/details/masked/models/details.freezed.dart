@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'details.dart';
 
@@ -12,7 +12,7 @@ part of 'details.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$Details {
@@ -33,10 +33,10 @@ mixin _$Details {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(
+    TResult? Function(
             int id, String title, String overview, Uri? poster, Uri? backdrop)?
         movie,
-    TResult Function(
+    TResult? Function(
             int id, String title, String overview, Uri? poster, Uri? backdrop)?
         tvShow,
   }) =>
@@ -60,8 +60,8 @@ mixin _$Details {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(MovieDetails value)? movie,
-    TResult Function(TvShowDetails value)? tvShow,
+    TResult? Function(MovieDetails value)? movie,
+    TResult? Function(TvShowDetails value)? tvShow,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -79,98 +79,103 @@ mixin _$Details {
 /// @nodoc
 abstract class $DetailsCopyWith<$Res> {
   factory $DetailsCopyWith(Details value, $Res Function(Details) then) =
-      _$DetailsCopyWithImpl<$Res>;
+      _$DetailsCopyWithImpl<$Res, Details>;
+  @useResult
   $Res call(
       {int id, String title, String overview, Uri? poster, Uri? backdrop});
 }
 
 /// @nodoc
-class _$DetailsCopyWithImpl<$Res> implements $DetailsCopyWith<$Res> {
+class _$DetailsCopyWithImpl<$Res, $Val extends Details>
+    implements $DetailsCopyWith<$Res> {
   _$DetailsCopyWithImpl(this._value, this._then);
 
-  final Details _value;
   // ignore: unused_field
-  final $Res Function(Details) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? overview = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? overview = null,
     Object? poster = freezed,
     Object? backdrop = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      overview: overview == freezed
+      overview: null == overview
           ? _value.overview
           : overview // ignore: cast_nullable_to_non_nullable
               as String,
-      poster: poster == freezed
+      poster: freezed == poster
           ? _value.poster
           : poster // ignore: cast_nullable_to_non_nullable
               as Uri?,
-      backdrop: backdrop == freezed
+      backdrop: freezed == backdrop
           ? _value.backdrop
           : backdrop // ignore: cast_nullable_to_non_nullable
               as Uri?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$MovieDetailsCopyWith<$Res> implements $DetailsCopyWith<$Res> {
-  factory _$$MovieDetailsCopyWith(
-          _$MovieDetails value, $Res Function(_$MovieDetails) then) =
-      __$$MovieDetailsCopyWithImpl<$Res>;
+abstract class _$$MovieDetailsImplCopyWith<$Res>
+    implements $DetailsCopyWith<$Res> {
+  factory _$$MovieDetailsImplCopyWith(
+          _$MovieDetailsImpl value, $Res Function(_$MovieDetailsImpl) then) =
+      __$$MovieDetailsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id, String title, String overview, Uri? poster, Uri? backdrop});
 }
 
 /// @nodoc
-class __$$MovieDetailsCopyWithImpl<$Res> extends _$DetailsCopyWithImpl<$Res>
-    implements _$$MovieDetailsCopyWith<$Res> {
-  __$$MovieDetailsCopyWithImpl(
-      _$MovieDetails _value, $Res Function(_$MovieDetails) _then)
-      : super(_value, (v) => _then(v as _$MovieDetails));
+class __$$MovieDetailsImplCopyWithImpl<$Res>
+    extends _$DetailsCopyWithImpl<$Res, _$MovieDetailsImpl>
+    implements _$$MovieDetailsImplCopyWith<$Res> {
+  __$$MovieDetailsImplCopyWithImpl(
+      _$MovieDetailsImpl _value, $Res Function(_$MovieDetailsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$MovieDetails get _value => super._value as _$MovieDetails;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? overview = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? overview = null,
     Object? poster = freezed,
     Object? backdrop = freezed,
   }) {
-    return _then(_$MovieDetails(
-      id: id == freezed
+    return _then(_$MovieDetailsImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      overview: overview == freezed
+      overview: null == overview
           ? _value.overview
           : overview // ignore: cast_nullable_to_non_nullable
               as String,
-      poster: poster == freezed
+      poster: freezed == poster
           ? _value.poster
           : poster // ignore: cast_nullable_to_non_nullable
               as Uri?,
-      backdrop: backdrop == freezed
+      backdrop: freezed == backdrop
           ? _value.backdrop
           : backdrop // ignore: cast_nullable_to_non_nullable
               as Uri?,
@@ -180,8 +185,8 @@ class __$$MovieDetailsCopyWithImpl<$Res> extends _$DetailsCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$MovieDetails implements MovieDetails {
-  const _$MovieDetails(
+class _$MovieDetailsImpl implements MovieDetails {
+  const _$MovieDetailsImpl(
       {required this.id,
       required this.title,
       required this.overview,
@@ -205,30 +210,28 @@ class _$MovieDetails implements MovieDetails {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$MovieDetails &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.overview, overview) &&
-            const DeepCollectionEquality().equals(other.poster, poster) &&
-            const DeepCollectionEquality().equals(other.backdrop, backdrop));
+            other is _$MovieDetailsImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.overview, overview) ||
+                other.overview == overview) &&
+            (identical(other.poster, poster) || other.poster == poster) &&
+            (identical(other.backdrop, backdrop) ||
+                other.backdrop == backdrop));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(overview),
-      const DeepCollectionEquality().hash(poster),
-      const DeepCollectionEquality().hash(backdrop));
+  int get hashCode =>
+      Object.hash(runtimeType, id, title, overview, poster, backdrop);
 
   @JsonKey(ignore: true)
   @override
-  _$$MovieDetailsCopyWith<_$MovieDetails> get copyWith =>
-      __$$MovieDetailsCopyWithImpl<_$MovieDetails>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MovieDetailsImplCopyWith<_$MovieDetailsImpl> get copyWith =>
+      __$$MovieDetailsImplCopyWithImpl<_$MovieDetailsImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -246,10 +249,10 @@ class _$MovieDetails implements MovieDetails {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(
+    TResult? Function(
             int id, String title, String overview, Uri? poster, Uri? backdrop)?
         movie,
-    TResult Function(
+    TResult? Function(
             int id, String title, String overview, Uri? poster, Uri? backdrop)?
         tvShow,
   }) {
@@ -285,8 +288,8 @@ class _$MovieDetails implements MovieDetails {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(MovieDetails value)? movie,
-    TResult Function(TvShowDetails value)? tvShow,
+    TResult? Function(MovieDetails value)? movie,
+    TResult? Function(TvShowDetails value)? tvShow,
   }) {
     return movie?.call(this);
   }
@@ -311,7 +314,7 @@ abstract class MovieDetails implements Details {
       required final String title,
       required final String overview,
       final Uri? poster,
-      final Uri? backdrop}) = _$MovieDetails;
+      final Uri? backdrop}) = _$MovieDetailsImpl;
 
   @override
   int get id;
@@ -325,57 +328,57 @@ abstract class MovieDetails implements Details {
   Uri? get backdrop;
   @override
   @JsonKey(ignore: true)
-  _$$MovieDetailsCopyWith<_$MovieDetails> get copyWith =>
+  _$$MovieDetailsImplCopyWith<_$MovieDetailsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$TvShowDetailsCopyWith<$Res>
+abstract class _$$TvShowDetailsImplCopyWith<$Res>
     implements $DetailsCopyWith<$Res> {
-  factory _$$TvShowDetailsCopyWith(
-          _$TvShowDetails value, $Res Function(_$TvShowDetails) then) =
-      __$$TvShowDetailsCopyWithImpl<$Res>;
+  factory _$$TvShowDetailsImplCopyWith(
+          _$TvShowDetailsImpl value, $Res Function(_$TvShowDetailsImpl) then) =
+      __$$TvShowDetailsImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id, String title, String overview, Uri? poster, Uri? backdrop});
 }
 
 /// @nodoc
-class __$$TvShowDetailsCopyWithImpl<$Res> extends _$DetailsCopyWithImpl<$Res>
-    implements _$$TvShowDetailsCopyWith<$Res> {
-  __$$TvShowDetailsCopyWithImpl(
-      _$TvShowDetails _value, $Res Function(_$TvShowDetails) _then)
-      : super(_value, (v) => _then(v as _$TvShowDetails));
+class __$$TvShowDetailsImplCopyWithImpl<$Res>
+    extends _$DetailsCopyWithImpl<$Res, _$TvShowDetailsImpl>
+    implements _$$TvShowDetailsImplCopyWith<$Res> {
+  __$$TvShowDetailsImplCopyWithImpl(
+      _$TvShowDetailsImpl _value, $Res Function(_$TvShowDetailsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$TvShowDetails get _value => super._value as _$TvShowDetails;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? overview = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? overview = null,
     Object? poster = freezed,
     Object? backdrop = freezed,
   }) {
-    return _then(_$TvShowDetails(
-      id: id == freezed
+    return _then(_$TvShowDetailsImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      overview: overview == freezed
+      overview: null == overview
           ? _value.overview
           : overview // ignore: cast_nullable_to_non_nullable
               as String,
-      poster: poster == freezed
+      poster: freezed == poster
           ? _value.poster
           : poster // ignore: cast_nullable_to_non_nullable
               as Uri?,
-      backdrop: backdrop == freezed
+      backdrop: freezed == backdrop
           ? _value.backdrop
           : backdrop // ignore: cast_nullable_to_non_nullable
               as Uri?,
@@ -385,8 +388,8 @@ class __$$TvShowDetailsCopyWithImpl<$Res> extends _$DetailsCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$TvShowDetails implements TvShowDetails {
-  const _$TvShowDetails(
+class _$TvShowDetailsImpl implements TvShowDetails {
+  const _$TvShowDetailsImpl(
       {required this.id,
       required this.title,
       required this.overview,
@@ -410,30 +413,28 @@ class _$TvShowDetails implements TvShowDetails {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$TvShowDetails &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.overview, overview) &&
-            const DeepCollectionEquality().equals(other.poster, poster) &&
-            const DeepCollectionEquality().equals(other.backdrop, backdrop));
+            other is _$TvShowDetailsImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.overview, overview) ||
+                other.overview == overview) &&
+            (identical(other.poster, poster) || other.poster == poster) &&
+            (identical(other.backdrop, backdrop) ||
+                other.backdrop == backdrop));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(overview),
-      const DeepCollectionEquality().hash(poster),
-      const DeepCollectionEquality().hash(backdrop));
+  int get hashCode =>
+      Object.hash(runtimeType, id, title, overview, poster, backdrop);
 
   @JsonKey(ignore: true)
   @override
-  _$$TvShowDetailsCopyWith<_$TvShowDetails> get copyWith =>
-      __$$TvShowDetailsCopyWithImpl<_$TvShowDetails>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$TvShowDetailsImplCopyWith<_$TvShowDetailsImpl> get copyWith =>
+      __$$TvShowDetailsImplCopyWithImpl<_$TvShowDetailsImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -451,10 +452,10 @@ class _$TvShowDetails implements TvShowDetails {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(
+    TResult? Function(
             int id, String title, String overview, Uri? poster, Uri? backdrop)?
         movie,
-    TResult Function(
+    TResult? Function(
             int id, String title, String overview, Uri? poster, Uri? backdrop)?
         tvShow,
   }) {
@@ -490,8 +491,8 @@ class _$TvShowDetails implements TvShowDetails {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(MovieDetails value)? movie,
-    TResult Function(TvShowDetails value)? tvShow,
+    TResult? Function(MovieDetails value)? movie,
+    TResult? Function(TvShowDetails value)? tvShow,
   }) {
     return tvShow?.call(this);
   }
@@ -516,7 +517,7 @@ abstract class TvShowDetails implements Details {
       required final String title,
       required final String overview,
       final Uri? poster,
-      final Uri? backdrop}) = _$TvShowDetails;
+      final Uri? backdrop}) = _$TvShowDetailsImpl;
 
   @override
   int get id;
@@ -530,6 +531,6 @@ abstract class TvShowDetails implements Details {
   Uri? get backdrop;
   @override
   @JsonKey(ignore: true)
-  _$$TvShowDetailsCopyWith<_$TvShowDetails> get copyWith =>
+  _$$TvShowDetailsImplCopyWith<_$TvShowDetailsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

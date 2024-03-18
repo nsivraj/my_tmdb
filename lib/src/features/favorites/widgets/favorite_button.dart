@@ -6,7 +6,7 @@ import '../../../di.dart';
 import '../../auth/auth_ext.dart';
 import '../../auth/models/auth_info.dart';
 import '../../auth/widgets/auth_dialog.dart';
-import '../src/favorites_bloc.dart';
+import '../masked/favorites_bloc.dart';
 
 class FavoriteButton extends StatelessWidget {
   const FavoriteButton({super.key, required this.contentId});

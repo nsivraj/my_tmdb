@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'popular_movie.dart';
 
@@ -12,7 +12,7 @@ part of 'popular_movie.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$PopularMovie {
@@ -29,78 +29,81 @@ mixin _$PopularMovie {
 abstract class $PopularMovieCopyWith<$Res> {
   factory $PopularMovieCopyWith(
           PopularMovie value, $Res Function(PopularMovie) then) =
-      _$PopularMovieCopyWithImpl<$Res>;
+      _$PopularMovieCopyWithImpl<$Res, PopularMovie>;
+  @useResult
   $Res call({int id, String title, Uri? poster});
 }
 
 /// @nodoc
-class _$PopularMovieCopyWithImpl<$Res> implements $PopularMovieCopyWith<$Res> {
+class _$PopularMovieCopyWithImpl<$Res, $Val extends PopularMovie>
+    implements $PopularMovieCopyWith<$Res> {
   _$PopularMovieCopyWithImpl(this._value, this._then);
 
-  final PopularMovie _value;
   // ignore: unused_field
-  final $Res Function(PopularMovie) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
+    Object? id = null,
+    Object? title = null,
     Object? poster = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      poster: poster == freezed
+      poster: freezed == poster
           ? _value.poster
           : poster // ignore: cast_nullable_to_non_nullable
               as Uri?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_PopularMovieCopyWith<$Res>
+abstract class _$$PopularMovieImplCopyWith<$Res>
     implements $PopularMovieCopyWith<$Res> {
-  factory _$$_PopularMovieCopyWith(
-          _$_PopularMovie value, $Res Function(_$_PopularMovie) then) =
-      __$$_PopularMovieCopyWithImpl<$Res>;
+  factory _$$PopularMovieImplCopyWith(
+          _$PopularMovieImpl value, $Res Function(_$PopularMovieImpl) then) =
+      __$$PopularMovieImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int id, String title, Uri? poster});
 }
 
 /// @nodoc
-class __$$_PopularMovieCopyWithImpl<$Res>
-    extends _$PopularMovieCopyWithImpl<$Res>
-    implements _$$_PopularMovieCopyWith<$Res> {
-  __$$_PopularMovieCopyWithImpl(
-      _$_PopularMovie _value, $Res Function(_$_PopularMovie) _then)
-      : super(_value, (v) => _then(v as _$_PopularMovie));
+class __$$PopularMovieImplCopyWithImpl<$Res>
+    extends _$PopularMovieCopyWithImpl<$Res, _$PopularMovieImpl>
+    implements _$$PopularMovieImplCopyWith<$Res> {
+  __$$PopularMovieImplCopyWithImpl(
+      _$PopularMovieImpl _value, $Res Function(_$PopularMovieImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_PopularMovie get _value => super._value as _$_PopularMovie;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
+    Object? id = null,
+    Object? title = null,
     Object? poster = freezed,
   }) {
-    return _then(_$_PopularMovie(
-      id: id == freezed
+    return _then(_$PopularMovieImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      poster: poster == freezed
+      poster: freezed == poster
           ? _value.poster
           : poster // ignore: cast_nullable_to_non_nullable
               as Uri?,
@@ -110,8 +113,9 @@ class __$$_PopularMovieCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PopularMovie implements _PopularMovie {
-  const _$_PopularMovie({required this.id, required this.title, this.poster});
+class _$PopularMovieImpl implements _PopularMovie {
+  const _$PopularMovieImpl(
+      {required this.id, required this.title, this.poster});
 
   @override
   final int id;
@@ -126,33 +130,30 @@ class _$_PopularMovie implements _PopularMovie {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PopularMovie &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.poster, poster));
+            other is _$PopularMovieImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.poster, poster) || other.poster == poster));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(poster));
+  int get hashCode => Object.hash(runtimeType, id, title, poster);
 
   @JsonKey(ignore: true)
   @override
-  _$$_PopularMovieCopyWith<_$_PopularMovie> get copyWith =>
-      __$$_PopularMovieCopyWithImpl<_$_PopularMovie>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PopularMovieImplCopyWith<_$PopularMovieImpl> get copyWith =>
+      __$$PopularMovieImplCopyWithImpl<_$PopularMovieImpl>(this, _$identity);
 }
 
 abstract class _PopularMovie implements PopularMovie {
   const factory _PopularMovie(
       {required final int id,
       required final String title,
-      final Uri? poster}) = _$_PopularMovie;
+      final Uri? poster}) = _$PopularMovieImpl;
 
   @override
   int get id;
@@ -162,6 +163,6 @@ abstract class _PopularMovie implements PopularMovie {
   Uri? get poster;
   @override
   @JsonKey(ignore: true)
-  _$$_PopularMovieCopyWith<_$_PopularMovie> get copyWith =>
+  _$$PopularMovieImplCopyWith<_$PopularMovieImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

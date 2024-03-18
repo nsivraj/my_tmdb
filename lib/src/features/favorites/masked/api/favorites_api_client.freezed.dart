@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'favorites_api_client.dart';
 
@@ -12,7 +12,7 @@ part of 'favorites_api_client.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MarkAsFavoriteRequestDto _$MarkAsFavoriteRequestDtoFromJson(
     Map<String, dynamic> json) {
@@ -35,81 +35,85 @@ mixin _$MarkAsFavoriteRequestDto {
 abstract class $MarkAsFavoriteRequestDtoCopyWith<$Res> {
   factory $MarkAsFavoriteRequestDtoCopyWith(MarkAsFavoriteRequestDto value,
           $Res Function(MarkAsFavoriteRequestDto) then) =
-      _$MarkAsFavoriteRequestDtoCopyWithImpl<$Res>;
+      _$MarkAsFavoriteRequestDtoCopyWithImpl<$Res, MarkAsFavoriteRequestDto>;
+  @useResult
   $Res call({MediaType mediaType, int mediaId, bool favorite});
 }
 
 /// @nodoc
-class _$MarkAsFavoriteRequestDtoCopyWithImpl<$Res>
+class _$MarkAsFavoriteRequestDtoCopyWithImpl<$Res,
+        $Val extends MarkAsFavoriteRequestDto>
     implements $MarkAsFavoriteRequestDtoCopyWith<$Res> {
   _$MarkAsFavoriteRequestDtoCopyWithImpl(this._value, this._then);
 
-  final MarkAsFavoriteRequestDto _value;
   // ignore: unused_field
-  final $Res Function(MarkAsFavoriteRequestDto) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? mediaType = freezed,
-    Object? mediaId = freezed,
-    Object? favorite = freezed,
+    Object? mediaType = null,
+    Object? mediaId = null,
+    Object? favorite = null,
   }) {
     return _then(_value.copyWith(
-      mediaType: mediaType == freezed
+      mediaType: null == mediaType
           ? _value.mediaType
           : mediaType // ignore: cast_nullable_to_non_nullable
               as MediaType,
-      mediaId: mediaId == freezed
+      mediaId: null == mediaId
           ? _value.mediaId
           : mediaId // ignore: cast_nullable_to_non_nullable
               as int,
-      favorite: favorite == freezed
+      favorite: null == favorite
           ? _value.favorite
           : favorite // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_MarkAsFavoriteRequestDtoCopyWith<$Res>
+abstract class _$$MarkAsFavoriteRequestDtoImplCopyWith<$Res>
     implements $MarkAsFavoriteRequestDtoCopyWith<$Res> {
-  factory _$$_MarkAsFavoriteRequestDtoCopyWith(
-          _$_MarkAsFavoriteRequestDto value,
-          $Res Function(_$_MarkAsFavoriteRequestDto) then) =
-      __$$_MarkAsFavoriteRequestDtoCopyWithImpl<$Res>;
+  factory _$$MarkAsFavoriteRequestDtoImplCopyWith(
+          _$MarkAsFavoriteRequestDtoImpl value,
+          $Res Function(_$MarkAsFavoriteRequestDtoImpl) then) =
+      __$$MarkAsFavoriteRequestDtoImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({MediaType mediaType, int mediaId, bool favorite});
 }
 
 /// @nodoc
-class __$$_MarkAsFavoriteRequestDtoCopyWithImpl<$Res>
-    extends _$MarkAsFavoriteRequestDtoCopyWithImpl<$Res>
-    implements _$$_MarkAsFavoriteRequestDtoCopyWith<$Res> {
-  __$$_MarkAsFavoriteRequestDtoCopyWithImpl(_$_MarkAsFavoriteRequestDto _value,
-      $Res Function(_$_MarkAsFavoriteRequestDto) _then)
-      : super(_value, (v) => _then(v as _$_MarkAsFavoriteRequestDto));
+class __$$MarkAsFavoriteRequestDtoImplCopyWithImpl<$Res>
+    extends _$MarkAsFavoriteRequestDtoCopyWithImpl<$Res,
+        _$MarkAsFavoriteRequestDtoImpl>
+    implements _$$MarkAsFavoriteRequestDtoImplCopyWith<$Res> {
+  __$$MarkAsFavoriteRequestDtoImplCopyWithImpl(
+      _$MarkAsFavoriteRequestDtoImpl _value,
+      $Res Function(_$MarkAsFavoriteRequestDtoImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_MarkAsFavoriteRequestDto get _value =>
-      super._value as _$_MarkAsFavoriteRequestDto;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? mediaType = freezed,
-    Object? mediaId = freezed,
-    Object? favorite = freezed,
+    Object? mediaType = null,
+    Object? mediaId = null,
+    Object? favorite = null,
   }) {
-    return _then(_$_MarkAsFavoriteRequestDto(
-      mediaType: mediaType == freezed
+    return _then(_$MarkAsFavoriteRequestDtoImpl(
+      mediaType: null == mediaType
           ? _value.mediaType
           : mediaType // ignore: cast_nullable_to_non_nullable
               as MediaType,
-      mediaId: mediaId == freezed
+      mediaId: null == mediaId
           ? _value.mediaId
           : mediaId // ignore: cast_nullable_to_non_nullable
               as int,
-      favorite: favorite == freezed
+      favorite: null == favorite
           ? _value.favorite
           : favorite // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -119,12 +123,12 @@ class __$$_MarkAsFavoriteRequestDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MarkAsFavoriteRequestDto implements _MarkAsFavoriteRequestDto {
-  const _$_MarkAsFavoriteRequestDto(
+class _$MarkAsFavoriteRequestDtoImpl implements _MarkAsFavoriteRequestDto {
+  const _$MarkAsFavoriteRequestDtoImpl(
       {required this.mediaType, required this.mediaId, required this.favorite});
 
-  factory _$_MarkAsFavoriteRequestDto.fromJson(Map<String, dynamic> json) =>
-      _$$_MarkAsFavoriteRequestDtoFromJson(json);
+  factory _$MarkAsFavoriteRequestDtoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MarkAsFavoriteRequestDtoImplFromJson(json);
 
   @override
   final MediaType mediaType;
@@ -139,32 +143,31 @@ class _$_MarkAsFavoriteRequestDto implements _MarkAsFavoriteRequestDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_MarkAsFavoriteRequestDto &&
-            const DeepCollectionEquality().equals(other.mediaType, mediaType) &&
-            const DeepCollectionEquality().equals(other.mediaId, mediaId) &&
-            const DeepCollectionEquality().equals(other.favorite, favorite));
+            other is _$MarkAsFavoriteRequestDtoImpl &&
+            (identical(other.mediaType, mediaType) ||
+                other.mediaType == mediaType) &&
+            (identical(other.mediaId, mediaId) || other.mediaId == mediaId) &&
+            (identical(other.favorite, favorite) ||
+                other.favorite == favorite));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(mediaType),
-      const DeepCollectionEquality().hash(mediaId),
-      const DeepCollectionEquality().hash(favorite));
+  int get hashCode => Object.hash(runtimeType, mediaType, mediaId, favorite);
 
   @JsonKey(ignore: true)
   @override
-  _$$_MarkAsFavoriteRequestDtoCopyWith<_$_MarkAsFavoriteRequestDto>
-      get copyWith => __$$_MarkAsFavoriteRequestDtoCopyWithImpl<
-          _$_MarkAsFavoriteRequestDto>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MarkAsFavoriteRequestDtoImplCopyWith<_$MarkAsFavoriteRequestDtoImpl>
+      get copyWith => __$$MarkAsFavoriteRequestDtoImplCopyWithImpl<
+          _$MarkAsFavoriteRequestDtoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MarkAsFavoriteRequestDtoToJson(
+    return _$$MarkAsFavoriteRequestDtoImplToJson(
       this,
     );
   }
@@ -174,10 +177,10 @@ abstract class _MarkAsFavoriteRequestDto implements MarkAsFavoriteRequestDto {
   const factory _MarkAsFavoriteRequestDto(
       {required final MediaType mediaType,
       required final int mediaId,
-      required final bool favorite}) = _$_MarkAsFavoriteRequestDto;
+      required final bool favorite}) = _$MarkAsFavoriteRequestDtoImpl;
 
   factory _MarkAsFavoriteRequestDto.fromJson(Map<String, dynamic> json) =
-      _$_MarkAsFavoriteRequestDto.fromJson;
+      _$MarkAsFavoriteRequestDtoImpl.fromJson;
 
   @override
   MediaType get mediaType;
@@ -187,7 +190,7 @@ abstract class _MarkAsFavoriteRequestDto implements MarkAsFavoriteRequestDto {
   bool get favorite;
   @override
   @JsonKey(ignore: true)
-  _$$_MarkAsFavoriteRequestDtoCopyWith<_$_MarkAsFavoriteRequestDto>
+  _$$MarkAsFavoriteRequestDtoImplCopyWith<_$MarkAsFavoriteRequestDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -211,62 +214,66 @@ abstract class $MovieAccountStatesResponseDtoCopyWith<$Res> {
   factory $MovieAccountStatesResponseDtoCopyWith(
           MovieAccountStatesResponseDto value,
           $Res Function(MovieAccountStatesResponseDto) then) =
-      _$MovieAccountStatesResponseDtoCopyWithImpl<$Res>;
+      _$MovieAccountStatesResponseDtoCopyWithImpl<$Res,
+          MovieAccountStatesResponseDto>;
+  @useResult
   $Res call({bool favorite});
 }
 
 /// @nodoc
-class _$MovieAccountStatesResponseDtoCopyWithImpl<$Res>
+class _$MovieAccountStatesResponseDtoCopyWithImpl<$Res,
+        $Val extends MovieAccountStatesResponseDto>
     implements $MovieAccountStatesResponseDtoCopyWith<$Res> {
   _$MovieAccountStatesResponseDtoCopyWithImpl(this._value, this._then);
 
-  final MovieAccountStatesResponseDto _value;
   // ignore: unused_field
-  final $Res Function(MovieAccountStatesResponseDto) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? favorite = freezed,
+    Object? favorite = null,
   }) {
     return _then(_value.copyWith(
-      favorite: favorite == freezed
+      favorite: null == favorite
           ? _value.favorite
           : favorite // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_MovieAccountStatesResponseDtoCopyWith<$Res>
+abstract class _$$MovieAccountStatesResponseDtoImplCopyWith<$Res>
     implements $MovieAccountStatesResponseDtoCopyWith<$Res> {
-  factory _$$_MovieAccountStatesResponseDtoCopyWith(
-          _$_MovieAccountStatesResponseDto value,
-          $Res Function(_$_MovieAccountStatesResponseDto) then) =
-      __$$_MovieAccountStatesResponseDtoCopyWithImpl<$Res>;
+  factory _$$MovieAccountStatesResponseDtoImplCopyWith(
+          _$MovieAccountStatesResponseDtoImpl value,
+          $Res Function(_$MovieAccountStatesResponseDtoImpl) then) =
+      __$$MovieAccountStatesResponseDtoImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({bool favorite});
 }
 
 /// @nodoc
-class __$$_MovieAccountStatesResponseDtoCopyWithImpl<$Res>
-    extends _$MovieAccountStatesResponseDtoCopyWithImpl<$Res>
-    implements _$$_MovieAccountStatesResponseDtoCopyWith<$Res> {
-  __$$_MovieAccountStatesResponseDtoCopyWithImpl(
-      _$_MovieAccountStatesResponseDto _value,
-      $Res Function(_$_MovieAccountStatesResponseDto) _then)
-      : super(_value, (v) => _then(v as _$_MovieAccountStatesResponseDto));
+class __$$MovieAccountStatesResponseDtoImplCopyWithImpl<$Res>
+    extends _$MovieAccountStatesResponseDtoCopyWithImpl<$Res,
+        _$MovieAccountStatesResponseDtoImpl>
+    implements _$$MovieAccountStatesResponseDtoImplCopyWith<$Res> {
+  __$$MovieAccountStatesResponseDtoImplCopyWithImpl(
+      _$MovieAccountStatesResponseDtoImpl _value,
+      $Res Function(_$MovieAccountStatesResponseDtoImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_MovieAccountStatesResponseDto get _value =>
-      super._value as _$_MovieAccountStatesResponseDto;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? favorite = freezed,
+    Object? favorite = null,
   }) {
-    return _then(_$_MovieAccountStatesResponseDto(
-      favorite: favorite == freezed
+    return _then(_$MovieAccountStatesResponseDtoImpl(
+      favorite: null == favorite
           ? _value.favorite
           : favorite // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -276,13 +283,13 @@ class __$$_MovieAccountStatesResponseDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MovieAccountStatesResponseDto
+class _$MovieAccountStatesResponseDtoImpl
     implements _MovieAccountStatesResponseDto {
-  const _$_MovieAccountStatesResponseDto({required this.favorite});
+  const _$MovieAccountStatesResponseDtoImpl({required this.favorite});
 
-  factory _$_MovieAccountStatesResponseDto.fromJson(
+  factory _$MovieAccountStatesResponseDtoImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_MovieAccountStatesResponseDtoFromJson(json);
+      _$$MovieAccountStatesResponseDtoImplFromJson(json);
 
   @override
   final bool favorite;
@@ -293,27 +300,29 @@ class _$_MovieAccountStatesResponseDto
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_MovieAccountStatesResponseDto &&
-            const DeepCollectionEquality().equals(other.favorite, favorite));
+            other is _$MovieAccountStatesResponseDtoImpl &&
+            (identical(other.favorite, favorite) ||
+                other.favorite == favorite));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(favorite));
+  int get hashCode => Object.hash(runtimeType, favorite);
 
   @JsonKey(ignore: true)
   @override
-  _$$_MovieAccountStatesResponseDtoCopyWith<_$_MovieAccountStatesResponseDto>
-      get copyWith => __$$_MovieAccountStatesResponseDtoCopyWithImpl<
-          _$_MovieAccountStatesResponseDto>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$MovieAccountStatesResponseDtoImplCopyWith<
+          _$MovieAccountStatesResponseDtoImpl>
+      get copyWith => __$$MovieAccountStatesResponseDtoImplCopyWithImpl<
+          _$MovieAccountStatesResponseDtoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MovieAccountStatesResponseDtoToJson(
+    return _$$MovieAccountStatesResponseDtoImplToJson(
       this,
     );
   }
@@ -322,16 +331,17 @@ class _$_MovieAccountStatesResponseDto
 abstract class _MovieAccountStatesResponseDto
     implements MovieAccountStatesResponseDto {
   const factory _MovieAccountStatesResponseDto({required final bool favorite}) =
-      _$_MovieAccountStatesResponseDto;
+      _$MovieAccountStatesResponseDtoImpl;
 
   factory _MovieAccountStatesResponseDto.fromJson(Map<String, dynamic> json) =
-      _$_MovieAccountStatesResponseDto.fromJson;
+      _$MovieAccountStatesResponseDtoImpl.fromJson;
 
   @override
   bool get favorite;
   @override
   @JsonKey(ignore: true)
-  _$$_MovieAccountStatesResponseDtoCopyWith<_$_MovieAccountStatesResponseDto>
+  _$$MovieAccountStatesResponseDtoImplCopyWith<
+          _$MovieAccountStatesResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -354,62 +364,66 @@ mixin _$TvAccountStatesResponseDto {
 abstract class $TvAccountStatesResponseDtoCopyWith<$Res> {
   factory $TvAccountStatesResponseDtoCopyWith(TvAccountStatesResponseDto value,
           $Res Function(TvAccountStatesResponseDto) then) =
-      _$TvAccountStatesResponseDtoCopyWithImpl<$Res>;
+      _$TvAccountStatesResponseDtoCopyWithImpl<$Res,
+          TvAccountStatesResponseDto>;
+  @useResult
   $Res call({bool favorite});
 }
 
 /// @nodoc
-class _$TvAccountStatesResponseDtoCopyWithImpl<$Res>
+class _$TvAccountStatesResponseDtoCopyWithImpl<$Res,
+        $Val extends TvAccountStatesResponseDto>
     implements $TvAccountStatesResponseDtoCopyWith<$Res> {
   _$TvAccountStatesResponseDtoCopyWithImpl(this._value, this._then);
 
-  final TvAccountStatesResponseDto _value;
   // ignore: unused_field
-  final $Res Function(TvAccountStatesResponseDto) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? favorite = freezed,
+    Object? favorite = null,
   }) {
     return _then(_value.copyWith(
-      favorite: favorite == freezed
+      favorite: null == favorite
           ? _value.favorite
           : favorite // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_TvAccountStatesResponseDtoCopyWith<$Res>
+abstract class _$$TvAccountStatesResponseDtoImplCopyWith<$Res>
     implements $TvAccountStatesResponseDtoCopyWith<$Res> {
-  factory _$$_TvAccountStatesResponseDtoCopyWith(
-          _$_TvAccountStatesResponseDto value,
-          $Res Function(_$_TvAccountStatesResponseDto) then) =
-      __$$_TvAccountStatesResponseDtoCopyWithImpl<$Res>;
+  factory _$$TvAccountStatesResponseDtoImplCopyWith(
+          _$TvAccountStatesResponseDtoImpl value,
+          $Res Function(_$TvAccountStatesResponseDtoImpl) then) =
+      __$$TvAccountStatesResponseDtoImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({bool favorite});
 }
 
 /// @nodoc
-class __$$_TvAccountStatesResponseDtoCopyWithImpl<$Res>
-    extends _$TvAccountStatesResponseDtoCopyWithImpl<$Res>
-    implements _$$_TvAccountStatesResponseDtoCopyWith<$Res> {
-  __$$_TvAccountStatesResponseDtoCopyWithImpl(
-      _$_TvAccountStatesResponseDto _value,
-      $Res Function(_$_TvAccountStatesResponseDto) _then)
-      : super(_value, (v) => _then(v as _$_TvAccountStatesResponseDto));
+class __$$TvAccountStatesResponseDtoImplCopyWithImpl<$Res>
+    extends _$TvAccountStatesResponseDtoCopyWithImpl<$Res,
+        _$TvAccountStatesResponseDtoImpl>
+    implements _$$TvAccountStatesResponseDtoImplCopyWith<$Res> {
+  __$$TvAccountStatesResponseDtoImplCopyWithImpl(
+      _$TvAccountStatesResponseDtoImpl _value,
+      $Res Function(_$TvAccountStatesResponseDtoImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_TvAccountStatesResponseDto get _value =>
-      super._value as _$_TvAccountStatesResponseDto;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? favorite = freezed,
+    Object? favorite = null,
   }) {
-    return _then(_$_TvAccountStatesResponseDto(
-      favorite: favorite == freezed
+    return _then(_$TvAccountStatesResponseDtoImpl(
+      favorite: null == favorite
           ? _value.favorite
           : favorite // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -419,11 +433,12 @@ class __$$_TvAccountStatesResponseDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_TvAccountStatesResponseDto implements _TvAccountStatesResponseDto {
-  const _$_TvAccountStatesResponseDto({required this.favorite});
+class _$TvAccountStatesResponseDtoImpl implements _TvAccountStatesResponseDto {
+  const _$TvAccountStatesResponseDtoImpl({required this.favorite});
 
-  factory _$_TvAccountStatesResponseDto.fromJson(Map<String, dynamic> json) =>
-      _$$_TvAccountStatesResponseDtoFromJson(json);
+  factory _$TvAccountStatesResponseDtoImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$TvAccountStatesResponseDtoImplFromJson(json);
 
   @override
   final bool favorite;
@@ -434,27 +449,28 @@ class _$_TvAccountStatesResponseDto implements _TvAccountStatesResponseDto {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_TvAccountStatesResponseDto &&
-            const DeepCollectionEquality().equals(other.favorite, favorite));
+            other is _$TvAccountStatesResponseDtoImpl &&
+            (identical(other.favorite, favorite) ||
+                other.favorite == favorite));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(favorite));
+  int get hashCode => Object.hash(runtimeType, favorite);
 
   @JsonKey(ignore: true)
   @override
-  _$$_TvAccountStatesResponseDtoCopyWith<_$_TvAccountStatesResponseDto>
-      get copyWith => __$$_TvAccountStatesResponseDtoCopyWithImpl<
-          _$_TvAccountStatesResponseDto>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$TvAccountStatesResponseDtoImplCopyWith<_$TvAccountStatesResponseDtoImpl>
+      get copyWith => __$$TvAccountStatesResponseDtoImplCopyWithImpl<
+          _$TvAccountStatesResponseDtoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_TvAccountStatesResponseDtoToJson(
+    return _$$TvAccountStatesResponseDtoImplToJson(
       this,
     );
   }
@@ -463,15 +479,15 @@ class _$_TvAccountStatesResponseDto implements _TvAccountStatesResponseDto {
 abstract class _TvAccountStatesResponseDto
     implements TvAccountStatesResponseDto {
   const factory _TvAccountStatesResponseDto({required final bool favorite}) =
-      _$_TvAccountStatesResponseDto;
+      _$TvAccountStatesResponseDtoImpl;
 
   factory _TvAccountStatesResponseDto.fromJson(Map<String, dynamic> json) =
-      _$_TvAccountStatesResponseDto.fromJson;
+      _$TvAccountStatesResponseDtoImpl.fromJson;
 
   @override
   bool get favorite;
   @override
   @JsonKey(ignore: true)
-  _$$_TvAccountStatesResponseDtoCopyWith<_$_TvAccountStatesResponseDto>
+  _$$TvAccountStatesResponseDtoImplCopyWith<_$TvAccountStatesResponseDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

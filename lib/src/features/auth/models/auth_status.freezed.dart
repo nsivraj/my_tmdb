@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'auth_status.dart';
 
@@ -12,7 +12,7 @@ part of 'auth_status.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$AuthStatus {
@@ -25,9 +25,9 @@ mixin _$AuthStatus {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? none,
-    TResult Function()? processing,
-    TResult Function()? failure,
+    TResult? Function()? none,
+    TResult? Function()? processing,
+    TResult? Function()? failure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -47,9 +47,9 @@ mixin _$AuthStatus {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(AuthStatusNone value)? none,
-    TResult Function(AuthStatusProcessing value)? processing,
-    TResult Function(AuthStatusFailure value)? failure,
+    TResult? Function(AuthStatusNone value)? none,
+    TResult? Function(AuthStatusProcessing value)? processing,
+    TResult? Function(AuthStatusFailure value)? failure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -66,41 +66,40 @@ mixin _$AuthStatus {
 abstract class $AuthStatusCopyWith<$Res> {
   factory $AuthStatusCopyWith(
           AuthStatus value, $Res Function(AuthStatus) then) =
-      _$AuthStatusCopyWithImpl<$Res>;
+      _$AuthStatusCopyWithImpl<$Res, AuthStatus>;
 }
 
 /// @nodoc
-class _$AuthStatusCopyWithImpl<$Res> implements $AuthStatusCopyWith<$Res> {
+class _$AuthStatusCopyWithImpl<$Res, $Val extends AuthStatus>
+    implements $AuthStatusCopyWith<$Res> {
   _$AuthStatusCopyWithImpl(this._value, this._then);
 
-  final AuthStatus _value;
   // ignore: unused_field
-  final $Res Function(AuthStatus) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$$AuthStatusNoneCopyWith<$Res> {
-  factory _$$AuthStatusNoneCopyWith(
-          _$AuthStatusNone value, $Res Function(_$AuthStatusNone) then) =
-      __$$AuthStatusNoneCopyWithImpl<$Res>;
+abstract class _$$AuthStatusNoneImplCopyWith<$Res> {
+  factory _$$AuthStatusNoneImplCopyWith(_$AuthStatusNoneImpl value,
+          $Res Function(_$AuthStatusNoneImpl) then) =
+      __$$AuthStatusNoneImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$AuthStatusNoneCopyWithImpl<$Res>
-    extends _$AuthStatusCopyWithImpl<$Res>
-    implements _$$AuthStatusNoneCopyWith<$Res> {
-  __$$AuthStatusNoneCopyWithImpl(
-      _$AuthStatusNone _value, $Res Function(_$AuthStatusNone) _then)
-      : super(_value, (v) => _then(v as _$AuthStatusNone));
-
-  @override
-  _$AuthStatusNone get _value => super._value as _$AuthStatusNone;
+class __$$AuthStatusNoneImplCopyWithImpl<$Res>
+    extends _$AuthStatusCopyWithImpl<$Res, _$AuthStatusNoneImpl>
+    implements _$$AuthStatusNoneImplCopyWith<$Res> {
+  __$$AuthStatusNoneImplCopyWithImpl(
+      _$AuthStatusNoneImpl _value, $Res Function(_$AuthStatusNoneImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$AuthStatusNone implements AuthStatusNone {
-  const _$AuthStatusNone();
+class _$AuthStatusNoneImpl implements AuthStatusNone {
+  const _$AuthStatusNoneImpl();
 
   @override
   String toString() {
@@ -108,9 +107,9 @@ class _$AuthStatusNone implements AuthStatusNone {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$AuthStatusNone);
+        (other.runtimeType == runtimeType && other is _$AuthStatusNoneImpl);
   }
 
   @override
@@ -129,9 +128,9 @@ class _$AuthStatusNone implements AuthStatusNone {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? none,
-    TResult Function()? processing,
-    TResult Function()? failure,
+    TResult? Function()? none,
+    TResult? Function()? processing,
+    TResult? Function()? failure,
   }) {
     return none?.call();
   }
@@ -163,9 +162,9 @@ class _$AuthStatusNone implements AuthStatusNone {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(AuthStatusNone value)? none,
-    TResult Function(AuthStatusProcessing value)? processing,
-    TResult Function(AuthStatusFailure value)? failure,
+    TResult? Function(AuthStatusNone value)? none,
+    TResult? Function(AuthStatusProcessing value)? processing,
+    TResult? Function(AuthStatusFailure value)? failure,
   }) {
     return none?.call(this);
   }
@@ -186,32 +185,29 @@ class _$AuthStatusNone implements AuthStatusNone {
 }
 
 abstract class AuthStatusNone implements AuthStatus {
-  const factory AuthStatusNone() = _$AuthStatusNone;
+  const factory AuthStatusNone() = _$AuthStatusNoneImpl;
 }
 
 /// @nodoc
-abstract class _$$AuthStatusProcessingCopyWith<$Res> {
-  factory _$$AuthStatusProcessingCopyWith(_$AuthStatusProcessing value,
-          $Res Function(_$AuthStatusProcessing) then) =
-      __$$AuthStatusProcessingCopyWithImpl<$Res>;
+abstract class _$$AuthStatusProcessingImplCopyWith<$Res> {
+  factory _$$AuthStatusProcessingImplCopyWith(_$AuthStatusProcessingImpl value,
+          $Res Function(_$AuthStatusProcessingImpl) then) =
+      __$$AuthStatusProcessingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$AuthStatusProcessingCopyWithImpl<$Res>
-    extends _$AuthStatusCopyWithImpl<$Res>
-    implements _$$AuthStatusProcessingCopyWith<$Res> {
-  __$$AuthStatusProcessingCopyWithImpl(_$AuthStatusProcessing _value,
-      $Res Function(_$AuthStatusProcessing) _then)
-      : super(_value, (v) => _then(v as _$AuthStatusProcessing));
-
-  @override
-  _$AuthStatusProcessing get _value => super._value as _$AuthStatusProcessing;
+class __$$AuthStatusProcessingImplCopyWithImpl<$Res>
+    extends _$AuthStatusCopyWithImpl<$Res, _$AuthStatusProcessingImpl>
+    implements _$$AuthStatusProcessingImplCopyWith<$Res> {
+  __$$AuthStatusProcessingImplCopyWithImpl(_$AuthStatusProcessingImpl _value,
+      $Res Function(_$AuthStatusProcessingImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$AuthStatusProcessing implements AuthStatusProcessing {
-  const _$AuthStatusProcessing();
+class _$AuthStatusProcessingImpl implements AuthStatusProcessing {
+  const _$AuthStatusProcessingImpl();
 
   @override
   String toString() {
@@ -219,9 +215,10 @@ class _$AuthStatusProcessing implements AuthStatusProcessing {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$AuthStatusProcessing);
+        (other.runtimeType == runtimeType &&
+            other is _$AuthStatusProcessingImpl);
   }
 
   @override
@@ -240,9 +237,9 @@ class _$AuthStatusProcessing implements AuthStatusProcessing {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? none,
-    TResult Function()? processing,
-    TResult Function()? failure,
+    TResult? Function()? none,
+    TResult? Function()? processing,
+    TResult? Function()? failure,
   }) {
     return processing?.call();
   }
@@ -274,9 +271,9 @@ class _$AuthStatusProcessing implements AuthStatusProcessing {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(AuthStatusNone value)? none,
-    TResult Function(AuthStatusProcessing value)? processing,
-    TResult Function(AuthStatusFailure value)? failure,
+    TResult? Function(AuthStatusNone value)? none,
+    TResult? Function(AuthStatusProcessing value)? processing,
+    TResult? Function(AuthStatusFailure value)? failure,
   }) {
     return processing?.call(this);
   }
@@ -297,32 +294,29 @@ class _$AuthStatusProcessing implements AuthStatusProcessing {
 }
 
 abstract class AuthStatusProcessing implements AuthStatus {
-  const factory AuthStatusProcessing() = _$AuthStatusProcessing;
+  const factory AuthStatusProcessing() = _$AuthStatusProcessingImpl;
 }
 
 /// @nodoc
-abstract class _$$AuthStatusFailureCopyWith<$Res> {
-  factory _$$AuthStatusFailureCopyWith(
-          _$AuthStatusFailure value, $Res Function(_$AuthStatusFailure) then) =
-      __$$AuthStatusFailureCopyWithImpl<$Res>;
+abstract class _$$AuthStatusFailureImplCopyWith<$Res> {
+  factory _$$AuthStatusFailureImplCopyWith(_$AuthStatusFailureImpl value,
+          $Res Function(_$AuthStatusFailureImpl) then) =
+      __$$AuthStatusFailureImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$AuthStatusFailureCopyWithImpl<$Res>
-    extends _$AuthStatusCopyWithImpl<$Res>
-    implements _$$AuthStatusFailureCopyWith<$Res> {
-  __$$AuthStatusFailureCopyWithImpl(
-      _$AuthStatusFailure _value, $Res Function(_$AuthStatusFailure) _then)
-      : super(_value, (v) => _then(v as _$AuthStatusFailure));
-
-  @override
-  _$AuthStatusFailure get _value => super._value as _$AuthStatusFailure;
+class __$$AuthStatusFailureImplCopyWithImpl<$Res>
+    extends _$AuthStatusCopyWithImpl<$Res, _$AuthStatusFailureImpl>
+    implements _$$AuthStatusFailureImplCopyWith<$Res> {
+  __$$AuthStatusFailureImplCopyWithImpl(_$AuthStatusFailureImpl _value,
+      $Res Function(_$AuthStatusFailureImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$AuthStatusFailure implements AuthStatusFailure {
-  const _$AuthStatusFailure();
+class _$AuthStatusFailureImpl implements AuthStatusFailure {
+  const _$AuthStatusFailureImpl();
 
   @override
   String toString() {
@@ -330,9 +324,9 @@ class _$AuthStatusFailure implements AuthStatusFailure {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$AuthStatusFailure);
+        (other.runtimeType == runtimeType && other is _$AuthStatusFailureImpl);
   }
 
   @override
@@ -351,9 +345,9 @@ class _$AuthStatusFailure implements AuthStatusFailure {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? none,
-    TResult Function()? processing,
-    TResult Function()? failure,
+    TResult? Function()? none,
+    TResult? Function()? processing,
+    TResult? Function()? failure,
   }) {
     return failure?.call();
   }
@@ -385,9 +379,9 @@ class _$AuthStatusFailure implements AuthStatusFailure {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(AuthStatusNone value)? none,
-    TResult Function(AuthStatusProcessing value)? processing,
-    TResult Function(AuthStatusFailure value)? failure,
+    TResult? Function(AuthStatusNone value)? none,
+    TResult? Function(AuthStatusProcessing value)? processing,
+    TResult? Function(AuthStatusFailure value)? failure,
   }) {
     return failure?.call(this);
   }
@@ -408,5 +402,5 @@ class _$AuthStatusFailure implements AuthStatusFailure {
 }
 
 abstract class AuthStatusFailure implements AuthStatus {
-  const factory AuthStatusFailure() = _$AuthStatusFailure;
+  const factory AuthStatusFailure() = _$AuthStatusFailureImpl;
 }

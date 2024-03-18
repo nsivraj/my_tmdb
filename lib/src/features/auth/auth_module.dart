@@ -4,8 +4,8 @@ import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
 
 import '../../di.dart';
-import 'src/auth_bloc.dart';
-import 'src/widgets/auth_failure_notifier.dart';
+import 'masked/auth_bloc.dart';
+import 'masked/widgets/auth_failure_notifier.dart';
 
 class AuthModule extends SingleChildStatelessWidget {
   const AuthModule({super.key});

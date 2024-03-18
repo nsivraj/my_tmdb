@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'auth_info.dart';
 
@@ -12,7 +12,7 @@ part of 'auth_info.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$AuthInfo {
@@ -25,9 +25,9 @@ mixin _$AuthInfo {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int accountId, String sessionId, String name)?
+    TResult? Function(int accountId, String sessionId, String name)?
         authenticated,
-    TResult Function()? anonymous,
+    TResult? Function()? anonymous,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -46,8 +46,8 @@ mixin _$AuthInfo {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Authenticated value)? authenticated,
-    TResult Function(Anonymous value)? anonymous,
+    TResult? Function(Authenticated value)? authenticated,
+    TResult? Function(Anonymous value)? anonymous,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -62,52 +62,54 @@ mixin _$AuthInfo {
 /// @nodoc
 abstract class $AuthInfoCopyWith<$Res> {
   factory $AuthInfoCopyWith(AuthInfo value, $Res Function(AuthInfo) then) =
-      _$AuthInfoCopyWithImpl<$Res>;
+      _$AuthInfoCopyWithImpl<$Res, AuthInfo>;
 }
 
 /// @nodoc
-class _$AuthInfoCopyWithImpl<$Res> implements $AuthInfoCopyWith<$Res> {
+class _$AuthInfoCopyWithImpl<$Res, $Val extends AuthInfo>
+    implements $AuthInfoCopyWith<$Res> {
   _$AuthInfoCopyWithImpl(this._value, this._then);
 
-  final AuthInfo _value;
   // ignore: unused_field
-  final $Res Function(AuthInfo) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$$AuthenticatedCopyWith<$Res> {
-  factory _$$AuthenticatedCopyWith(
-          _$Authenticated value, $Res Function(_$Authenticated) then) =
-      __$$AuthenticatedCopyWithImpl<$Res>;
+abstract class _$$AuthenticatedImplCopyWith<$Res> {
+  factory _$$AuthenticatedImplCopyWith(
+          _$AuthenticatedImpl value, $Res Function(_$AuthenticatedImpl) then) =
+      __$$AuthenticatedImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({int accountId, String sessionId, String name});
 }
 
 /// @nodoc
-class __$$AuthenticatedCopyWithImpl<$Res> extends _$AuthInfoCopyWithImpl<$Res>
-    implements _$$AuthenticatedCopyWith<$Res> {
-  __$$AuthenticatedCopyWithImpl(
-      _$Authenticated _value, $Res Function(_$Authenticated) _then)
-      : super(_value, (v) => _then(v as _$Authenticated));
+class __$$AuthenticatedImplCopyWithImpl<$Res>
+    extends _$AuthInfoCopyWithImpl<$Res, _$AuthenticatedImpl>
+    implements _$$AuthenticatedImplCopyWith<$Res> {
+  __$$AuthenticatedImplCopyWithImpl(
+      _$AuthenticatedImpl _value, $Res Function(_$AuthenticatedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$Authenticated get _value => super._value as _$Authenticated;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accountId = freezed,
-    Object? sessionId = freezed,
-    Object? name = freezed,
+    Object? accountId = null,
+    Object? sessionId = null,
+    Object? name = null,
   }) {
-    return _then(_$Authenticated(
-      accountId: accountId == freezed
+    return _then(_$AuthenticatedImpl(
+      accountId: null == accountId
           ? _value.accountId
           : accountId // ignore: cast_nullable_to_non_nullable
               as int,
-      sessionId: sessionId == freezed
+      sessionId: null == sessionId
           ? _value.sessionId
           : sessionId // ignore: cast_nullable_to_non_nullable
               as String,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
@@ -117,8 +119,8 @@ class __$$AuthenticatedCopyWithImpl<$Res> extends _$AuthInfoCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$Authenticated implements Authenticated {
-  const _$Authenticated(
+class _$AuthenticatedImpl implements Authenticated {
+  const _$AuthenticatedImpl(
       {required this.accountId, required this.sessionId, required this.name});
 
   @override
@@ -134,26 +136,25 @@ class _$Authenticated implements Authenticated {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$Authenticated &&
-            const DeepCollectionEquality().equals(other.accountId, accountId) &&
-            const DeepCollectionEquality().equals(other.sessionId, sessionId) &&
-            const DeepCollectionEquality().equals(other.name, name));
+            other is _$AuthenticatedImpl &&
+            (identical(other.accountId, accountId) ||
+                other.accountId == accountId) &&
+            (identical(other.sessionId, sessionId) ||
+                other.sessionId == sessionId) &&
+            (identical(other.name, name) || other.name == name));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(accountId),
-      const DeepCollectionEquality().hash(sessionId),
-      const DeepCollectionEquality().hash(name));
+  int get hashCode => Object.hash(runtimeType, accountId, sessionId, name);
 
   @JsonKey(ignore: true)
   @override
-  _$$AuthenticatedCopyWith<_$Authenticated> get copyWith =>
-      __$$AuthenticatedCopyWithImpl<_$Authenticated>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AuthenticatedImplCopyWith<_$AuthenticatedImpl> get copyWith =>
+      __$$AuthenticatedImplCopyWithImpl<_$AuthenticatedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -168,9 +169,9 @@ class _$Authenticated implements Authenticated {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int accountId, String sessionId, String name)?
+    TResult? Function(int accountId, String sessionId, String name)?
         authenticated,
-    TResult Function()? anonymous,
+    TResult? Function()? anonymous,
   }) {
     return authenticated?.call(accountId, sessionId, name);
   }
@@ -201,8 +202,8 @@ class _$Authenticated implements Authenticated {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Authenticated value)? authenticated,
-    TResult Function(Anonymous value)? anonymous,
+    TResult? Function(Authenticated value)? authenticated,
+    TResult? Function(Anonymous value)? anonymous,
   }) {
     return authenticated?.call(this);
   }
@@ -225,38 +226,36 @@ abstract class Authenticated implements AuthInfo {
   const factory Authenticated(
       {required final int accountId,
       required final String sessionId,
-      required final String name}) = _$Authenticated;
+      required final String name}) = _$AuthenticatedImpl;
 
   int get accountId;
   String get sessionId;
   String get name;
   @JsonKey(ignore: true)
-  _$$AuthenticatedCopyWith<_$Authenticated> get copyWith =>
+  _$$AuthenticatedImplCopyWith<_$AuthenticatedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$AnonymousCopyWith<$Res> {
-  factory _$$AnonymousCopyWith(
-          _$Anonymous value, $Res Function(_$Anonymous) then) =
-      __$$AnonymousCopyWithImpl<$Res>;
+abstract class _$$AnonymousImplCopyWith<$Res> {
+  factory _$$AnonymousImplCopyWith(
+          _$AnonymousImpl value, $Res Function(_$AnonymousImpl) then) =
+      __$$AnonymousImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$AnonymousCopyWithImpl<$Res> extends _$AuthInfoCopyWithImpl<$Res>
-    implements _$$AnonymousCopyWith<$Res> {
-  __$$AnonymousCopyWithImpl(
-      _$Anonymous _value, $Res Function(_$Anonymous) _then)
-      : super(_value, (v) => _then(v as _$Anonymous));
-
-  @override
-  _$Anonymous get _value => super._value as _$Anonymous;
+class __$$AnonymousImplCopyWithImpl<$Res>
+    extends _$AuthInfoCopyWithImpl<$Res, _$AnonymousImpl>
+    implements _$$AnonymousImplCopyWith<$Res> {
+  __$$AnonymousImplCopyWithImpl(
+      _$AnonymousImpl _value, $Res Function(_$AnonymousImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Anonymous implements Anonymous {
-  const _$Anonymous();
+class _$AnonymousImpl implements Anonymous {
+  const _$AnonymousImpl();
 
   @override
   String toString() {
@@ -264,9 +263,9 @@ class _$Anonymous implements Anonymous {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Anonymous);
+        (other.runtimeType == runtimeType && other is _$AnonymousImpl);
   }
 
   @override
@@ -285,9 +284,9 @@ class _$Anonymous implements Anonymous {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int accountId, String sessionId, String name)?
+    TResult? Function(int accountId, String sessionId, String name)?
         authenticated,
-    TResult Function()? anonymous,
+    TResult? Function()? anonymous,
   }) {
     return anonymous?.call();
   }
@@ -318,8 +317,8 @@ class _$Anonymous implements Anonymous {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Authenticated value)? authenticated,
-    TResult Function(Anonymous value)? anonymous,
+    TResult? Function(Authenticated value)? authenticated,
+    TResult? Function(Anonymous value)? anonymous,
   }) {
     return anonymous?.call(this);
   }
@@ -339,5 +338,5 @@ class _$Anonymous implements Anonymous {
 }
 
 abstract class Anonymous implements AuthInfo {
-  const factory Anonymous() = _$Anonymous;
+  const factory Anonymous() = _$AnonymousImpl;
 }

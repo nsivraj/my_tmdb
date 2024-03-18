@@ -2,9 +2,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
-import 'package:my_tmdb/src/features/search/src/api/search_api_client.dart';
-import 'package:my_tmdb/src/features/search/src/models/search_result.dart';
-import 'package:my_tmdb/src/features/search/src/search_repository.dart';
+import 'package:my_tmdb/src/features/search/masked/api/search_api_client.dart';
+import 'package:my_tmdb/src/features/search/masked/models/search_result.dart';
+import 'package:my_tmdb/src/features/search/masked/search_repository.dart';
 
 import '../../fake_config_repository.dart';
 import 'search_repository_test.mocks.dart';

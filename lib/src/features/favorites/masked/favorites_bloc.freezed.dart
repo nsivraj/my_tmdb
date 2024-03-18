@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'favorites_bloc.dart';
 
@@ -12,7 +12,7 @@ part of 'favorites_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$FavoritesState {
@@ -26,10 +26,10 @@ mixin _$FavoritesState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? processing,
-    TResult Function()? failure,
-    TResult Function(bool isFavorite)? fetched,
+    TResult? Function()? initial,
+    TResult? Function()? processing,
+    TResult? Function()? failure,
+    TResult? Function(bool isFavorite)? fetched,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -51,10 +51,10 @@ mixin _$FavoritesState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Initial value)? initial,
-    TResult Function(Processing value)? processing,
-    TResult Function(Failure value)? failure,
-    TResult Function(Fetched value)? fetched,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Processing value)? processing,
+    TResult? Function(Failure value)? failure,
+    TResult? Function(Fetched value)? fetched,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -72,39 +72,40 @@ mixin _$FavoritesState {
 abstract class $FavoritesStateCopyWith<$Res> {
   factory $FavoritesStateCopyWith(
           FavoritesState value, $Res Function(FavoritesState) then) =
-      _$FavoritesStateCopyWithImpl<$Res>;
+      _$FavoritesStateCopyWithImpl<$Res, FavoritesState>;
 }
 
 /// @nodoc
-class _$FavoritesStateCopyWithImpl<$Res>
+class _$FavoritesStateCopyWithImpl<$Res, $Val extends FavoritesState>
     implements $FavoritesStateCopyWith<$Res> {
   _$FavoritesStateCopyWithImpl(this._value, this._then);
 
-  final FavoritesState _value;
   // ignore: unused_field
-  final $Res Function(FavoritesState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$$InitialCopyWith<$Res> {
-  factory _$$InitialCopyWith(_$Initial value, $Res Function(_$Initial) then) =
-      __$$InitialCopyWithImpl<$Res>;
+abstract class _$$InitialImplCopyWith<$Res> {
+  factory _$$InitialImplCopyWith(
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$InitialCopyWithImpl<$Res> extends _$FavoritesStateCopyWithImpl<$Res>
-    implements _$$InitialCopyWith<$Res> {
-  __$$InitialCopyWithImpl(_$Initial _value, $Res Function(_$Initial) _then)
-      : super(_value, (v) => _then(v as _$Initial));
-
-  @override
-  _$Initial get _value => super._value as _$Initial;
+class __$$InitialImplCopyWithImpl<$Res>
+    extends _$FavoritesStateCopyWithImpl<$Res, _$InitialImpl>
+    implements _$$InitialImplCopyWith<$Res> {
+  __$$InitialImplCopyWithImpl(
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Initial implements Initial {
-  const _$Initial();
+class _$InitialImpl implements Initial {
+  const _$InitialImpl();
 
   @override
   String toString() {
@@ -112,9 +113,9 @@ class _$Initial implements Initial {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Initial);
+        (other.runtimeType == runtimeType && other is _$InitialImpl);
   }
 
   @override
@@ -134,10 +135,10 @@ class _$Initial implements Initial {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? processing,
-    TResult Function()? failure,
-    TResult Function(bool isFavorite)? fetched,
+    TResult? Function()? initial,
+    TResult? Function()? processing,
+    TResult? Function()? failure,
+    TResult? Function(bool isFavorite)? fetched,
   }) {
     return initial?.call();
   }
@@ -171,10 +172,10 @@ class _$Initial implements Initial {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Initial value)? initial,
-    TResult Function(Processing value)? processing,
-    TResult Function(Failure value)? failure,
-    TResult Function(Fetched value)? fetched,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Processing value)? processing,
+    TResult? Function(Failure value)? failure,
+    TResult? Function(Fetched value)? fetched,
   }) {
     return initial?.call(this);
   }
@@ -196,32 +197,29 @@ class _$Initial implements Initial {
 }
 
 abstract class Initial implements FavoritesState {
-  const factory Initial() = _$Initial;
+  const factory Initial() = _$InitialImpl;
 }
 
 /// @nodoc
-abstract class _$$ProcessingCopyWith<$Res> {
-  factory _$$ProcessingCopyWith(
-          _$Processing value, $Res Function(_$Processing) then) =
-      __$$ProcessingCopyWithImpl<$Res>;
+abstract class _$$ProcessingImplCopyWith<$Res> {
+  factory _$$ProcessingImplCopyWith(
+          _$ProcessingImpl value, $Res Function(_$ProcessingImpl) then) =
+      __$$ProcessingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$ProcessingCopyWithImpl<$Res>
-    extends _$FavoritesStateCopyWithImpl<$Res>
-    implements _$$ProcessingCopyWith<$Res> {
-  __$$ProcessingCopyWithImpl(
-      _$Processing _value, $Res Function(_$Processing) _then)
-      : super(_value, (v) => _then(v as _$Processing));
-
-  @override
-  _$Processing get _value => super._value as _$Processing;
+class __$$ProcessingImplCopyWithImpl<$Res>
+    extends _$FavoritesStateCopyWithImpl<$Res, _$ProcessingImpl>
+    implements _$$ProcessingImplCopyWith<$Res> {
+  __$$ProcessingImplCopyWithImpl(
+      _$ProcessingImpl _value, $Res Function(_$ProcessingImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Processing implements Processing {
-  const _$Processing();
+class _$ProcessingImpl implements Processing {
+  const _$ProcessingImpl();
 
   @override
   String toString() {
@@ -229,9 +227,9 @@ class _$Processing implements Processing {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Processing);
+        (other.runtimeType == runtimeType && other is _$ProcessingImpl);
   }
 
   @override
@@ -251,10 +249,10 @@ class _$Processing implements Processing {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? processing,
-    TResult Function()? failure,
-    TResult Function(bool isFavorite)? fetched,
+    TResult? Function()? initial,
+    TResult? Function()? processing,
+    TResult? Function()? failure,
+    TResult? Function(bool isFavorite)? fetched,
   }) {
     return processing?.call();
   }
@@ -288,10 +286,10 @@ class _$Processing implements Processing {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Initial value)? initial,
-    TResult Function(Processing value)? processing,
-    TResult Function(Failure value)? failure,
-    TResult Function(Fetched value)? fetched,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Processing value)? processing,
+    TResult? Function(Failure value)? failure,
+    TResult? Function(Fetched value)? fetched,
   }) {
     return processing?.call(this);
   }
@@ -313,29 +311,29 @@ class _$Processing implements Processing {
 }
 
 abstract class Processing implements FavoritesState {
-  const factory Processing() = _$Processing;
+  const factory Processing() = _$ProcessingImpl;
 }
 
 /// @nodoc
-abstract class _$$FailureCopyWith<$Res> {
-  factory _$$FailureCopyWith(_$Failure value, $Res Function(_$Failure) then) =
-      __$$FailureCopyWithImpl<$Res>;
+abstract class _$$FailureImplCopyWith<$Res> {
+  factory _$$FailureImplCopyWith(
+          _$FailureImpl value, $Res Function(_$FailureImpl) then) =
+      __$$FailureImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$FailureCopyWithImpl<$Res> extends _$FavoritesStateCopyWithImpl<$Res>
-    implements _$$FailureCopyWith<$Res> {
-  __$$FailureCopyWithImpl(_$Failure _value, $Res Function(_$Failure) _then)
-      : super(_value, (v) => _then(v as _$Failure));
-
-  @override
-  _$Failure get _value => super._value as _$Failure;
+class __$$FailureImplCopyWithImpl<$Res>
+    extends _$FavoritesStateCopyWithImpl<$Res, _$FailureImpl>
+    implements _$$FailureImplCopyWith<$Res> {
+  __$$FailureImplCopyWithImpl(
+      _$FailureImpl _value, $Res Function(_$FailureImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Failure implements Failure {
-  const _$Failure();
+class _$FailureImpl implements Failure {
+  const _$FailureImpl();
 
   @override
   String toString() {
@@ -343,9 +341,9 @@ class _$Failure implements Failure {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Failure);
+        (other.runtimeType == runtimeType && other is _$FailureImpl);
   }
 
   @override
@@ -365,10 +363,10 @@ class _$Failure implements Failure {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? processing,
-    TResult Function()? failure,
-    TResult Function(bool isFavorite)? fetched,
+    TResult? Function()? initial,
+    TResult? Function()? processing,
+    TResult? Function()? failure,
+    TResult? Function(bool isFavorite)? fetched,
   }) {
     return failure?.call();
   }
@@ -402,10 +400,10 @@ class _$Failure implements Failure {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Initial value)? initial,
-    TResult Function(Processing value)? processing,
-    TResult Function(Failure value)? failure,
-    TResult Function(Fetched value)? fetched,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Processing value)? processing,
+    TResult? Function(Failure value)? failure,
+    TResult? Function(Fetched value)? fetched,
   }) {
     return failure?.call(this);
   }
@@ -427,31 +425,33 @@ class _$Failure implements Failure {
 }
 
 abstract class Failure implements FavoritesState {
-  const factory Failure() = _$Failure;
+  const factory Failure() = _$FailureImpl;
 }
 
 /// @nodoc
-abstract class _$$FetchedCopyWith<$Res> {
-  factory _$$FetchedCopyWith(_$Fetched value, $Res Function(_$Fetched) then) =
-      __$$FetchedCopyWithImpl<$Res>;
+abstract class _$$FetchedImplCopyWith<$Res> {
+  factory _$$FetchedImplCopyWith(
+          _$FetchedImpl value, $Res Function(_$FetchedImpl) then) =
+      __$$FetchedImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({bool isFavorite});
 }
 
 /// @nodoc
-class __$$FetchedCopyWithImpl<$Res> extends _$FavoritesStateCopyWithImpl<$Res>
-    implements _$$FetchedCopyWith<$Res> {
-  __$$FetchedCopyWithImpl(_$Fetched _value, $Res Function(_$Fetched) _then)
-      : super(_value, (v) => _then(v as _$Fetched));
+class __$$FetchedImplCopyWithImpl<$Res>
+    extends _$FavoritesStateCopyWithImpl<$Res, _$FetchedImpl>
+    implements _$$FetchedImplCopyWith<$Res> {
+  __$$FetchedImplCopyWithImpl(
+      _$FetchedImpl _value, $Res Function(_$FetchedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$Fetched get _value => super._value as _$Fetched;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? isFavorite = freezed,
+    Object? isFavorite = null,
   }) {
-    return _then(_$Fetched(
-      isFavorite: isFavorite == freezed
+    return _then(_$FetchedImpl(
+      isFavorite: null == isFavorite
           ? _value.isFavorite
           : isFavorite // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -461,8 +461,8 @@ class __$$FetchedCopyWithImpl<$Res> extends _$FavoritesStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$Fetched implements Fetched {
-  const _$Fetched({required this.isFavorite});
+class _$FetchedImpl implements Fetched {
+  const _$FetchedImpl({required this.isFavorite});
 
   @override
   final bool isFavorite;
@@ -473,22 +473,22 @@ class _$Fetched implements Fetched {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$Fetched &&
-            const DeepCollectionEquality()
-                .equals(other.isFavorite, isFavorite));
+            other is _$FetchedImpl &&
+            (identical(other.isFavorite, isFavorite) ||
+                other.isFavorite == isFavorite));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(isFavorite));
+  int get hashCode => Object.hash(runtimeType, isFavorite);
 
   @JsonKey(ignore: true)
   @override
-  _$$FetchedCopyWith<_$Fetched> get copyWith =>
-      __$$FetchedCopyWithImpl<_$Fetched>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$FetchedImplCopyWith<_$FetchedImpl> get copyWith =>
+      __$$FetchedImplCopyWithImpl<_$FetchedImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -504,10 +504,10 @@ class _$Fetched implements Fetched {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? processing,
-    TResult Function()? failure,
-    TResult Function(bool isFavorite)? fetched,
+    TResult? Function()? initial,
+    TResult? Function()? processing,
+    TResult? Function()? failure,
+    TResult? Function(bool isFavorite)? fetched,
   }) {
     return fetched?.call(isFavorite);
   }
@@ -541,10 +541,10 @@ class _$Fetched implements Fetched {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Initial value)? initial,
-    TResult Function(Processing value)? processing,
-    TResult Function(Failure value)? failure,
-    TResult Function(Fetched value)? fetched,
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Processing value)? processing,
+    TResult? Function(Failure value)? failure,
+    TResult? Function(Fetched value)? fetched,
   }) {
     return fetched?.call(this);
   }
@@ -566,11 +566,11 @@ class _$Fetched implements Fetched {
 }
 
 abstract class Fetched implements FavoritesState {
-  const factory Fetched({required final bool isFavorite}) = _$Fetched;
+  const factory Fetched({required final bool isFavorite}) = _$FetchedImpl;
 
   bool get isFavorite;
   @JsonKey(ignore: true)
-  _$$FetchedCopyWith<_$Fetched> get copyWith =>
+  _$$FetchedImplCopyWith<_$FetchedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -585,9 +585,9 @@ mixin _$FavoritesEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(AuthInfo authInfo)? init,
-    TResult Function(Authenticated info)? addToFavorites,
-    TResult Function(Authenticated info)? removeFromFavorites,
+    TResult? Function(AuthInfo authInfo)? init,
+    TResult? Function(Authenticated info)? addToFavorites,
+    TResult? Function(Authenticated info)? removeFromFavorites,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -607,9 +607,9 @@ mixin _$FavoritesEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Init value)? init,
-    TResult Function(AddToFavorites value)? addToFavorites,
-    TResult Function(RemoveFromFavorites value)? removeFromFavorites,
+    TResult? Function(Init value)? init,
+    TResult? Function(AddToFavorites value)? addToFavorites,
+    TResult? Function(RemoveFromFavorites value)? removeFromFavorites,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -626,43 +626,45 @@ mixin _$FavoritesEvent {
 abstract class $FavoritesEventCopyWith<$Res> {
   factory $FavoritesEventCopyWith(
           FavoritesEvent value, $Res Function(FavoritesEvent) then) =
-      _$FavoritesEventCopyWithImpl<$Res>;
+      _$FavoritesEventCopyWithImpl<$Res, FavoritesEvent>;
 }
 
 /// @nodoc
-class _$FavoritesEventCopyWithImpl<$Res>
+class _$FavoritesEventCopyWithImpl<$Res, $Val extends FavoritesEvent>
     implements $FavoritesEventCopyWith<$Res> {
   _$FavoritesEventCopyWithImpl(this._value, this._then);
 
-  final FavoritesEvent _value;
   // ignore: unused_field
-  final $Res Function(FavoritesEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$$InitCopyWith<$Res> {
-  factory _$$InitCopyWith(_$Init value, $Res Function(_$Init) then) =
-      __$$InitCopyWithImpl<$Res>;
+abstract class _$$InitImplCopyWith<$Res> {
+  factory _$$InitImplCopyWith(
+          _$InitImpl value, $Res Function(_$InitImpl) then) =
+      __$$InitImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({AuthInfo authInfo});
 
   $AuthInfoCopyWith<$Res> get authInfo;
 }
 
 /// @nodoc
-class __$$InitCopyWithImpl<$Res> extends _$FavoritesEventCopyWithImpl<$Res>
-    implements _$$InitCopyWith<$Res> {
-  __$$InitCopyWithImpl(_$Init _value, $Res Function(_$Init) _then)
-      : super(_value, (v) => _then(v as _$Init));
+class __$$InitImplCopyWithImpl<$Res>
+    extends _$FavoritesEventCopyWithImpl<$Res, _$InitImpl>
+    implements _$$InitImplCopyWith<$Res> {
+  __$$InitImplCopyWithImpl(_$InitImpl _value, $Res Function(_$InitImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$Init get _value => super._value as _$Init;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? authInfo = freezed,
+    Object? authInfo = null,
   }) {
-    return _then(_$Init(
-      authInfo: authInfo == freezed
+    return _then(_$InitImpl(
+      authInfo: null == authInfo
           ? _value.authInfo
           : authInfo // ignore: cast_nullable_to_non_nullable
               as AuthInfo,
@@ -670,6 +672,7 @@ class __$$InitCopyWithImpl<$Res> extends _$FavoritesEventCopyWithImpl<$Res>
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $AuthInfoCopyWith<$Res> get authInfo {
     return $AuthInfoCopyWith<$Res>(_value.authInfo, (value) {
       return _then(_value.copyWith(authInfo: value));
@@ -679,8 +682,8 @@ class __$$InitCopyWithImpl<$Res> extends _$FavoritesEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$Init implements Init {
-  const _$Init({required this.authInfo});
+class _$InitImpl implements Init {
+  const _$InitImpl({required this.authInfo});
 
   @override
   final AuthInfo authInfo;
@@ -691,21 +694,22 @@ class _$Init implements Init {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$Init &&
-            const DeepCollectionEquality().equals(other.authInfo, authInfo));
+            other is _$InitImpl &&
+            (identical(other.authInfo, authInfo) ||
+                other.authInfo == authInfo));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(authInfo));
+  int get hashCode => Object.hash(runtimeType, authInfo);
 
   @JsonKey(ignore: true)
   @override
-  _$$InitCopyWith<_$Init> get copyWith =>
-      __$$InitCopyWithImpl<_$Init>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$InitImplCopyWith<_$InitImpl> get copyWith =>
+      __$$InitImplCopyWithImpl<_$InitImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -720,9 +724,9 @@ class _$Init implements Init {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(AuthInfo authInfo)? init,
-    TResult Function(Authenticated info)? addToFavorites,
-    TResult Function(Authenticated info)? removeFromFavorites,
+    TResult? Function(AuthInfo authInfo)? init,
+    TResult? Function(Authenticated info)? addToFavorites,
+    TResult? Function(Authenticated info)? removeFromFavorites,
   }) {
     return init?.call(authInfo);
   }
@@ -754,9 +758,9 @@ class _$Init implements Init {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Init value)? init,
-    TResult Function(AddToFavorites value)? addToFavorites,
-    TResult Function(RemoveFromFavorites value)? removeFromFavorites,
+    TResult? Function(Init value)? init,
+    TResult? Function(AddToFavorites value)? addToFavorites,
+    TResult? Function(RemoveFromFavorites value)? removeFromFavorites,
   }) {
     return init?.call(this);
   }
@@ -777,38 +781,38 @@ class _$Init implements Init {
 }
 
 abstract class Init implements FavoritesEvent {
-  const factory Init({required final AuthInfo authInfo}) = _$Init;
+  const factory Init({required final AuthInfo authInfo}) = _$InitImpl;
 
   AuthInfo get authInfo;
   @JsonKey(ignore: true)
-  _$$InitCopyWith<_$Init> get copyWith => throw _privateConstructorUsedError;
+  _$$InitImplCopyWith<_$InitImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$AddToFavoritesCopyWith<$Res> {
-  factory _$$AddToFavoritesCopyWith(
-          _$AddToFavorites value, $Res Function(_$AddToFavorites) then) =
-      __$$AddToFavoritesCopyWithImpl<$Res>;
+abstract class _$$AddToFavoritesImplCopyWith<$Res> {
+  factory _$$AddToFavoritesImplCopyWith(_$AddToFavoritesImpl value,
+          $Res Function(_$AddToFavoritesImpl) then) =
+      __$$AddToFavoritesImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({Authenticated info});
 }
 
 /// @nodoc
-class __$$AddToFavoritesCopyWithImpl<$Res>
-    extends _$FavoritesEventCopyWithImpl<$Res>
-    implements _$$AddToFavoritesCopyWith<$Res> {
-  __$$AddToFavoritesCopyWithImpl(
-      _$AddToFavorites _value, $Res Function(_$AddToFavorites) _then)
-      : super(_value, (v) => _then(v as _$AddToFavorites));
+class __$$AddToFavoritesImplCopyWithImpl<$Res>
+    extends _$FavoritesEventCopyWithImpl<$Res, _$AddToFavoritesImpl>
+    implements _$$AddToFavoritesImplCopyWith<$Res> {
+  __$$AddToFavoritesImplCopyWithImpl(
+      _$AddToFavoritesImpl _value, $Res Function(_$AddToFavoritesImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$AddToFavorites get _value => super._value as _$AddToFavorites;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? info = freezed,
   }) {
-    return _then(_$AddToFavorites(
-      info: info == freezed
+    return _then(_$AddToFavoritesImpl(
+      info: freezed == info
           ? _value.info
           : info // ignore: cast_nullable_to_non_nullable
               as Authenticated,
@@ -818,8 +822,8 @@ class __$$AddToFavoritesCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$AddToFavorites implements AddToFavorites {
-  const _$AddToFavorites({required this.info});
+class _$AddToFavoritesImpl implements AddToFavorites {
+  const _$AddToFavoritesImpl({required this.info});
 
   @override
   final Authenticated info;
@@ -830,10 +834,10 @@ class _$AddToFavorites implements AddToFavorites {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$AddToFavorites &&
+            other is _$AddToFavoritesImpl &&
             const DeepCollectionEquality().equals(other.info, info));
   }
 
@@ -843,8 +847,10 @@ class _$AddToFavorites implements AddToFavorites {
 
   @JsonKey(ignore: true)
   @override
-  _$$AddToFavoritesCopyWith<_$AddToFavorites> get copyWith =>
-      __$$AddToFavoritesCopyWithImpl<_$AddToFavorites>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AddToFavoritesImplCopyWith<_$AddToFavoritesImpl> get copyWith =>
+      __$$AddToFavoritesImplCopyWithImpl<_$AddToFavoritesImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -859,9 +865,9 @@ class _$AddToFavorites implements AddToFavorites {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(AuthInfo authInfo)? init,
-    TResult Function(Authenticated info)? addToFavorites,
-    TResult Function(Authenticated info)? removeFromFavorites,
+    TResult? Function(AuthInfo authInfo)? init,
+    TResult? Function(Authenticated info)? addToFavorites,
+    TResult? Function(Authenticated info)? removeFromFavorites,
   }) {
     return addToFavorites?.call(info);
   }
@@ -893,9 +899,9 @@ class _$AddToFavorites implements AddToFavorites {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Init value)? init,
-    TResult Function(AddToFavorites value)? addToFavorites,
-    TResult Function(RemoveFromFavorites value)? removeFromFavorites,
+    TResult? Function(Init value)? init,
+    TResult? Function(AddToFavorites value)? addToFavorites,
+    TResult? Function(RemoveFromFavorites value)? removeFromFavorites,
   }) {
     return addToFavorites?.call(this);
   }
@@ -917,39 +923,38 @@ class _$AddToFavorites implements AddToFavorites {
 
 abstract class AddToFavorites implements FavoritesEvent {
   const factory AddToFavorites({required final Authenticated info}) =
-      _$AddToFavorites;
+      _$AddToFavoritesImpl;
 
   Authenticated get info;
   @JsonKey(ignore: true)
-  _$$AddToFavoritesCopyWith<_$AddToFavorites> get copyWith =>
+  _$$AddToFavoritesImplCopyWith<_$AddToFavoritesImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$RemoveFromFavoritesCopyWith<$Res> {
-  factory _$$RemoveFromFavoritesCopyWith(_$RemoveFromFavorites value,
-          $Res Function(_$RemoveFromFavorites) then) =
-      __$$RemoveFromFavoritesCopyWithImpl<$Res>;
+abstract class _$$RemoveFromFavoritesImplCopyWith<$Res> {
+  factory _$$RemoveFromFavoritesImplCopyWith(_$RemoveFromFavoritesImpl value,
+          $Res Function(_$RemoveFromFavoritesImpl) then) =
+      __$$RemoveFromFavoritesImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({Authenticated info});
 }
 
 /// @nodoc
-class __$$RemoveFromFavoritesCopyWithImpl<$Res>
-    extends _$FavoritesEventCopyWithImpl<$Res>
-    implements _$$RemoveFromFavoritesCopyWith<$Res> {
-  __$$RemoveFromFavoritesCopyWithImpl(
-      _$RemoveFromFavorites _value, $Res Function(_$RemoveFromFavorites) _then)
-      : super(_value, (v) => _then(v as _$RemoveFromFavorites));
+class __$$RemoveFromFavoritesImplCopyWithImpl<$Res>
+    extends _$FavoritesEventCopyWithImpl<$Res, _$RemoveFromFavoritesImpl>
+    implements _$$RemoveFromFavoritesImplCopyWith<$Res> {
+  __$$RemoveFromFavoritesImplCopyWithImpl(_$RemoveFromFavoritesImpl _value,
+      $Res Function(_$RemoveFromFavoritesImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$RemoveFromFavorites get _value => super._value as _$RemoveFromFavorites;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? info = freezed,
   }) {
-    return _then(_$RemoveFromFavorites(
-      info: info == freezed
+    return _then(_$RemoveFromFavoritesImpl(
+      info: freezed == info
           ? _value.info
           : info // ignore: cast_nullable_to_non_nullable
               as Authenticated,
@@ -959,8 +964,8 @@ class __$$RemoveFromFavoritesCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$RemoveFromFavorites implements RemoveFromFavorites {
-  const _$RemoveFromFavorites({required this.info});
+class _$RemoveFromFavoritesImpl implements RemoveFromFavorites {
+  const _$RemoveFromFavoritesImpl({required this.info});
 
   @override
   final Authenticated info;
@@ -971,10 +976,10 @@ class _$RemoveFromFavorites implements RemoveFromFavorites {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$RemoveFromFavorites &&
+            other is _$RemoveFromFavoritesImpl &&
             const DeepCollectionEquality().equals(other.info, info));
   }
 
@@ -984,8 +989,9 @@ class _$RemoveFromFavorites implements RemoveFromFavorites {
 
   @JsonKey(ignore: true)
   @override
-  _$$RemoveFromFavoritesCopyWith<_$RemoveFromFavorites> get copyWith =>
-      __$$RemoveFromFavoritesCopyWithImpl<_$RemoveFromFavorites>(
+  @pragma('vm:prefer-inline')
+  _$$RemoveFromFavoritesImplCopyWith<_$RemoveFromFavoritesImpl> get copyWith =>
+      __$$RemoveFromFavoritesImplCopyWithImpl<_$RemoveFromFavoritesImpl>(
           this, _$identity);
 
   @override
@@ -1001,9 +1007,9 @@ class _$RemoveFromFavorites implements RemoveFromFavorites {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(AuthInfo authInfo)? init,
-    TResult Function(Authenticated info)? addToFavorites,
-    TResult Function(Authenticated info)? removeFromFavorites,
+    TResult? Function(AuthInfo authInfo)? init,
+    TResult? Function(Authenticated info)? addToFavorites,
+    TResult? Function(Authenticated info)? removeFromFavorites,
   }) {
     return removeFromFavorites?.call(info);
   }
@@ -1035,9 +1041,9 @@ class _$RemoveFromFavorites implements RemoveFromFavorites {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(Init value)? init,
-    TResult Function(AddToFavorites value)? addToFavorites,
-    TResult Function(RemoveFromFavorites value)? removeFromFavorites,
+    TResult? Function(Init value)? init,
+    TResult? Function(AddToFavorites value)? addToFavorites,
+    TResult? Function(RemoveFromFavorites value)? removeFromFavorites,
   }) {
     return removeFromFavorites?.call(this);
   }
@@ -1059,10 +1065,10 @@ class _$RemoveFromFavorites implements RemoveFromFavorites {
 
 abstract class RemoveFromFavorites implements FavoritesEvent {
   const factory RemoveFromFavorites({required final Authenticated info}) =
-      _$RemoveFromFavorites;
+      _$RemoveFromFavoritesImpl;
 
   Authenticated get info;
   @JsonKey(ignore: true)
-  _$$RemoveFromFavoritesCopyWith<_$RemoveFromFavorites> get copyWith =>
+  _$$RemoveFromFavoritesImplCopyWith<_$RemoveFromFavoritesImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

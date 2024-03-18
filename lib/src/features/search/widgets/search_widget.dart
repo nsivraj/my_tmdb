@@ -5,8 +5,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
 
 import '../../../di.dart';
-import '../src/models/search_result.dart';
-import '../src/search_bloc.dart';
+import '../masked/models/search_result.dart';
+import '../masked/search_bloc.dart';
 
 class SearchWidget extends StatefulWidget {
   const SearchWidget({super.key, required this.onItemPressed});

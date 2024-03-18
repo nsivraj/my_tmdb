@@ -1,6 +1,6 @@
 import 'package:golden_toolkit/golden_toolkit.dart';
-import 'package:my_tmdb/src/features/details/src/models/details.dart';
-import 'package:my_tmdb/src/features/details/src/widgets/details_content.dart';
+import 'package:my_tmdb/src/features/details/masked/models/details.dart';
+import 'package:my_tmdb/src/features/details/masked/widgets/details_content.dart';
 
 import '../../default_wrapper.dart';
 

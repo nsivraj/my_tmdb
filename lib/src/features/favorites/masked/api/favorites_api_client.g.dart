@@ -6,16 +6,16 @@ part of 'favorites_api_client.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MarkAsFavoriteRequestDto _$$_MarkAsFavoriteRequestDtoFromJson(
+_$MarkAsFavoriteRequestDtoImpl _$$MarkAsFavoriteRequestDtoImplFromJson(
         Map<String, dynamic> json) =>
-    _$_MarkAsFavoriteRequestDto(
+    _$MarkAsFavoriteRequestDtoImpl(
       mediaType: $enumDecode(_$MediaTypeEnumMap, json['media_type']),
       mediaId: json['media_id'] as int,
       favorite: json['favorite'] as bool,
     );
 
-Map<String, dynamic> _$$_MarkAsFavoriteRequestDtoToJson(
-        _$_MarkAsFavoriteRequestDto instance) =>
+Map<String, dynamic> _$$MarkAsFavoriteRequestDtoImplToJson(
+        _$MarkAsFavoriteRequestDtoImpl instance) =>
     <String, dynamic>{
       'media_type': _$MediaTypeEnumMap[instance.mediaType]!,
       'media_id': instance.mediaId,
@@ -27,26 +27,26 @@ const _$MediaTypeEnumMap = {
   MediaType.tv: 'tv',
 };
 
-_$_MovieAccountStatesResponseDto _$$_MovieAccountStatesResponseDtoFromJson(
-        Map<String, dynamic> json) =>
-    _$_MovieAccountStatesResponseDto(
-      favorite: json['favorite'] as bool,
-    );
+_$MovieAccountStatesResponseDtoImpl
+    _$$MovieAccountStatesResponseDtoImplFromJson(Map<String, dynamic> json) =>
+        _$MovieAccountStatesResponseDtoImpl(
+          favorite: json['favorite'] as bool,
+        );
 
-Map<String, dynamic> _$$_MovieAccountStatesResponseDtoToJson(
-        _$_MovieAccountStatesResponseDto instance) =>
+Map<String, dynamic> _$$MovieAccountStatesResponseDtoImplToJson(
+        _$MovieAccountStatesResponseDtoImpl instance) =>
     <String, dynamic>{
       'favorite': instance.favorite,
     };
 
-_$_TvAccountStatesResponseDto _$$_TvAccountStatesResponseDtoFromJson(
+_$TvAccountStatesResponseDtoImpl _$$TvAccountStatesResponseDtoImplFromJson(
         Map<String, dynamic> json) =>
-    _$_TvAccountStatesResponseDto(
+    _$TvAccountStatesResponseDtoImpl(
       favorite: json['favorite'] as bool,
     );
 
-Map<String, dynamic> _$$_TvAccountStatesResponseDtoToJson(
-        _$_TvAccountStatesResponseDto instance) =>
+Map<String, dynamic> _$$TvAccountStatesResponseDtoImplToJson(
+        _$TvAccountStatesResponseDtoImpl instance) =>
     <String, dynamic>{
       'favorite': instance.favorite,
     };
@@ -80,8 +80,7 @@ class _FavoritesApiClient implements FavoritesApiClient {
       r'session_id': sessionId,
     };
     final _headers = <String, dynamic>{};
-    final _data = <String, dynamic>{};
-    _data.addAll(body.toJson());
+    final _data = body;
     await _dio.fetch<void>(_setStreamType<void>(Options(
       method: 'POST',
       headers: _headers,

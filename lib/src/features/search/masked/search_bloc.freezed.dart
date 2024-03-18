@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'search_bloc.dart';
 
@@ -12,7 +12,7 @@ part of 'search_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$SearchEvent {
@@ -24,7 +24,7 @@ mixin _$SearchEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String query)? search,
+    TResult? Function(String query)? search,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -40,7 +40,7 @@ mixin _$SearchEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(SearchEventSearch value)? search,
+    TResult? Function(SearchEventSearch value)? search,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -59,58 +59,61 @@ mixin _$SearchEvent {
 abstract class $SearchEventCopyWith<$Res> {
   factory $SearchEventCopyWith(
           SearchEvent value, $Res Function(SearchEvent) then) =
-      _$SearchEventCopyWithImpl<$Res>;
+      _$SearchEventCopyWithImpl<$Res, SearchEvent>;
+  @useResult
   $Res call({String query});
 }
 
 /// @nodoc
-class _$SearchEventCopyWithImpl<$Res> implements $SearchEventCopyWith<$Res> {
+class _$SearchEventCopyWithImpl<$Res, $Val extends SearchEvent>
+    implements $SearchEventCopyWith<$Res> {
   _$SearchEventCopyWithImpl(this._value, this._then);
 
-  final SearchEvent _value;
   // ignore: unused_field
-  final $Res Function(SearchEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? query = freezed,
+    Object? query = null,
   }) {
     return _then(_value.copyWith(
-      query: query == freezed
+      query: null == query
           ? _value.query
           : query // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$SearchEventSearchCopyWith<$Res>
+abstract class _$$SearchEventSearchImplCopyWith<$Res>
     implements $SearchEventCopyWith<$Res> {
-  factory _$$SearchEventSearchCopyWith(
-          _$SearchEventSearch value, $Res Function(_$SearchEventSearch) then) =
-      __$$SearchEventSearchCopyWithImpl<$Res>;
+  factory _$$SearchEventSearchImplCopyWith(_$SearchEventSearchImpl value,
+          $Res Function(_$SearchEventSearchImpl) then) =
+      __$$SearchEventSearchImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String query});
 }
 
 /// @nodoc
-class __$$SearchEventSearchCopyWithImpl<$Res>
-    extends _$SearchEventCopyWithImpl<$Res>
-    implements _$$SearchEventSearchCopyWith<$Res> {
-  __$$SearchEventSearchCopyWithImpl(
-      _$SearchEventSearch _value, $Res Function(_$SearchEventSearch) _then)
-      : super(_value, (v) => _then(v as _$SearchEventSearch));
+class __$$SearchEventSearchImplCopyWithImpl<$Res>
+    extends _$SearchEventCopyWithImpl<$Res, _$SearchEventSearchImpl>
+    implements _$$SearchEventSearchImplCopyWith<$Res> {
+  __$$SearchEventSearchImplCopyWithImpl(_$SearchEventSearchImpl _value,
+      $Res Function(_$SearchEventSearchImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$SearchEventSearch get _value => super._value as _$SearchEventSearch;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? query = freezed,
+    Object? query = null,
   }) {
-    return _then(_$SearchEventSearch(
-      query == freezed
+    return _then(_$SearchEventSearchImpl(
+      null == query
           ? _value.query
           : query // ignore: cast_nullable_to_non_nullable
               as String,
@@ -120,8 +123,8 @@ class __$$SearchEventSearchCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$SearchEventSearch implements SearchEventSearch {
-  const _$SearchEventSearch(this.query);
+class _$SearchEventSearchImpl implements SearchEventSearch {
+  const _$SearchEventSearchImpl(this.query);
 
   @override
   final String query;
@@ -132,21 +135,22 @@ class _$SearchEventSearch implements SearchEventSearch {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$SearchEventSearch &&
-            const DeepCollectionEquality().equals(other.query, query));
+            other is _$SearchEventSearchImpl &&
+            (identical(other.query, query) || other.query == query));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(query));
+  int get hashCode => Object.hash(runtimeType, query);
 
   @JsonKey(ignore: true)
   @override
-  _$$SearchEventSearchCopyWith<_$SearchEventSearch> get copyWith =>
-      __$$SearchEventSearchCopyWithImpl<_$SearchEventSearch>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$SearchEventSearchImplCopyWith<_$SearchEventSearchImpl> get copyWith =>
+      __$$SearchEventSearchImplCopyWithImpl<_$SearchEventSearchImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -159,7 +163,7 @@ class _$SearchEventSearch implements SearchEventSearch {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String query)? search,
+    TResult? Function(String query)? search,
   }) {
     return search?.call(query);
   }
@@ -187,7 +191,7 @@ class _$SearchEventSearch implements SearchEventSearch {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(SearchEventSearch value)? search,
+    TResult? Function(SearchEventSearch value)? search,
   }) {
     return search?.call(this);
   }
@@ -206,13 +210,13 @@ class _$SearchEventSearch implements SearchEventSearch {
 }
 
 abstract class SearchEventSearch implements SearchEvent {
-  const factory SearchEventSearch(final String query) = _$SearchEventSearch;
+  const factory SearchEventSearch(final String query) = _$SearchEventSearchImpl;
 
   @override
   String get query;
   @override
   @JsonKey(ignore: true)
-  _$$SearchEventSearchCopyWith<_$SearchEventSearch> get copyWith =>
+  _$$SearchEventSearchImplCopyWith<_$SearchEventSearchImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -230,52 +234,58 @@ mixin _$SearchState {
 abstract class $SearchStateCopyWith<$Res> {
   factory $SearchStateCopyWith(
           SearchState value, $Res Function(SearchState) then) =
-      _$SearchStateCopyWithImpl<$Res>;
+      _$SearchStateCopyWithImpl<$Res, SearchState>;
+  @useResult
   $Res call({IList<SearchResult> results, SearchStatus status});
 
   $SearchStatusCopyWith<$Res> get status;
 }
 
 /// @nodoc
-class _$SearchStateCopyWithImpl<$Res> implements $SearchStateCopyWith<$Res> {
+class _$SearchStateCopyWithImpl<$Res, $Val extends SearchState>
+    implements $SearchStateCopyWith<$Res> {
   _$SearchStateCopyWithImpl(this._value, this._then);
 
-  final SearchState _value;
   // ignore: unused_field
-  final $Res Function(SearchState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? results = freezed,
-    Object? status = freezed,
+    Object? results = null,
+    Object? status = null,
   }) {
     return _then(_value.copyWith(
-      results: results == freezed
+      results: null == results
           ? _value.results
           : results // ignore: cast_nullable_to_non_nullable
               as IList<SearchResult>,
-      status: status == freezed
+      status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as SearchStatus,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $SearchStatusCopyWith<$Res> get status {
     return $SearchStatusCopyWith<$Res>(_value.status, (value) {
-      return _then(_value.copyWith(status: value));
+      return _then(_value.copyWith(status: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$$_SearchStateCopyWith<$Res>
+abstract class _$$SearchStateImplCopyWith<$Res>
     implements $SearchStateCopyWith<$Res> {
-  factory _$$_SearchStateCopyWith(
-          _$_SearchState value, $Res Function(_$_SearchState) then) =
-      __$$_SearchStateCopyWithImpl<$Res>;
+  factory _$$SearchStateImplCopyWith(
+          _$SearchStateImpl value, $Res Function(_$SearchStateImpl) then) =
+      __$$SearchStateImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({IList<SearchResult> results, SearchStatus status});
 
   @override
@@ -283,26 +293,25 @@ abstract class _$$_SearchStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_SearchStateCopyWithImpl<$Res> extends _$SearchStateCopyWithImpl<$Res>
-    implements _$$_SearchStateCopyWith<$Res> {
-  __$$_SearchStateCopyWithImpl(
-      _$_SearchState _value, $Res Function(_$_SearchState) _then)
-      : super(_value, (v) => _then(v as _$_SearchState));
+class __$$SearchStateImplCopyWithImpl<$Res>
+    extends _$SearchStateCopyWithImpl<$Res, _$SearchStateImpl>
+    implements _$$SearchStateImplCopyWith<$Res> {
+  __$$SearchStateImplCopyWithImpl(
+      _$SearchStateImpl _value, $Res Function(_$SearchStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_SearchState get _value => super._value as _$_SearchState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? results = freezed,
-    Object? status = freezed,
+    Object? results = null,
+    Object? status = null,
   }) {
-    return _then(_$_SearchState(
-      results: results == freezed
+    return _then(_$SearchStateImpl(
+      results: null == results
           ? _value.results
           : results // ignore: cast_nullable_to_non_nullable
               as IList<SearchResult>,
-      status: status == freezed
+      status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as SearchStatus,
@@ -312,8 +321,8 @@ class __$$_SearchStateCopyWithImpl<$Res> extends _$SearchStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_SearchState implements _SearchState {
-  const _$_SearchState({required this.results, required this.status});
+class _$SearchStateImpl implements _SearchState {
+  const _$SearchStateImpl({required this.results, required this.status});
 
   @override
   final IList<SearchResult> results;
@@ -326,30 +335,29 @@ class _$_SearchState implements _SearchState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SearchState &&
+            other is _$SearchStateImpl &&
             const DeepCollectionEquality().equals(other.results, results) &&
-            const DeepCollectionEquality().equals(other.status, status));
+            (identical(other.status, status) || other.status == status));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(results),
-      const DeepCollectionEquality().hash(status));
+      runtimeType, const DeepCollectionEquality().hash(results), status);
 
   @JsonKey(ignore: true)
   @override
-  _$$_SearchStateCopyWith<_$_SearchState> get copyWith =>
-      __$$_SearchStateCopyWithImpl<_$_SearchState>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$SearchStateImplCopyWith<_$SearchStateImpl> get copyWith =>
+      __$$SearchStateImplCopyWithImpl<_$SearchStateImpl>(this, _$identity);
 }
 
 abstract class _SearchState implements SearchState {
   const factory _SearchState(
       {required final IList<SearchResult> results,
-      required final SearchStatus status}) = _$_SearchState;
+      required final SearchStatus status}) = _$SearchStateImpl;
 
   @override
   IList<SearchResult> get results;
@@ -357,7 +365,7 @@ abstract class _SearchState implements SearchState {
   SearchStatus get status;
   @override
   @JsonKey(ignore: true)
-  _$$_SearchStateCopyWith<_$_SearchState> get copyWith =>
+  _$$SearchStateImplCopyWith<_$SearchStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -372,9 +380,9 @@ mixin _$SearchStatus {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? none,
-    TResult Function()? inProgress,
-    TResult Function()? failure,
+    TResult? Function()? none,
+    TResult? Function()? inProgress,
+    TResult? Function()? failure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -394,9 +402,9 @@ mixin _$SearchStatus {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(SearchStatusNone value)? none,
-    TResult Function(SearchStatusInProgress value)? inProgress,
-    TResult Function(SearchStatusFailure value)? failure,
+    TResult? Function(SearchStatusNone value)? none,
+    TResult? Function(SearchStatusInProgress value)? inProgress,
+    TResult? Function(SearchStatusFailure value)? failure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -413,41 +421,40 @@ mixin _$SearchStatus {
 abstract class $SearchStatusCopyWith<$Res> {
   factory $SearchStatusCopyWith(
           SearchStatus value, $Res Function(SearchStatus) then) =
-      _$SearchStatusCopyWithImpl<$Res>;
+      _$SearchStatusCopyWithImpl<$Res, SearchStatus>;
 }
 
 /// @nodoc
-class _$SearchStatusCopyWithImpl<$Res> implements $SearchStatusCopyWith<$Res> {
+class _$SearchStatusCopyWithImpl<$Res, $Val extends SearchStatus>
+    implements $SearchStatusCopyWith<$Res> {
   _$SearchStatusCopyWithImpl(this._value, this._then);
 
-  final SearchStatus _value;
   // ignore: unused_field
-  final $Res Function(SearchStatus) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$$SearchStatusNoneCopyWith<$Res> {
-  factory _$$SearchStatusNoneCopyWith(
-          _$SearchStatusNone value, $Res Function(_$SearchStatusNone) then) =
-      __$$SearchStatusNoneCopyWithImpl<$Res>;
+abstract class _$$SearchStatusNoneImplCopyWith<$Res> {
+  factory _$$SearchStatusNoneImplCopyWith(_$SearchStatusNoneImpl value,
+          $Res Function(_$SearchStatusNoneImpl) then) =
+      __$$SearchStatusNoneImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$SearchStatusNoneCopyWithImpl<$Res>
-    extends _$SearchStatusCopyWithImpl<$Res>
-    implements _$$SearchStatusNoneCopyWith<$Res> {
-  __$$SearchStatusNoneCopyWithImpl(
-      _$SearchStatusNone _value, $Res Function(_$SearchStatusNone) _then)
-      : super(_value, (v) => _then(v as _$SearchStatusNone));
-
-  @override
-  _$SearchStatusNone get _value => super._value as _$SearchStatusNone;
+class __$$SearchStatusNoneImplCopyWithImpl<$Res>
+    extends _$SearchStatusCopyWithImpl<$Res, _$SearchStatusNoneImpl>
+    implements _$$SearchStatusNoneImplCopyWith<$Res> {
+  __$$SearchStatusNoneImplCopyWithImpl(_$SearchStatusNoneImpl _value,
+      $Res Function(_$SearchStatusNoneImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$SearchStatusNone implements SearchStatusNone {
-  const _$SearchStatusNone();
+class _$SearchStatusNoneImpl implements SearchStatusNone {
+  const _$SearchStatusNoneImpl();
 
   @override
   String toString() {
@@ -455,9 +462,9 @@ class _$SearchStatusNone implements SearchStatusNone {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$SearchStatusNone);
+        (other.runtimeType == runtimeType && other is _$SearchStatusNoneImpl);
   }
 
   @override
@@ -476,9 +483,9 @@ class _$SearchStatusNone implements SearchStatusNone {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? none,
-    TResult Function()? inProgress,
-    TResult Function()? failure,
+    TResult? Function()? none,
+    TResult? Function()? inProgress,
+    TResult? Function()? failure,
   }) {
     return none?.call();
   }
@@ -510,9 +517,9 @@ class _$SearchStatusNone implements SearchStatusNone {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(SearchStatusNone value)? none,
-    TResult Function(SearchStatusInProgress value)? inProgress,
-    TResult Function(SearchStatusFailure value)? failure,
+    TResult? Function(SearchStatusNone value)? none,
+    TResult? Function(SearchStatusInProgress value)? inProgress,
+    TResult? Function(SearchStatusFailure value)? failure,
   }) {
     return none?.call(this);
   }
@@ -533,33 +540,31 @@ class _$SearchStatusNone implements SearchStatusNone {
 }
 
 abstract class SearchStatusNone implements SearchStatus {
-  const factory SearchStatusNone() = _$SearchStatusNone;
+  const factory SearchStatusNone() = _$SearchStatusNoneImpl;
 }
 
 /// @nodoc
-abstract class _$$SearchStatusInProgressCopyWith<$Res> {
-  factory _$$SearchStatusInProgressCopyWith(_$SearchStatusInProgress value,
-          $Res Function(_$SearchStatusInProgress) then) =
-      __$$SearchStatusInProgressCopyWithImpl<$Res>;
+abstract class _$$SearchStatusInProgressImplCopyWith<$Res> {
+  factory _$$SearchStatusInProgressImplCopyWith(
+          _$SearchStatusInProgressImpl value,
+          $Res Function(_$SearchStatusInProgressImpl) then) =
+      __$$SearchStatusInProgressImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$SearchStatusInProgressCopyWithImpl<$Res>
-    extends _$SearchStatusCopyWithImpl<$Res>
-    implements _$$SearchStatusInProgressCopyWith<$Res> {
-  __$$SearchStatusInProgressCopyWithImpl(_$SearchStatusInProgress _value,
-      $Res Function(_$SearchStatusInProgress) _then)
-      : super(_value, (v) => _then(v as _$SearchStatusInProgress));
-
-  @override
-  _$SearchStatusInProgress get _value =>
-      super._value as _$SearchStatusInProgress;
+class __$$SearchStatusInProgressImplCopyWithImpl<$Res>
+    extends _$SearchStatusCopyWithImpl<$Res, _$SearchStatusInProgressImpl>
+    implements _$$SearchStatusInProgressImplCopyWith<$Res> {
+  __$$SearchStatusInProgressImplCopyWithImpl(
+      _$SearchStatusInProgressImpl _value,
+      $Res Function(_$SearchStatusInProgressImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$SearchStatusInProgress implements SearchStatusInProgress {
-  const _$SearchStatusInProgress();
+class _$SearchStatusInProgressImpl implements SearchStatusInProgress {
+  const _$SearchStatusInProgressImpl();
 
   @override
   String toString() {
@@ -567,9 +572,10 @@ class _$SearchStatusInProgress implements SearchStatusInProgress {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$SearchStatusInProgress);
+        (other.runtimeType == runtimeType &&
+            other is _$SearchStatusInProgressImpl);
   }
 
   @override
@@ -588,9 +594,9 @@ class _$SearchStatusInProgress implements SearchStatusInProgress {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? none,
-    TResult Function()? inProgress,
-    TResult Function()? failure,
+    TResult? Function()? none,
+    TResult? Function()? inProgress,
+    TResult? Function()? failure,
   }) {
     return inProgress?.call();
   }
@@ -622,9 +628,9 @@ class _$SearchStatusInProgress implements SearchStatusInProgress {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(SearchStatusNone value)? none,
-    TResult Function(SearchStatusInProgress value)? inProgress,
-    TResult Function(SearchStatusFailure value)? failure,
+    TResult? Function(SearchStatusNone value)? none,
+    TResult? Function(SearchStatusInProgress value)? inProgress,
+    TResult? Function(SearchStatusFailure value)? failure,
   }) {
     return inProgress?.call(this);
   }
@@ -645,32 +651,29 @@ class _$SearchStatusInProgress implements SearchStatusInProgress {
 }
 
 abstract class SearchStatusInProgress implements SearchStatus {
-  const factory SearchStatusInProgress() = _$SearchStatusInProgress;
+  const factory SearchStatusInProgress() = _$SearchStatusInProgressImpl;
 }
 
 /// @nodoc
-abstract class _$$SearchStatusFailureCopyWith<$Res> {
-  factory _$$SearchStatusFailureCopyWith(_$SearchStatusFailure value,
-          $Res Function(_$SearchStatusFailure) then) =
-      __$$SearchStatusFailureCopyWithImpl<$Res>;
+abstract class _$$SearchStatusFailureImplCopyWith<$Res> {
+  factory _$$SearchStatusFailureImplCopyWith(_$SearchStatusFailureImpl value,
+          $Res Function(_$SearchStatusFailureImpl) then) =
+      __$$SearchStatusFailureImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$SearchStatusFailureCopyWithImpl<$Res>
-    extends _$SearchStatusCopyWithImpl<$Res>
-    implements _$$SearchStatusFailureCopyWith<$Res> {
-  __$$SearchStatusFailureCopyWithImpl(
-      _$SearchStatusFailure _value, $Res Function(_$SearchStatusFailure) _then)
-      : super(_value, (v) => _then(v as _$SearchStatusFailure));
-
-  @override
-  _$SearchStatusFailure get _value => super._value as _$SearchStatusFailure;
+class __$$SearchStatusFailureImplCopyWithImpl<$Res>
+    extends _$SearchStatusCopyWithImpl<$Res, _$SearchStatusFailureImpl>
+    implements _$$SearchStatusFailureImplCopyWith<$Res> {
+  __$$SearchStatusFailureImplCopyWithImpl(_$SearchStatusFailureImpl _value,
+      $Res Function(_$SearchStatusFailureImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$SearchStatusFailure implements SearchStatusFailure {
-  const _$SearchStatusFailure();
+class _$SearchStatusFailureImpl implements SearchStatusFailure {
+  const _$SearchStatusFailureImpl();
 
   @override
   String toString() {
@@ -678,9 +681,10 @@ class _$SearchStatusFailure implements SearchStatusFailure {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$SearchStatusFailure);
+        (other.runtimeType == runtimeType &&
+            other is _$SearchStatusFailureImpl);
   }
 
   @override
@@ -699,9 +703,9 @@ class _$SearchStatusFailure implements SearchStatusFailure {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? none,
-    TResult Function()? inProgress,
-    TResult Function()? failure,
+    TResult? Function()? none,
+    TResult? Function()? inProgress,
+    TResult? Function()? failure,
   }) {
     return failure?.call();
   }
@@ -733,9 +737,9 @@ class _$SearchStatusFailure implements SearchStatusFailure {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(SearchStatusNone value)? none,
-    TResult Function(SearchStatusInProgress value)? inProgress,
-    TResult Function(SearchStatusFailure value)? failure,
+    TResult? Function(SearchStatusNone value)? none,
+    TResult? Function(SearchStatusInProgress value)? inProgress,
+    TResult? Function(SearchStatusFailure value)? failure,
   }) {
     return failure?.call(this);
   }
@@ -756,5 +760,5 @@ class _$SearchStatusFailure implements SearchStatusFailure {
 }
 
 abstract class SearchStatusFailure implements SearchStatus {
-  const factory SearchStatusFailure() = _$SearchStatusFailure;
+  const factory SearchStatusFailure() = _$SearchStatusFailureImpl;
 }

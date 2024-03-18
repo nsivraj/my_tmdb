@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'search_result.dart';
 
@@ -12,7 +12,7 @@ part of 'search_result.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$SearchResult {
@@ -27,8 +27,8 @@ mixin _$SearchResult {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int id, String title, Uri? poster)? movie,
-    TResult Function(int id, String title, Uri? poster)? tvShow,
+    TResult? Function(int id, String title, Uri? poster)? movie,
+    TResult? Function(int id, String title, Uri? poster)? tvShow,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -46,8 +46,8 @@ mixin _$SearchResult {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(SearchResultMovie value)? movie,
-    TResult Function(SearchResultTvShow value)? tvShow,
+    TResult? Function(SearchResultMovie value)? movie,
+    TResult? Function(SearchResultTvShow value)? tvShow,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -67,78 +67,81 @@ mixin _$SearchResult {
 abstract class $SearchResultCopyWith<$Res> {
   factory $SearchResultCopyWith(
           SearchResult value, $Res Function(SearchResult) then) =
-      _$SearchResultCopyWithImpl<$Res>;
+      _$SearchResultCopyWithImpl<$Res, SearchResult>;
+  @useResult
   $Res call({int id, String title, Uri? poster});
 }
 
 /// @nodoc
-class _$SearchResultCopyWithImpl<$Res> implements $SearchResultCopyWith<$Res> {
+class _$SearchResultCopyWithImpl<$Res, $Val extends SearchResult>
+    implements $SearchResultCopyWith<$Res> {
   _$SearchResultCopyWithImpl(this._value, this._then);
 
-  final SearchResult _value;
   // ignore: unused_field
-  final $Res Function(SearchResult) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
+    Object? id = null,
+    Object? title = null,
     Object? poster = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      poster: poster == freezed
+      poster: freezed == poster
           ? _value.poster
           : poster // ignore: cast_nullable_to_non_nullable
               as Uri?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$SearchResultMovieCopyWith<$Res>
+abstract class _$$SearchResultMovieImplCopyWith<$Res>
     implements $SearchResultCopyWith<$Res> {
-  factory _$$SearchResultMovieCopyWith(
-          _$SearchResultMovie value, $Res Function(_$SearchResultMovie) then) =
-      __$$SearchResultMovieCopyWithImpl<$Res>;
+  factory _$$SearchResultMovieImplCopyWith(_$SearchResultMovieImpl value,
+          $Res Function(_$SearchResultMovieImpl) then) =
+      __$$SearchResultMovieImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int id, String title, Uri? poster});
 }
 
 /// @nodoc
-class __$$SearchResultMovieCopyWithImpl<$Res>
-    extends _$SearchResultCopyWithImpl<$Res>
-    implements _$$SearchResultMovieCopyWith<$Res> {
-  __$$SearchResultMovieCopyWithImpl(
-      _$SearchResultMovie _value, $Res Function(_$SearchResultMovie) _then)
-      : super(_value, (v) => _then(v as _$SearchResultMovie));
+class __$$SearchResultMovieImplCopyWithImpl<$Res>
+    extends _$SearchResultCopyWithImpl<$Res, _$SearchResultMovieImpl>
+    implements _$$SearchResultMovieImplCopyWith<$Res> {
+  __$$SearchResultMovieImplCopyWithImpl(_$SearchResultMovieImpl _value,
+      $Res Function(_$SearchResultMovieImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$SearchResultMovie get _value => super._value as _$SearchResultMovie;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
+    Object? id = null,
+    Object? title = null,
     Object? poster = freezed,
   }) {
-    return _then(_$SearchResultMovie(
-      id: id == freezed
+    return _then(_$SearchResultMovieImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      poster: poster == freezed
+      poster: freezed == poster
           ? _value.poster
           : poster // ignore: cast_nullable_to_non_nullable
               as Uri?,
@@ -148,8 +151,8 @@ class __$$SearchResultMovieCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$SearchResultMovie implements SearchResultMovie {
-  const _$SearchResultMovie(
+class _$SearchResultMovieImpl implements SearchResultMovie {
+  const _$SearchResultMovieImpl(
       {required this.id, required this.title, this.poster});
 
   @override
@@ -165,26 +168,24 @@ class _$SearchResultMovie implements SearchResultMovie {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$SearchResultMovie &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.poster, poster));
+            other is _$SearchResultMovieImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.poster, poster) || other.poster == poster));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(poster));
+  int get hashCode => Object.hash(runtimeType, id, title, poster);
 
   @JsonKey(ignore: true)
   @override
-  _$$SearchResultMovieCopyWith<_$SearchResultMovie> get copyWith =>
-      __$$SearchResultMovieCopyWithImpl<_$SearchResultMovie>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$SearchResultMovieImplCopyWith<_$SearchResultMovieImpl> get copyWith =>
+      __$$SearchResultMovieImplCopyWithImpl<_$SearchResultMovieImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -198,8 +199,8 @@ class _$SearchResultMovie implements SearchResultMovie {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int id, String title, Uri? poster)? movie,
-    TResult Function(int id, String title, Uri? poster)? tvShow,
+    TResult? Function(int id, String title, Uri? poster)? movie,
+    TResult? Function(int id, String title, Uri? poster)? tvShow,
   }) {
     return movie?.call(id, title, poster);
   }
@@ -229,8 +230,8 @@ class _$SearchResultMovie implements SearchResultMovie {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(SearchResultMovie value)? movie,
-    TResult Function(SearchResultTvShow value)? tvShow,
+    TResult? Function(SearchResultMovie value)? movie,
+    TResult? Function(SearchResultTvShow value)? tvShow,
   }) {
     return movie?.call(this);
   }
@@ -253,7 +254,7 @@ abstract class SearchResultMovie implements SearchResult {
   const factory SearchResultMovie(
       {required final int id,
       required final String title,
-      final Uri? poster}) = _$SearchResultMovie;
+      final Uri? poster}) = _$SearchResultMovieImpl;
 
   @override
   int get id;
@@ -263,47 +264,46 @@ abstract class SearchResultMovie implements SearchResult {
   Uri? get poster;
   @override
   @JsonKey(ignore: true)
-  _$$SearchResultMovieCopyWith<_$SearchResultMovie> get copyWith =>
+  _$$SearchResultMovieImplCopyWith<_$SearchResultMovieImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$SearchResultTvShowCopyWith<$Res>
+abstract class _$$SearchResultTvShowImplCopyWith<$Res>
     implements $SearchResultCopyWith<$Res> {
-  factory _$$SearchResultTvShowCopyWith(_$SearchResultTvShow value,
-          $Res Function(_$SearchResultTvShow) then) =
-      __$$SearchResultTvShowCopyWithImpl<$Res>;
+  factory _$$SearchResultTvShowImplCopyWith(_$SearchResultTvShowImpl value,
+          $Res Function(_$SearchResultTvShowImpl) then) =
+      __$$SearchResultTvShowImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int id, String title, Uri? poster});
 }
 
 /// @nodoc
-class __$$SearchResultTvShowCopyWithImpl<$Res>
-    extends _$SearchResultCopyWithImpl<$Res>
-    implements _$$SearchResultTvShowCopyWith<$Res> {
-  __$$SearchResultTvShowCopyWithImpl(
-      _$SearchResultTvShow _value, $Res Function(_$SearchResultTvShow) _then)
-      : super(_value, (v) => _then(v as _$SearchResultTvShow));
+class __$$SearchResultTvShowImplCopyWithImpl<$Res>
+    extends _$SearchResultCopyWithImpl<$Res, _$SearchResultTvShowImpl>
+    implements _$$SearchResultTvShowImplCopyWith<$Res> {
+  __$$SearchResultTvShowImplCopyWithImpl(_$SearchResultTvShowImpl _value,
+      $Res Function(_$SearchResultTvShowImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$SearchResultTvShow get _value => super._value as _$SearchResultTvShow;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
+    Object? id = null,
+    Object? title = null,
     Object? poster = freezed,
   }) {
-    return _then(_$SearchResultTvShow(
-      id: id == freezed
+    return _then(_$SearchResultTvShowImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      poster: poster == freezed
+      poster: freezed == poster
           ? _value.poster
           : poster // ignore: cast_nullable_to_non_nullable
               as Uri?,
@@ -313,8 +313,8 @@ class __$$SearchResultTvShowCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$SearchResultTvShow implements SearchResultTvShow {
-  const _$SearchResultTvShow(
+class _$SearchResultTvShowImpl implements SearchResultTvShow {
+  const _$SearchResultTvShowImpl(
       {required this.id, required this.title, this.poster});
 
   @override
@@ -330,26 +330,23 @@ class _$SearchResultTvShow implements SearchResultTvShow {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$SearchResultTvShow &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.poster, poster));
+            other is _$SearchResultTvShowImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.poster, poster) || other.poster == poster));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(poster));
+  int get hashCode => Object.hash(runtimeType, id, title, poster);
 
   @JsonKey(ignore: true)
   @override
-  _$$SearchResultTvShowCopyWith<_$SearchResultTvShow> get copyWith =>
-      __$$SearchResultTvShowCopyWithImpl<_$SearchResultTvShow>(
+  @pragma('vm:prefer-inline')
+  _$$SearchResultTvShowImplCopyWith<_$SearchResultTvShowImpl> get copyWith =>
+      __$$SearchResultTvShowImplCopyWithImpl<_$SearchResultTvShowImpl>(
           this, _$identity);
 
   @override
@@ -364,8 +361,8 @@ class _$SearchResultTvShow implements SearchResultTvShow {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(int id, String title, Uri? poster)? movie,
-    TResult Function(int id, String title, Uri? poster)? tvShow,
+    TResult? Function(int id, String title, Uri? poster)? movie,
+    TResult? Function(int id, String title, Uri? poster)? tvShow,
   }) {
     return tvShow?.call(id, title, poster);
   }
@@ -395,8 +392,8 @@ class _$SearchResultTvShow implements SearchResultTvShow {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(SearchResultMovie value)? movie,
-    TResult Function(SearchResultTvShow value)? tvShow,
+    TResult? Function(SearchResultMovie value)? movie,
+    TResult? Function(SearchResultTvShow value)? tvShow,
   }) {
     return tvShow?.call(this);
   }
@@ -419,7 +416,7 @@ abstract class SearchResultTvShow implements SearchResult {
   const factory SearchResultTvShow(
       {required final int id,
       required final String title,
-      final Uri? poster}) = _$SearchResultTvShow;
+      final Uri? poster}) = _$SearchResultTvShowImpl;
 
   @override
   int get id;
@@ -429,7 +426,7 @@ abstract class SearchResultTvShow implements SearchResult {
   Uri? get poster;
   @override
   @JsonKey(ignore: true)
-  _$$SearchResultTvShowCopyWith<_$SearchResultTvShow> get copyWith =>
+  _$$SearchResultTvShowImplCopyWith<_$SearchResultTvShowImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -444,8 +441,8 @@ mixin _$SearchResultWrapper {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(IList<SearchResult> results, int totalPages)? success,
-    TResult Function()? failure,
+    TResult? Function(IList<SearchResult> results, int totalPages)? success,
+    TResult? Function()? failure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -463,8 +460,8 @@ mixin _$SearchResultWrapper {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(SearchResultSuccess value)? success,
-    TResult Function(SearchResultFailure value)? failure,
+    TResult? Function(SearchResultSuccess value)? success,
+    TResult? Function(SearchResultFailure value)? failure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -480,49 +477,49 @@ mixin _$SearchResultWrapper {
 abstract class $SearchResultWrapperCopyWith<$Res> {
   factory $SearchResultWrapperCopyWith(
           SearchResultWrapper value, $Res Function(SearchResultWrapper) then) =
-      _$SearchResultWrapperCopyWithImpl<$Res>;
+      _$SearchResultWrapperCopyWithImpl<$Res, SearchResultWrapper>;
 }
 
 /// @nodoc
-class _$SearchResultWrapperCopyWithImpl<$Res>
+class _$SearchResultWrapperCopyWithImpl<$Res, $Val extends SearchResultWrapper>
     implements $SearchResultWrapperCopyWith<$Res> {
   _$SearchResultWrapperCopyWithImpl(this._value, this._then);
 
-  final SearchResultWrapper _value;
   // ignore: unused_field
-  final $Res Function(SearchResultWrapper) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$$SearchResultSuccessCopyWith<$Res> {
-  factory _$$SearchResultSuccessCopyWith(_$SearchResultSuccess value,
-          $Res Function(_$SearchResultSuccess) then) =
-      __$$SearchResultSuccessCopyWithImpl<$Res>;
+abstract class _$$SearchResultSuccessImplCopyWith<$Res> {
+  factory _$$SearchResultSuccessImplCopyWith(_$SearchResultSuccessImpl value,
+          $Res Function(_$SearchResultSuccessImpl) then) =
+      __$$SearchResultSuccessImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({IList<SearchResult> results, int totalPages});
 }
 
 /// @nodoc
-class __$$SearchResultSuccessCopyWithImpl<$Res>
-    extends _$SearchResultWrapperCopyWithImpl<$Res>
-    implements _$$SearchResultSuccessCopyWith<$Res> {
-  __$$SearchResultSuccessCopyWithImpl(
-      _$SearchResultSuccess _value, $Res Function(_$SearchResultSuccess) _then)
-      : super(_value, (v) => _then(v as _$SearchResultSuccess));
+class __$$SearchResultSuccessImplCopyWithImpl<$Res>
+    extends _$SearchResultWrapperCopyWithImpl<$Res, _$SearchResultSuccessImpl>
+    implements _$$SearchResultSuccessImplCopyWith<$Res> {
+  __$$SearchResultSuccessImplCopyWithImpl(_$SearchResultSuccessImpl _value,
+      $Res Function(_$SearchResultSuccessImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$SearchResultSuccess get _value => super._value as _$SearchResultSuccess;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? results = freezed,
-    Object? totalPages = freezed,
+    Object? results = null,
+    Object? totalPages = null,
   }) {
-    return _then(_$SearchResultSuccess(
-      results: results == freezed
+    return _then(_$SearchResultSuccessImpl(
+      results: null == results
           ? _value.results
           : results // ignore: cast_nullable_to_non_nullable
               as IList<SearchResult>,
-      totalPages: totalPages == freezed
+      totalPages: null == totalPages
           ? _value.totalPages
           : totalPages // ignore: cast_nullable_to_non_nullable
               as int,
@@ -532,8 +529,8 @@ class __$$SearchResultSuccessCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$SearchResultSuccess implements SearchResultSuccess {
-  const _$SearchResultSuccess(
+class _$SearchResultSuccessImpl implements SearchResultSuccess {
+  const _$SearchResultSuccessImpl(
       {required this.results, required this.totalPages});
 
   @override
@@ -547,25 +544,24 @@ class _$SearchResultSuccess implements SearchResultSuccess {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$SearchResultSuccess &&
+            other is _$SearchResultSuccessImpl &&
             const DeepCollectionEquality().equals(other.results, results) &&
-            const DeepCollectionEquality()
-                .equals(other.totalPages, totalPages));
+            (identical(other.totalPages, totalPages) ||
+                other.totalPages == totalPages));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(results),
-      const DeepCollectionEquality().hash(totalPages));
+      runtimeType, const DeepCollectionEquality().hash(results), totalPages);
 
   @JsonKey(ignore: true)
   @override
-  _$$SearchResultSuccessCopyWith<_$SearchResultSuccess> get copyWith =>
-      __$$SearchResultSuccessCopyWithImpl<_$SearchResultSuccess>(
+  @pragma('vm:prefer-inline')
+  _$$SearchResultSuccessImplCopyWith<_$SearchResultSuccessImpl> get copyWith =>
+      __$$SearchResultSuccessImplCopyWithImpl<_$SearchResultSuccessImpl>(
           this, _$identity);
 
   @override
@@ -581,8 +577,8 @@ class _$SearchResultSuccess implements SearchResultSuccess {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(IList<SearchResult> results, int totalPages)? success,
-    TResult Function()? failure,
+    TResult? Function(IList<SearchResult> results, int totalPages)? success,
+    TResult? Function()? failure,
   }) {
     return success?.call(results, totalPages);
   }
@@ -612,8 +608,8 @@ class _$SearchResultSuccess implements SearchResultSuccess {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(SearchResultSuccess value)? success,
-    TResult Function(SearchResultFailure value)? failure,
+    TResult? Function(SearchResultSuccess value)? success,
+    TResult? Function(SearchResultFailure value)? failure,
   }) {
     return success?.call(this);
   }
@@ -635,38 +631,35 @@ class _$SearchResultSuccess implements SearchResultSuccess {
 abstract class SearchResultSuccess implements SearchResultWrapper {
   const factory SearchResultSuccess(
       {required final IList<SearchResult> results,
-      required final int totalPages}) = _$SearchResultSuccess;
+      required final int totalPages}) = _$SearchResultSuccessImpl;
 
   IList<SearchResult> get results;
   int get totalPages;
   @JsonKey(ignore: true)
-  _$$SearchResultSuccessCopyWith<_$SearchResultSuccess> get copyWith =>
+  _$$SearchResultSuccessImplCopyWith<_$SearchResultSuccessImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$SearchResultFailureCopyWith<$Res> {
-  factory _$$SearchResultFailureCopyWith(_$SearchResultFailure value,
-          $Res Function(_$SearchResultFailure) then) =
-      __$$SearchResultFailureCopyWithImpl<$Res>;
+abstract class _$$SearchResultFailureImplCopyWith<$Res> {
+  factory _$$SearchResultFailureImplCopyWith(_$SearchResultFailureImpl value,
+          $Res Function(_$SearchResultFailureImpl) then) =
+      __$$SearchResultFailureImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$SearchResultFailureCopyWithImpl<$Res>
-    extends _$SearchResultWrapperCopyWithImpl<$Res>
-    implements _$$SearchResultFailureCopyWith<$Res> {
-  __$$SearchResultFailureCopyWithImpl(
-      _$SearchResultFailure _value, $Res Function(_$SearchResultFailure) _then)
-      : super(_value, (v) => _then(v as _$SearchResultFailure));
-
-  @override
-  _$SearchResultFailure get _value => super._value as _$SearchResultFailure;
+class __$$SearchResultFailureImplCopyWithImpl<$Res>
+    extends _$SearchResultWrapperCopyWithImpl<$Res, _$SearchResultFailureImpl>
+    implements _$$SearchResultFailureImplCopyWith<$Res> {
+  __$$SearchResultFailureImplCopyWithImpl(_$SearchResultFailureImpl _value,
+      $Res Function(_$SearchResultFailureImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$SearchResultFailure implements SearchResultFailure {
-  const _$SearchResultFailure();
+class _$SearchResultFailureImpl implements SearchResultFailure {
+  const _$SearchResultFailureImpl();
 
   @override
   String toString() {
@@ -674,9 +667,10 @@ class _$SearchResultFailure implements SearchResultFailure {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$SearchResultFailure);
+        (other.runtimeType == runtimeType &&
+            other is _$SearchResultFailureImpl);
   }
 
   @override
@@ -695,8 +689,8 @@ class _$SearchResultFailure implements SearchResultFailure {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(IList<SearchResult> results, int totalPages)? success,
-    TResult Function()? failure,
+    TResult? Function(IList<SearchResult> results, int totalPages)? success,
+    TResult? Function()? failure,
   }) {
     return failure?.call();
   }
@@ -726,8 +720,8 @@ class _$SearchResultFailure implements SearchResultFailure {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(SearchResultSuccess value)? success,
-    TResult Function(SearchResultFailure value)? failure,
+    TResult? Function(SearchResultSuccess value)? success,
+    TResult? Function(SearchResultFailure value)? failure,
   }) {
     return failure?.call(this);
   }
@@ -747,5 +741,5 @@ class _$SearchResultFailure implements SearchResultFailure {
 }
 
 abstract class SearchResultFailure implements SearchResultWrapper {
-  const factory SearchResultFailure() = _$SearchResultFailure;
+  const factory SearchResultFailure() = _$SearchResultFailureImpl;
 }
